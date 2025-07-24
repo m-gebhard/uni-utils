@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AudioSourceExtension
+   | UniUtils Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AudioSourceExtension
+   | UniUtils Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../templates/utils/images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UniUtils.Extensions.AudioSourceExtension">
+  
+  
+  <h1 id="UniUtils_Extensions_AudioSourceExtension" data-uid="UniUtils.Extensions.AudioSourceExtension" class="text-break">Class AudioSourceExtension
+  </h1>
+  <div class="markdown level0 summary"><p>Provides extension methods for Audio sources.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AudioSourceExtension</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.Extensions.html">UniUtils.Extensions</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UniUtils_Extensions_AudioSourceExtension_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AudioSourceExtension</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UniUtils_Extensions_AudioSourceExtension_FadeVolume_" data-uid="UniUtils.Extensions.AudioSourceExtension.FadeVolume*"></a>
+  <h4 id="UniUtils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__" data-uid="UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single})">FadeVolume(AudioSource, Single, Single, Nullable&lt;Single&gt;)</h4>
+  <div class="markdown level1 summary"><p>Fades the volume of the given AudioSource from a start volume to a target volume over a specified duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator FadeVolume(this AudioSource audioSource, float duration, float targetVolume, float? startVolume = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioSource</span></td>
+        <td><span class="parametername">audioSource</span></td>
+        <td><p>The AudioSource to fade.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>The duration over which to fade the volume.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">targetVolume</span></td>
+        <td><p>The target volume to reach at the end of the fade.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">startVolume</span></td>
+        <td><p>The starting volume. Defaults to 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span></td>
+        <td><p>An IEnumerator that can be used to run the fade operation in a coroutine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single___examples">Examples</h5>
+  <pre><code>// Usage example:
+IEnumerator FadeExample(AudioSource audioSource)
+{
+    // Fade volume to 0 over 2 seconds
+    yield return audioSource.FadeVolume(2f, 0f);
+
+    // Fade back to full volume over 1.5 seconds
+    yield return audioSource.FadeVolume(1.5f, 1f);
+}</code></pre>
+<p><example>
+</example></p>
+<pre><code>// Usage example:
+StartCoroutine(audioSource.FadeVolume(1.5f, 1f));</code></pre>
+
+  
+  
+  <a id="UniUtils_Extensions_AudioSourceExtension_PlayAndWait_" data-uid="UniUtils.Extensions.AudioSourceExtension.PlayAndWait*"></a>
+  <h4 id="UniUtils_Extensions_AudioSourceExtension_PlayAndWait" data-uid="UniUtils.Extensions.AudioSourceExtension.PlayAndWait">PlayAndWait()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayAndWait()</code></pre>
+  </div>
+  
+  
+  <a id="UniUtils_Extensions_AudioSourceExtension_PlayOneShotWithVariance_" data-uid="UniUtils.Extensions.AudioSourceExtension.PlayOneShotWithVariance*"></a>
+  <h4 id="UniUtils_Extensions_AudioSourceExtension_PlayOneShotWithVariance_AudioSource_AudioClip_System_Single_System_Single_System_Single_" data-uid="UniUtils.Extensions.AudioSourceExtension.PlayOneShotWithVariance(AudioSource,AudioClip,System.Single,System.Single,System.Single)">PlayOneShotWithVariance(AudioSource, AudioClip, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Plays an AudioClip with random pitch and volume variations for added audio diversity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayOneShotWithVariance(this AudioSource audioSource, AudioClip clip, float audioVolume = 1F, float maxPitchVariation = 0.1F, float maxVolumeVariation = 0.1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">AudioSource</span></td>
+        <td><span class="parametername">audioSource</span></td>
+        <td><p>The AudioSource to play the clip on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">AudioClip</span></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>The AudioClip to play.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">audioVolume</span></td>
+        <td><p>The base volume at which to play the clip. Defaults to 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxPitchVariation</span></td>
+        <td><p>The maximum variation in pitch. Defaults to 0.1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxVolumeVariation</span></td>
+        <td><p>The maximum variation in volume. Defaults to 0.1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_AudioSourceExtension_PlayOneShotWithVariance_AudioSource_AudioClip_System_Single_System_Single_System_Single__examples">Examples</h5>
+  <pre><code>// Usage example:
+void PlayClipWithVariance(AudioSource audioSource, AudioClip clip)
+{
+    audioSource.PlayOneShotWithVariance(clip, 1f, 0.2f, 0.15f);
+}</code></pre>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            UniUtils Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

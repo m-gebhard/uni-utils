@@ -1,0 +1,618 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileManager
+   | UniUtils Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileManager
+   | UniUtils Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../templates/utils/images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UniUtils.Data.FileManager">
+  
+  
+  <h1 id="UniUtils_Data_FileManager" data-uid="UniUtils.Data.FileManager" class="text-break">Class FileManager
+  </h1>
+  <div class="markdown level0 summary"><p>Provides utility methods for managing files and directories within different storage locations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.Data.html">UniUtils.Data</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UniUtils_Data_FileManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class FileManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UniUtils_Data_FileManager_ClearDirectory_" data-uid="UniUtils.Data.FileManager.ClearDirectory*"></a>
+  <h4 id="UniUtils_Data_FileManager_ClearDirectory_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.ClearDirectory(System.String,UniUtils.Data.EStorageLocation)">ClearDirectory(String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Clears the contents of a specified directory within a given storage location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearDirectory(string relativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path of the directory to clear.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location to use for resolving the directory path. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileManager_CopyDirectory_" data-uid="UniUtils.Data.FileManager.CopyDirectory*"></a>
+  <h4 id="UniUtils_Data_FileManager_CopyDirectory_System_String_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.CopyDirectory(System.String,System.String,UniUtils.Data.EStorageLocation)">CopyDirectory(String, String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Copies the contents of a source directory to a target directory within a specified storage location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CopyDirectory(string sourceRelativePath, string targetRelativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceRelativePath</span></td>
+        <td><p>The relative path of the source directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetRelativePath</span></td>
+        <td><p>The relative path of the target directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location to use for resolving the directory paths. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the directory is copied successfully; <code>false</code> if the source directory does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileManager_CopyDirectory_System_String_System_String_UniUtils_Data_EStorageLocation__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method creates the target directory if it does not exist and copies all files and subdirectories
+from the source directory to the target directory.</p>
+</div>
+  <h5 id="UniUtils_Data_FileManager_CopyDirectory_System_String_System_String_UniUtils_Data_EStorageLocation__examples">Examples</h5>
+  <pre><code>bool success = FileManager.CopyDirectory(&quot;SourceDir&quot;, &quot;TargetDir&quot;, EStorageLocation.DataPath);
+if (success)
+{
+    Debug.Log(&quot;Directory copied successfully.&quot;);
+}
+else
+{
+    Debug.LogError(&quot;Failed to copy directory.&quot;);
+}</code></pre>
+
+  
+  
+  <a id="UniUtils_Data_FileManager_DeleteDirectory_" data-uid="UniUtils.Data.FileManager.DeleteDirectory*"></a>
+  <h4 id="UniUtils_Data_FileManager_DeleteDirectory_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.DeleteDirectory(System.String,UniUtils.Data.EStorageLocation)">DeleteDirectory(String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Deletes a specified directory within a given storage location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DeleteDirectory(string relativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path of the directory to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location to use for resolving the directory path. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the directory is deleted successfully; <code>false</code> if an error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileManager_EnsureDirectoryExists_" data-uid="UniUtils.Data.FileManager.EnsureDirectoryExists*"></a>
+  <h4 id="UniUtils_Data_FileManager_EnsureDirectoryExists_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.EnsureDirectoryExists(System.String,UniUtils.Data.EStorageLocation)">EnsureDirectoryExists(String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Ensures that a directory exists at the specified relative path within a given storage location.
+If the directory does not exist, it is created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EnsureDirectoryExists(string relativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path of the directory to check or create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location to use for resolving the directory path. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileManager_GetFilesInDirectory_" data-uid="UniUtils.Data.FileManager.GetFilesInDirectory*"></a>
+  <h4 id="UniUtils_Data_FileManager_GetFilesInDirectory_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.GetFilesInDirectory(System.String,UniUtils.Data.EStorageLocation)">GetFilesInDirectory(String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a list of files from a specified directory within a given storage location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FileHandle&gt; GetFilesInDirectory(string relativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path to the directory from which to retrieve files.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location to use for resolving the directory path. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a>&gt;</td>
+        <td><p>A list of <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> objects representing the files in the specified directory.
+If the directory does not exist, an empty list is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileManager_GetRootPath_" data-uid="UniUtils.Data.FileManager.GetRootPath*"></a>
+  <h4 id="UniUtils_Data_FileManager_GetRootPath_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.GetRootPath(UniUtils.Data.EStorageLocation)">GetRootPath(EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the root path for the specified storage location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetRootPath(EStorageLocation location)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location for which to retrieve the root path.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The root path of the specified storage location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileManager_GetSubdirectories_" data-uid="UniUtils.Data.FileManager.GetSubdirectories*"></a>
+  <h4 id="UniUtils_Data_FileManager_GetSubdirectories_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.GetSubdirectories(System.String,UniUtils.Data.EStorageLocation)">GetSubdirectories(String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a list of subdirectories from a specified directory within a given storage location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetSubdirectories(string relativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path to the directory from which to retrieve subdirectories.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location to use for resolving the directory path. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A list of relative paths representing the subdirectories in the specified directory. If the directory does not exist, an empty list is returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileManager_MoveDirectory_" data-uid="UniUtils.Data.FileManager.MoveDirectory*"></a>
+  <h4 id="UniUtils_Data_FileManager_MoveDirectory_System_String_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileManager.MoveDirectory(System.String,System.String,UniUtils.Data.EStorageLocation)">MoveDirectory(String, String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Moves a directory from one location to another within a given storage location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MoveDirectory(string fromRelativePath, string toRelativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fromRelativePath</span></td>
+        <td><p>The relative path of the source directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">toRelativePath</span></td>
+        <td><p>The relative path of the target directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location to use for resolving the directory paths. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the directory is moved successfully; <code>false</code> if an error occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileManager_TryIOAction_" data-uid="UniUtils.Data.FileManager.TryIOAction*"></a>
+  <h4 id="UniUtils_Data_FileManager_TryIOAction_System_Action_System_String_System_Action_System_Exception_System_String__" data-uid="UniUtils.Data.FileManager.TryIOAction(System.Action,System.String,System.Action{System.Exception,System.String})">TryIOAction(Action, String, Action&lt;Exception, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes an I/O action and handles any exceptions that occur during its execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryIOAction(Action action, string errorContext, Action&lt;Exception, string&gt; onError = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>The I/O action to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorContext</span></td>
+        <td><p>A descriptive context for the error, used to provide additional information in the error message.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Exception</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>An optional callback to handle exceptions. The callback receives the exception and the formatted error message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the action executes successfully; <code>false</code> if an exception occurs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            UniUtils Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

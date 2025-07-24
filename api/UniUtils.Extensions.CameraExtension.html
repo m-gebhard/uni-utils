@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CameraExtension
+   | UniUtils Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CameraExtension
+   | UniUtils Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../templates/utils/images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UniUtils.Extensions.CameraExtension">
+  
+  
+  <h1 id="UniUtils_Extensions_CameraExtension" data-uid="UniUtils.Extensions.CameraExtension" class="text-break">Class CameraExtension
+  </h1>
+  <div class="markdown level0 summary"><p>Provides extension methods for the Camera.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CameraExtension</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.Extensions.html">UniUtils.Extensions</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UniUtils_Extensions_CameraExtension_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CameraExtension</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UniUtils_Extensions_CameraExtension_Capture_" data-uid="UniUtils.Extensions.CameraExtension.Capture*"></a>
+  <h4 id="UniUtils_Extensions_CameraExtension_Capture_Camera_System_Action_System_Byte____LayerMask_" data-uid="UniUtils.Extensions.CameraExtension.Capture(Camera,System.Action{System.Byte[]},LayerMask)">Capture(Camera, Action&lt;Byte[]&gt;, LayerMask)</h4>
+  <div class="markdown level1 summary"><p>Captures the current camera view and invokes a callback with the image data as a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Capture(this Camera camera, Action&lt;byte[]&gt; callback, LayerMask excludedLayers = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">camera</span></td>
+        <td><p>The Camera instance to capture the view from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>The callback to invoke with the captured image data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LayerMask</span></td>
+        <td><span class="parametername">excludedLayers</span></td>
+        <td><p>The layers to exclude from the camera capture. Defaults to none.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_CameraExtension_Capture_Camera_System_Action_System_Byte____LayerMask__examples">Examples</h5>
+  <pre><code>// Usage example:
+void Start()
+{
+    Camera mainCam = Camera.main;
+    mainCam.Capture(OnCaptured);
+}
+
+void OnCaptured(byte[] imageData)
+{
+    Debug.Log(&quot;Captured image byte size: &quot; + imageData.Length);
+    // You can now save the image or use it however you want
+}</code></pre>
+
+  
+  
+  <a id="UniUtils_Extensions_CameraExtension_Raycast_" data-uid="UniUtils.Extensions.CameraExtension.Raycast*"></a>
+  <h4 id="UniUtils_Extensions_CameraExtension_Raycast_Camera_RaycastHit__LayerMask_System_Nullable_Vector3__System_Single_QueryTriggerInteraction_System_Boolean_" data-uid="UniUtils.Extensions.CameraExtension.Raycast(Camera,RaycastHit@,LayerMask,System.Nullable{Vector3},System.Single,QueryTriggerInteraction,System.Boolean)">Raycast(Camera, out RaycastHit, LayerMask, Nullable&lt;Vector3&gt;, Single, QueryTriggerInteraction, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Performs a raycast from the camera&apos;s screen point and returns whether a hit occurred.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Raycast(this Camera camera, out RaycastHit hit, LayerMask includedLayers, Vector3? position = null, float maxDistance = 3.40282347E+38F, QueryTriggerInteraction queryTriggerInteraction = null, bool drawRay = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">camera</span></td>
+        <td><p>The Camera instance to perform the raycast from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">RaycastHit</span></td>
+        <td><span class="parametername">hit</span></td>
+        <td><p>The RaycastHit object containing information about the hit.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">LayerMask</span></td>
+        <td><span class="parametername">includedLayers</span></td>
+        <td><p>The layers to include in the raycast.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The screen position to cast the ray from. Defaults to the center of the screen.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">maxDistance</span></td>
+        <td><p>The maximum distance for the raycast. Defaults to infinity.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">QueryTriggerInteraction</span></td>
+        <td><span class="parametername">queryTriggerInteraction</span></td>
+        <td><p>Specifies whether to include trigger colliders in the raycast.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">drawRay</span></td>
+        <td><p>Indicates whether to draw the ray in the scene view for debugging purposes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the raycast hit an object; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_CameraExtension_Raycast_Camera_RaycastHit__LayerMask_System_Nullable_Vector3__System_Single_QueryTriggerInteraction_System_Boolean__examples">Examples</h5>
+  <p>Example usage:</p>
+<pre><code>RaycastHit hit;
+bool didHit = Camera.main.Raycast(
+    includedLayers: LayerMask.GetMask(&quot;Default&quot;),
+    hit: out hit,
+    drawRay: true
+);
+
+if (didHit)
+{
+    Debug.Log($&quot;Hit: {hit.collider.name}&quot;);
+}</code></pre>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            UniUtils Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

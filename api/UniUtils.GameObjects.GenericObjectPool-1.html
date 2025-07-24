@@ -1,0 +1,895 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GenericObjectPool&lt;T&gt;
+   | UniUtils Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GenericObjectPool&lt;T&gt;
+   | UniUtils Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../templates/utils/images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UniUtils.GameObjects.GenericObjectPool`1">
+  
+  
+  <h1 id="UniUtils_GameObjects_GenericObjectPool_1" data-uid="UniUtils.GameObjects.GenericObjectPool`1" class="text-break">Class GenericObjectPool&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A generic object pool for managing reusable objects of type T.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UniUtils.GameObjects.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="UniUtils.GameObjects.GenericObjectPool-1.html">GenericObjectPool</a>&lt;T&gt;&gt;</div>
+    <div class="level2"><a class="xref" href="UniUtils.GameObjects.EphemeralSingleton-1.html">EphemeralSingleton</a>&lt;<a class="xref" href="UniUtils.GameObjects.GenericObjectPool-1.html">GenericObjectPool</a>&lt;T&gt;&gt;</div>
+    <div class="level3"><span class="xref">GenericObjectPool&lt;T&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UniUtils.GameObjects.Singleton-1.html#UniUtils_GameObjects_Singleton_1_instance">Singleton&lt;GenericObjectPool&lt;T&gt;&gt;.instance</a>
+    </div>
+    <div>
+      <a class="xref" href="UniUtils.GameObjects.Singleton-1.html#UniUtils_GameObjects_Singleton_1_Instance">Singleton&lt;GenericObjectPool&lt;T&gt;&gt;.Instance</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.GameObjects.html">UniUtils.GameObjects</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UniUtils_GameObjects_GenericObjectPool_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GenericObjectPool&lt;T&gt; : EphemeralSingleton&lt;GenericObjectPool&lt;T&gt;&gt; where T : Component</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of objects to pool, which must be a Component.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_GameObjects_GenericObjectPool_1_examples"><strong>Examples</strong></h5>
+  <pre><code>public class Bullet : MonoBehaviour
+{
+    // Bullet logic here
+}
+
+public class BulletPool : GenericObjectPool&lt;Bullet>
+{
+    // Optionally add pool-specific logic here
+    // The Pool has to be placed in the scene. Within the inspector, you have to assign it&apos;s prefab.
+}
+
+public class PlayerShooter : MonoBehaviour
+{
+    private void Shoot()
+    {
+        Bullet bullet = BulletPool.Instance.Get();
+        bullet.transform.position = transform.position;
+        bullet.gameObject.SetActive(true);
+
+        // Setup bullet, e.g., velocity, direction...
+    }
+
+    private void OnBulletFinished(Bullet bullet)
+    {
+        BulletPool.Instance.ReturnToPool(bullet);
+    }
+}</code></pre>
+
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_activatePooledObjects" data-uid="UniUtils.GameObjects.GenericObjectPool`1.activatePooledObjects">activatePooledObjects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool activatePooledObjects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_activeObjects" data-uid="UniUtils.GameObjects.GenericObjectPool`1.activeObjects">activeObjects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly LinkedList&lt;T&gt; activeObjects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.LinkedList</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_allObjects" data-uid="UniUtils.GameObjects.GenericObjectPool`1.allObjects">allObjects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly HashSet&lt;T&gt; allObjects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HashSet</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_allowObjectRecycling" data-uid="UniUtils.GameObjects.GenericObjectPool`1.allowObjectRecycling">allowObjectRecycling</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool allowObjectRecycling</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_awakeObjectsBatchSize" data-uid="UniUtils.GameObjects.GenericObjectPool`1.awakeObjectsBatchSize">awakeObjectsBatchSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int awakeObjectsBatchSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_awakeObjectsOnCreation" data-uid="UniUtils.GameObjects.GenericObjectPool`1.awakeObjectsOnCreation">awakeObjectsOnCreation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool awakeObjectsOnCreation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_maxPoolSize" data-uid="UniUtils.GameObjects.GenericObjectPool`1.maxPoolSize">maxPoolSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int maxPoolSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_prefab" data-uid="UniUtils.GameObjects.GenericObjectPool`1.prefab">prefab</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected T prefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_prewarmCount" data-uid="UniUtils.GameObjects.GenericObjectPool`1.prewarmCount">prewarmCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int prewarmCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_readyToUseObjects" data-uid="UniUtils.GameObjects.GenericObjectPool`1.readyToUseObjects">readyToUseObjects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly Queue&lt;T&gt; readyToUseObjects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Queue</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_ActiveObjects_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.ActiveObjects*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_ActiveObjects" data-uid="UniUtils.GameObjects.GenericObjectPool`1.ActiveObjects">ActiveObjects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;T&gt; ActiveObjects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_AvailableSlots_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.AvailableSlots*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_AvailableSlots" data-uid="UniUtils.GameObjects.GenericObjectPool`1.AvailableSlots">AvailableSlots</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AvailableSlots { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_AddObjects_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.AddObjects*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_AddObjects_System_Int32_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.AddObjects(System.Int32)">AddObjects(Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a specified number of objects to the pool, up to the available slots.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddObjects(int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>The number of objects to add to the pool.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_Awake_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.Awake*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_Awake" data-uid="UniUtils.GameObjects.GenericObjectPool`1.Awake">Awake()</h4>
+  <div class="markdown level1 summary"><p>Initializes the pool and prewarms objects if specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UniUtils.GameObjects.Singleton&lt;UniUtils.GameObjects.GenericObjectPool&lt;T&gt;&gt;.Awake()</span></div>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_CreateInstance_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.CreateInstance*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_CreateInstance" data-uid="UniUtils.GameObjects.GenericObjectPool`1.CreateInstance">CreateInstance()</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the prefab and initializes it for use in the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual T CreateInstance()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A new instance of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> with its GameObject deactivated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_Get_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.Get*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_Get" data-uid="UniUtils.GameObjects.GenericObjectPool`1.Get">Get()</h4>
+  <div class="markdown level1 summary"><p>Retrieves an object from the pool. If no objects are available, attempts to create or recycle one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T Get()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A pooled object of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> or <code>null</code> if the operation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_Get_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.Get*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_Get_Vector3_Quaternion_Transform_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.Get(Vector3,Quaternion,Transform)">Get(Vector3, Quaternion, Transform)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an object from the pool and sets its position, rotation, and parent transform.
+If no objects are available, attempts to create or recycle one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual T Get(Vector3 position, Quaternion rotation, Transform parent = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>The position to set for the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td><p>The rotation to set for the object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent transform to assign to the object. Defaults to <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A pooled object of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> or <code>null</code> if the operation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_GetOrCreateObject_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.GetOrCreateObject*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_GetOrCreateObject_System_Boolean__" data-uid="UniUtils.GameObjects.GenericObjectPool`1.GetOrCreateObject(System.Boolean@)">GetOrCreateObject(out Boolean)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an object from the pool or creates/recycles one if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual T GetOrCreateObject(out bool wasNew)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">wasNew</span></td>
+        <td><p>Outputs whether the object was newly created (<code>true</code>) or retrieved from the pool (<code>false</code>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A pooled object of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> or <code>null</code> if the operation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_NotifyPooled_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.NotifyPooled*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_NotifyPooled__0_System_Boolean_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.NotifyPooled(`0,System.Boolean)">NotifyPooled(T, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Notifies that an object has been pooled and invokes relevant events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void NotifyPooled(T obj, bool wasNew)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object that has been pooled.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">wasNew</span></td>
+        <td><p>Indicates whether the object was newly created (<code>true</code>) or retrieved from the pool (<code>false</code>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_PrewarmCoroutine_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.PrewarmCoroutine*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_PrewarmCoroutine_System_Int32_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.PrewarmCoroutine(System.Int32)">PrewarmCoroutine(Int32)</h4>
+  <div class="markdown level1 summary"><p>Prewarms the object pool by activating and deactivating objects in batches.
+This ensures that objects are properly initialized before use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator PrewarmCoroutine(int batchSize = 50)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">batchSize</span></td>
+        <td><p>The number of objects to activate and deactivate in each batch. Defaults to 50.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span></td>
+        <td><p>An enumerator that performs the prewarming operation over multiple frames.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_GenericObjectPool_1_ReturnToPool_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.ReturnToPool*"></a>
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_ReturnToPool__0_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.ReturnToPool(`0)">ReturnToPool(T)</h4>
+  <div class="markdown level1 summary"><p>Returns an object to the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReturnToPool(T objectToReturn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">objectToReturn</span></td>
+        <td><p>The object to return to the pool.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_OnObjectPooled" data-uid="UniUtils.GameObjects.GenericObjectPool`1.OnObjectPooled">OnObjectPooled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;T&gt; OnObjectPooled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_OnObjectRecycled" data-uid="UniUtils.GameObjects.GenericObjectPool`1.OnObjectRecycled">OnObjectRecycled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;T&gt; OnObjectRecycled</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_OnObjectReturned" data-uid="UniUtils.GameObjects.GenericObjectPool`1.OnObjectReturned">OnObjectReturned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;T&gt; OnObjectReturned</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UniUtils_GameObjects_GenericObjectPool_1_OnPrewarmCompleted" data-uid="UniUtils.GameObjects.GenericObjectPool`1.OnPrewarmCompleted">OnPrewarmCompleted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;List&lt;T&gt;&gt; OnPrewarmCompleted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            UniUtils Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

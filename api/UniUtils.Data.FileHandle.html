@@ -1,0 +1,1003 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FileHandle
+   | UniUtils Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FileHandle
+   | UniUtils Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../templates/utils/images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UniUtils.Data.FileHandle">
+  
+  
+  <h1 id="UniUtils_Data_FileHandle" data-uid="UniUtils.Data.FileHandle" class="text-break">Class FileHandle
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a file handle that provides methods for file operations such as reading, writing, and deleting files.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FileHandle</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.Data.html">UniUtils.Data</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UniUtils_Data_FileHandle_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FileHandle</code></pre>
+  </div>
+  <h5 id="UniUtils_Data_FileHandle_examples"><strong>Examples</strong></h5>
+  <p>Example of using a FileHandle to read, write and delete text files:</p>
+<pre><code>FileHandle handle = new FileHandle(&quot;files/example.txt&quot;, EStorageLocation.Persistent);
+handle.WriteText(&quot;Hello, World!&quot;);
+Debug.Log(handle.ReadText()); // Outputs: Hello, World!
+handle.Delete();</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UniUtils_Data_FileHandle__ctor_" data-uid="UniUtils.Data.FileHandle.#ctor*"></a>
+  <h4 id="UniUtils_Data_FileHandle__ctor_System_String_UniUtils_Data_EStorageLocation_" data-uid="UniUtils.Data.FileHandle.#ctor(System.String,UniUtils.Data.EStorageLocation)">FileHandle(String, EStorageLocation)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> class with the specified relative path and storage location.
+Ensures the directory for the file exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileHandle(string relativePath, EStorageLocation location = EStorageLocation.Persistent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The relative path of the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location. Defaults to <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UniUtils_Data_FileHandle_Exists_" data-uid="UniUtils.Data.FileHandle.Exists*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Exists" data-uid="UniUtils.Data.FileHandle.Exists">Exists</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Exists { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_Extension_" data-uid="UniUtils.Data.FileHandle.Extension*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Extension" data-uid="UniUtils.Data.FileHandle.Extension">Extension</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Extension { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_FileName_" data-uid="UniUtils.Data.FileHandle.FileName*"></a>
+  <h4 id="UniUtils_Data_FileHandle_FileName" data-uid="UniUtils.Data.FileHandle.FileName">FileName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FileName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_FullPath_" data-uid="UniUtils.Data.FileHandle.FullPath*"></a>
+  <h4 id="UniUtils_Data_FileHandle_FullPath" data-uid="UniUtils.Data.FileHandle.FullPath">FullPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string FullPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_IsReadOnly_" data-uid="UniUtils.Data.FileHandle.IsReadOnly*"></a>
+  <h4 id="UniUtils_Data_FileHandle_IsReadOnly" data-uid="UniUtils.Data.FileHandle.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_Location_" data-uid="UniUtils.Data.FileHandle.Location*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Location" data-uid="UniUtils.Data.FileHandle.Location">Location</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual EStorageLocation Location { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_RelativePath_" data-uid="UniUtils.Data.FileHandle.RelativePath*"></a>
+  <h4 id="UniUtils_Data_FileHandle_RelativePath" data-uid="UniUtils.Data.FileHandle.RelativePath">RelativePath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string RelativePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UniUtils_Data_FileHandle_AppendText_" data-uid="UniUtils.Data.FileHandle.AppendText*"></a>
+  <h4 id="UniUtils_Data_FileHandle_AppendText_System_String_" data-uid="UniUtils.Data.FileHandle.AppendText(System.String)">AppendText(String)</h4>
+  <div class="markdown level1 summary"><p>Appends the specified text content to the file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AppendText(string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The text content to append to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the operation was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_Copy_" data-uid="UniUtils.Data.FileHandle.Copy*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Copy_System_String_System_Nullable_UniUtils_Data_EStorageLocation__System_Boolean_" data-uid="UniUtils.Data.FileHandle.Copy(System.String,System.Nullable{UniUtils.Data.EStorageLocation},System.Boolean)">Copy(String, Nullable&lt;EStorageLocation&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Copies the current file to a new location and returns a new <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> instance for the copied file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FileHandle Copy(string newRelativePath, EStorageLocation? location = null, bool canOverwrite = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newRelativePath</span></td>
+        <td><p>The relative path for the new file location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a>&gt;</td>
+        <td><span class="parametername">location</span></td>
+        <td><p>The storage location for the new file. If <code>null</code>, the current file&apos;s location is used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">canOverwrite</span></td>
+        <td><p>If <code>true</code>, allows overwriting an existing file at the new location;
+otherwise, throws an error if the target file already exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a></td>
+        <td><p>A new <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> instance representing the copied file, or <code>null</code> if the operation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileHandle_Copy_System_String_System_Nullable_UniUtils_Data_EStorageLocation__System_Boolean__examples">Examples</h5>
+  <pre><code>FileHandle file = new FileHandle(&quot;data/source.txt&quot;);
+FileHandle copiedFile = file.Copy(&quot;data/destination.txt&quot;, canOverwrite: true);</code></pre>
+
+  
+  
+  <a id="UniUtils_Data_FileHandle_Delete_" data-uid="UniUtils.Data.FileHandle.Delete*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Delete" data-uid="UniUtils.Data.FileHandle.Delete">Delete()</h4>
+  <div class="markdown level1 summary"><p>Deletes the current file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Delete()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the file was successfully deleted; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_Dump_" data-uid="UniUtils.Data.FileHandle.Dump*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Dump" data-uid="UniUtils.Data.FileHandle.Dump">Dump()</h4>
+  <div class="markdown level1 summary"><p>Logs the content of the file by reading its text and outputting it to the log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dump()</code></pre>
+  </div>
+  
+  
+  <a id="UniUtils_Data_FileHandle_FileSizeBytes_" data-uid="UniUtils.Data.FileHandle.FileSizeBytes*"></a>
+  <h4 id="UniUtils_Data_FileHandle_FileSizeBytes" data-uid="UniUtils.Data.FileHandle.FileSizeBytes">FileSizeBytes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual long FileSizeBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_GetLastModified_" data-uid="UniUtils.Data.FileHandle.GetLastModified*"></a>
+  <h4 id="UniUtils_Data_FileHandle_GetLastModified" data-uid="UniUtils.Data.FileHandle.GetLastModified">GetLastModified()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual DateTime? GetLastModified()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_Move_" data-uid="UniUtils.Data.FileHandle.Move*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Move_System_String_System_Nullable_UniUtils_Data_EStorageLocation__System_Boolean_" data-uid="UniUtils.Data.FileHandle.Move(System.String,System.Nullable{UniUtils.Data.EStorageLocation},System.Boolean)">Move(String, Nullable&lt;EStorageLocation&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Moves the current file to a new location and returns a new <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> instance for the moved file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FileHandle Move(string newRelativePath, EStorageLocation? location = null, bool canOverwrite = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newRelativePath</span></td>
+        <td><p>The relative path for the new file location.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a>&gt;</td>
+        <td><span class="parametername">location</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">canOverwrite</span></td>
+        <td><p>If <code>true</code>, allows overwriting an existing file at the new location;
+otherwise, throws an error if the target file already exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a></td>
+        <td><p>A new <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> instance representing the moved file, or <code>null</code> if the operation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileHandle_Move_System_String_System_Nullable_UniUtils_Data_EStorageLocation__System_Boolean__examples">Examples</h5>
+  <pre><code>FileHandle file = new FileHandle(&quot;data/oldname.txt&quot;);
+FileHandle movedFile = file.Move(&quot;data/newname.txt&quot;, canOverwrite: true);</code></pre>
+
+  
+  
+  <a id="UniUtils_Data_FileHandle_OpenReadStream_" data-uid="UniUtils.Data.FileHandle.OpenReadStream*"></a>
+  <h4 id="UniUtils_Data_FileHandle_OpenReadStream" data-uid="UniUtils.Data.FileHandle.OpenReadStream">OpenReadStream()</h4>
+  <div class="markdown level1 summary"><p>Opens and returns a read-only <see cref="!:FileStream"></see> for this file.
+<p><strong>Important:</strong> You must close or dispose this stream when done.</p>
+<example><p>
+<pre><code class="lang-csharp">FileHandle h = new FileHandle(&quot;data.bin&quot;);
+using (FileStream fs = h.OpenReadStream())
+{
+    byte[] buffer = new byte[fs.Length];
+    fs.Read(buffer, 0, buffer.Length);
+}</code></pre>
+<p></example></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FileStream OpenReadStream()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FileStream</span></td>
+        <td><p>A <see cref="!:FileStream"></see> opened for read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_OpenWriteStream_" data-uid="UniUtils.Data.FileHandle.OpenWriteStream*"></a>
+  <h4 id="UniUtils_Data_FileHandle_OpenWriteStream_System_Boolean_" data-uid="UniUtils.Data.FileHandle.OpenWriteStream(System.Boolean)">OpenWriteStream(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Opens and returns a write-only <see cref="!:FileStream"></see> for this file.
+<p><strong>Important:</strong> You must close or dispose this stream when done.</p>
+<example><p>
+<pre><code class="lang-csharp">FileHandle h = new FileHandle(&quot;output.bin&quot;);
+using (FileStream fs = h.OpenWriteStream(overwrite: true))
+{
+    byte[] data = new byte[] { 1, 2, 3 };
+    fs.Write(data, 0, data.Length);
+}</code></pre>
+<p></example></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FileStream OpenWriteStream(bool overwrite = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">overwrite</span></td>
+        <td><p>If true, the file will be truncated (recreated); if false, data will be appended.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">FileStream</span></td>
+        <td><p>A <see cref="!:FileStream"></see> opened for write.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_ReadBytes_" data-uid="UniUtils.Data.FileHandle.ReadBytes*"></a>
+  <h4 id="UniUtils_Data_FileHandle_ReadBytes" data-uid="UniUtils.Data.FileHandle.ReadBytes">ReadBytes()</h4>
+  <div class="markdown level1 summary"><p>Reads the content of the file as a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] ReadBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The content of the file as a byte array, or <code>null</code> if the file does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_ReadText_" data-uid="UniUtils.Data.FileHandle.ReadText*"></a>
+  <h4 id="UniUtils_Data_FileHandle_ReadText" data-uid="UniUtils.Data.FileHandle.ReadText">ReadText()</h4>
+  <div class="markdown level1 summary"><p>Reads the content of the file as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ReadText()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The content of the file as a string, or <code>null</code> if the file does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_Rename_" data-uid="UniUtils.Data.FileHandle.Rename*"></a>
+  <h4 id="UniUtils_Data_FileHandle_Rename_System_String_System_Boolean_" data-uid="UniUtils.Data.FileHandle.Rename(System.String,System.Boolean)">Rename(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Renames the current file by moving it to a new name within the same directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual FileHandle Rename(string newName, bool canOverwrite = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">newName</span></td>
+        <td><p>The new name for the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">canOverwrite</span></td>
+        <td><p>If <code>true</code>, allows overwriting an existing file with the new name;
+otherwise, throws an error if the target file already exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a></td>
+        <td><p>A new <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> instance representing the renamed file, or <code>null</code> if the operation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_ToString_" data-uid="UniUtils.Data.FileHandle.ToString*"></a>
+  <h4 id="UniUtils_Data_FileHandle_ToString" data-uid="UniUtils.Data.FileHandle.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns the full path of the file as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The full path of the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  
+  <a id="UniUtils_Data_FileHandle_WriteBytes_" data-uid="UniUtils.Data.FileHandle.WriteBytes*"></a>
+  <h4 id="UniUtils_Data_FileHandle_WriteBytes_System_Byte___" data-uid="UniUtils.Data.FileHandle.WriteBytes(System.Byte[])">WriteBytes(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Writes the specified byte array content to the file, overwriting any existing content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool WriteBytes(byte[] content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The byte array content to write to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the operation was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_WriteText_" data-uid="UniUtils.Data.FileHandle.WriteText*"></a>
+  <h4 id="UniUtils_Data_FileHandle_WriteText_System_String_" data-uid="UniUtils.Data.FileHandle.WriteText(System.String)">WriteText(String)</h4>
+  <div class="markdown level1 summary"><p>Writes the specified text content to the file, overwriting any existing content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool WriteText(string content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The text content to write to the file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the operation was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_FileHandle_WriteText_" data-uid="UniUtils.Data.FileHandle.WriteText*"></a>
+  <h4 id="UniUtils_Data_FileHandle_WriteText_System_String_Encoding_" data-uid="UniUtils.Data.FileHandle.WriteText(System.String,Encoding)">WriteText(String, Encoding)</h4>
+  <div class="markdown level1 summary"><p>Writes the specified text content to the file using the provided encoding, overwriting any existing content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool WriteText(string content, Encoding encoding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The text content to write to the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Encoding</span></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>The encoding to use when writing the text content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the operation was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            UniUtils Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
