@@ -1,0 +1,58 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../Editor",
+          "files": [
+            "**/*.cs"
+          ]
+        },
+        {
+          "src": "../Runtime",
+          "files": [
+            "**/*.cs"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "globalMetadata": {
+      "_appTitle": "UniUtils Documentation",
+      "_appFooter": "UniUtils Documentation",
+      "_enableSearch": true,
+      "_appLogoPath": "templates/utils/images/logo.svg",
+      "_appFaviconPath ": "templates/utils/images/logo.svg"
+    },
+    "resource": [
+      {
+        "files": [
+          "templates/utils/**"
+        ]
+      }
+    ],
+    "content": [
+      {
+        "files": [
+          "toc.yml",
+          "index.md"
+        ]
+      },
+      {
+        "src": "api",
+        "files": [
+          "*.yml"
+        ],
+        "dest": "api"
+      }
+    ],
+    "template": [
+      "default",
+      "templates/unity",
+      "templates/utils"
+    ],
+    "dest": "_site"
+  }
+}
