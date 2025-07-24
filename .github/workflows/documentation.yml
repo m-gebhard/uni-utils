@@ -16,16 +16,16 @@ jobs:
         run: choco install -y docfx
 
       - name: Use README.md as index.md
-        run: cp README.md Documentation/index.md
+        run: cp README.md Documentation~/index.md
 
       - name: Build documentation
-        run: docfx Documentation/docfx.json
+        run: docfx Documentation~/docfx.json
 
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
           name: docfx-site
-          path: Documentation/_site
+          path: Documentation~/_site
 
   deploy:
     needs: build
