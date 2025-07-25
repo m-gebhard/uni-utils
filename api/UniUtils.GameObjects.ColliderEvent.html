@@ -83,7 +83,7 @@
   
   <h1 id="UniUtils_GameObjects_ColliderEvent" data-uid="UniUtils.GameObjects.ColliderEvent" class="text-break">Struct ColliderEvent
   </h1>
-  <div class="markdown level0 summary"><p>Struct representing a collider event.</p>
+  <div class="markdown level0 summary"><p>Struct representing a collider event with callbacks for enter and exit interactions.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -118,7 +118,8 @@
   
   
   <h4 id="UniUtils_GameObjects_ColliderEvent_OnEnter" data-uid="UniUtils.GameObjects.ColliderEvent.OnEnter">OnEnter</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The action to invoke when a collider with the matching tag enters this collider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -139,10 +140,15 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_GameObjects_ColliderEvent_OnEnter_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The first parameter is the other UnityEngine.GameObject involved in the collision.
+The second parameter is an array of UnityEngine.ContactPoint providing collision details.</p>
+</div>
   
   
   <h4 id="UniUtils_GameObjects_ColliderEvent_OnExit" data-uid="UniUtils.GameObjects.ColliderEvent.OnExit">OnExit</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The action to invoke when a collider with the matching tag exits this collider.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -163,10 +169,16 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_GameObjects_ColliderEvent_OnExit_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The first parameter is the other UnityEngine.GameObject involved in the collision.
+The second parameter is an array of UnityEngine.ContactPoint from the exit interaction.</p>
+</div>
   
   
   <h4 id="UniUtils_GameObjects_ColliderEvent_Tag" data-uid="UniUtils.GameObjects.ColliderEvent.Tag">Tag</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The tag of the GameObject to match during collision events.
+Only GameObjects with this tag will trigger the callbacks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

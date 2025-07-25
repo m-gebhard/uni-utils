@@ -411,19 +411,6 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.FileHandle.FullPath
   nameWithType: FileHandle.FullPath
-- uid: UniUtils.Data.FileHandle.GetLastModified
-  name: GetLastModified()
-  href: api/UniUtils.Data.FileHandle.html#UniUtils_Data_FileHandle_GetLastModified
-  commentId: M:UniUtils.Data.FileHandle.GetLastModified
-  fullName: UniUtils.Data.FileHandle.GetLastModified()
-  nameWithType: FileHandle.GetLastModified()
-- uid: UniUtils.Data.FileHandle.GetLastModified*
-  name: GetLastModified
-  href: api/UniUtils.Data.FileHandle.html#UniUtils_Data_FileHandle_GetLastModified_
-  commentId: Overload:UniUtils.Data.FileHandle.GetLastModified
-  isSpec: "True"
-  fullName: UniUtils.Data.FileHandle.GetLastModified
-  nameWithType: FileHandle.GetLastModified
 - uid: UniUtils.Data.FileHandle.IsReadOnly
   name: IsReadOnly
   href: api/UniUtils.Data.FileHandle.html#UniUtils_Data_FileHandle_IsReadOnly
@@ -437,6 +424,19 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.FileHandle.IsReadOnly
   nameWithType: FileHandle.IsReadOnly
+- uid: UniUtils.Data.FileHandle.LastModified
+  name: LastModified()
+  href: api/UniUtils.Data.FileHandle.html#UniUtils_Data_FileHandle_LastModified
+  commentId: M:UniUtils.Data.FileHandle.LastModified
+  fullName: UniUtils.Data.FileHandle.LastModified()
+  nameWithType: FileHandle.LastModified()
+- uid: UniUtils.Data.FileHandle.LastModified*
+  name: LastModified
+  href: api/UniUtils.Data.FileHandle.html#UniUtils_Data_FileHandle_LastModified_
+  commentId: Overload:UniUtils.Data.FileHandle.LastModified
+  isSpec: "True"
+  fullName: UniUtils.Data.FileHandle.LastModified
+  nameWithType: FileHandle.LastModified
 - uid: UniUtils.Data.FileHandle.Location
   name: Location
   href: api/UniUtils.Data.FileHandle.html#UniUtils_Data_FileHandle_Location

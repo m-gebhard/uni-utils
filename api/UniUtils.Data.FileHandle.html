@@ -118,13 +118,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class FileHandle</code></pre>
   </div>
-  <h5 id="UniUtils_Data_FileHandle_examples"><strong>Examples</strong></h5>
-  <p>Example of using a FileHandle to read, write and delete text files:</p>
-<pre><code>FileHandle handle = new FileHandle(&quot;files/example.txt&quot;, EStorageLocation.Persistent);
-handle.WriteText(&quot;Hello, World!&quot;);
-Debug.Log(handle.ReadText()); // Outputs: Hello, World!
-handle.Delete();</code></pre>
-
   <h3 id="constructors">Constructors
   </h3>
   
@@ -186,7 +179,8 @@ Ensures the directory for the file exists.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Returns <code>true</code> if the file exists; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -211,7 +205,8 @@ Ensures the directory for the file exists.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>Returns the file extension.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -236,7 +231,8 @@ Ensures the directory for the file exists.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The name of the file without the directory path.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -261,7 +257,8 @@ Ensures the directory for the file exists.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The full path to the file, including the directory and file name.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -286,7 +283,8 @@ Ensures the directory for the file exists.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>Returns <code>true</code> if the file is read-only; otherwise, <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -311,7 +309,8 @@ Ensures the directory for the file exists.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="UniUtils.Data.EStorageLocation.html">EStorageLocation</a></td>
-        <td></td>
+        <td><p>The storage location of the file, such as <a class="xref" href="UniUtils.Data.EStorageLocation.html#UniUtils_Data_EStorageLocation_Persistent">Persistent</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -336,7 +335,8 @@ Ensures the directory for the file exists.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The relative path of the file from the root of the specified storage location.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -383,6 +383,26 @@ Ensures the directory for the file exists.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if the operation was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileHandle_AppendText_System_String__examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;log.txt&quot;);
+handle.AppendText(&quot;Log entry\n&quot;);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if appending to the file fails.</p>
 </td>
       </tr>
     </tbody>
@@ -449,6 +469,27 @@ otherwise, throws an error if the target file already exists.</p>
   <pre><code>FileHandle file = new FileHandle(&quot;data/source.txt&quot;);
 FileHandle copiedFile = file.Copy(&quot;data/destination.txt&quot;, canOverwrite: true);</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>Thrown if the file does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if writing to the file fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="UniUtils_Data_FileHandle_Delete_" data-uid="UniUtils.Data.FileHandle.Delete*"></a>
@@ -476,17 +517,41 @@ FileHandle copiedFile = file.Copy(&quot;data/destination.txt&quot;, canOverwrite
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Data_FileHandle_Delete_examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;temp/data.txt&quot;);
+handle.Delete();</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if the delete operation fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="UniUtils_Data_FileHandle_Dump_" data-uid="UniUtils.Data.FileHandle.Dump*"></a>
   <h4 id="UniUtils_Data_FileHandle_Dump" data-uid="UniUtils.Data.FileHandle.Dump">Dump()</h4>
-  <div class="markdown level1 summary"><p>Logs the content of the file by reading its text and outputting it to the log.</p>
+  <div class="markdown level1 summary"><p>Logs the contents of the file to the Unity console.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Dump()</code></pre>
   </div>
+  <h5 id="UniUtils_Data_FileHandle_Dump_examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;logs/output.txt&quot;);
+handle.Dump(); // Logs file contents to Unity console.</code></pre>
+
   
   
   <a id="UniUtils_Data_FileHandle_FileSizeBytes_" data-uid="UniUtils.Data.FileHandle.FileSizeBytes*"></a>
@@ -508,19 +573,20 @@ FileHandle copiedFile = file.Copy(&quot;data/destination.txt&quot;, canOverwrite
     <tbody>
       <tr>
         <td><span class="xref">System.Int64</span></td>
-        <td></td>
+        <td><p>Returns the size of the file in bytes, or 0 if the file does not exist.</p>
+</td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="UniUtils_Data_FileHandle_GetLastModified_" data-uid="UniUtils.Data.FileHandle.GetLastModified*"></a>
-  <h4 id="UniUtils_Data_FileHandle_GetLastModified" data-uid="UniUtils.Data.FileHandle.GetLastModified">GetLastModified()</h4>
+  <a id="UniUtils_Data_FileHandle_LastModified_" data-uid="UniUtils.Data.FileHandle.LastModified*"></a>
+  <h4 id="UniUtils_Data_FileHandle_LastModified" data-uid="UniUtils.Data.FileHandle.LastModified">LastModified()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public virtual DateTime? GetLastModified()</code></pre>
+    <pre><code class="lang-csharp hljs">public virtual DateTime? LastModified()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -533,7 +599,8 @@ FileHandle copiedFile = file.Copy(&quot;data/destination.txt&quot;, canOverwrite
     <tbody>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
-        <td></td>
+        <td><p>Returns the last modified date and time of the file, or <code>null</code> if the file does not exist.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -598,20 +665,37 @@ otherwise, throws an error if the target file already exists.</p>
   <pre><code>FileHandle file = new FileHandle(&quot;data/oldname.txt&quot;);
 FileHandle movedFile = file.Move(&quot;data/newname.txt&quot;, canOverwrite: true);</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>Thrown if the file does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if the target file already exists.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if writing to the file fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="UniUtils_Data_FileHandle_OpenReadStream_" data-uid="UniUtils.Data.FileHandle.OpenReadStream*"></a>
   <h4 id="UniUtils_Data_FileHandle_OpenReadStream" data-uid="UniUtils.Data.FileHandle.OpenReadStream">OpenReadStream()</h4>
-  <div class="markdown level1 summary"><p>Opens and returns a read-only <see cref="!:FileStream"></see> for this file.
-<p><strong>Important:</strong> You must close or dispose this stream when done.</p>
-<example><p>
-<pre><code class="lang-csharp">FileHandle h = new FileHandle(&quot;data.bin&quot;);
-using (FileStream fs = h.OpenReadStream())
-{
-    byte[] buffer = new byte[fs.Length];
-    fs.Read(buffer, 0, buffer.Length);
-}</code></pre>
-<p></example></p>
+  <div class="markdown level1 summary"><p>Opens and returns a read-only FileStream for this file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -629,7 +713,30 @@ using (FileStream fs = h.OpenReadStream())
     <tbody>
       <tr>
         <td><span class="xref">FileStream</span></td>
-        <td><p>A <see cref="!:FileStream"></see> opened for read.</p>
+        <td><p>A <span class="xref">System.IO.FileStream</span> opened for read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileHandle_OpenReadStream_examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;data.txt&quot;);
+using (FileStream stream = handle.OpenReadStream())
+{
+    // Read from stream
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.FileNotFoundException</span></td>
+        <td><p>FileNotFoundException: Thrown if the file does not exist.</p>
 </td>
       </tr>
     </tbody>
@@ -638,16 +745,7 @@ using (FileStream fs = h.OpenReadStream())
   
   <a id="UniUtils_Data_FileHandle_OpenWriteStream_" data-uid="UniUtils.Data.FileHandle.OpenWriteStream*"></a>
   <h4 id="UniUtils_Data_FileHandle_OpenWriteStream_System_Boolean_" data-uid="UniUtils.Data.FileHandle.OpenWriteStream(System.Boolean)">OpenWriteStream(Boolean)</h4>
-  <div class="markdown level1 summary"><p>Opens and returns a write-only <see cref="!:FileStream"></see> for this file.
-<p><strong>Important:</strong> You must close or dispose this stream when done.</p>
-<example><p>
-<pre><code class="lang-csharp">FileHandle h = new FileHandle(&quot;output.bin&quot;);
-using (FileStream fs = h.OpenWriteStream(overwrite: true))
-{
-    byte[] data = new byte[] { 1, 2, 3 };
-    fs.Write(data, 0, data.Length);
-}</code></pre>
-<p></example></p>
+  <div class="markdown level1 summary"><p>Opens and returns a write-only FileStream for this file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -667,7 +765,7 @@ using (FileStream fs = h.OpenWriteStream(overwrite: true))
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">overwrite</span></td>
-        <td><p>If true, the file will be truncated (recreated); if false, data will be appended.</p>
+        <td><p>If true, the file will be recreated; if false, data will be appended.</p>
 </td>
       </tr>
     </tbody>
@@ -683,11 +781,19 @@ using (FileStream fs = h.OpenWriteStream(overwrite: true))
     <tbody>
       <tr>
         <td><span class="xref">FileStream</span></td>
-        <td><p>A <see cref="!:FileStream"></see> opened for write.</p>
+        <td><p>A <span class="xref">System.IO.FileStream</span> opened for write.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Data_FileHandle_OpenWriteStream_System_Boolean__examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;log.txt&quot;);
+using (FileStream stream = handle.OpenWriteStream(overwrite: true))
+{
+    byte[] bytes = Encoding.UTF8.GetBytes(&quot;Hello&quot;);
+    stream.Write(bytes, 0, bytes.Length);
+}</code></pre>
+
   
   
   <a id="UniUtils_Data_FileHandle_ReadBytes_" data-uid="UniUtils.Data.FileHandle.ReadBytes*"></a>
@@ -715,6 +821,26 @@ using (FileStream fs = h.OpenWriteStream(overwrite: true))
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Data_FileHandle_ReadBytes_examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;data.bin&quot;);
+byte[] data = handle.ReadBytes();</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if the file cannot be read.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="UniUtils_Data_FileHandle_ReadText_" data-uid="UniUtils.Data.FileHandle.ReadText*"></a>
@@ -738,6 +864,27 @@ using (FileStream fs = h.OpenWriteStream(overwrite: true))
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>The content of the file as a string, or <code>null</code> if the file does not exist.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileHandle_ReadText_examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;log.txt&quot;);
+string content = handle.ReadText();
+Debug.Log(content);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if the file cannot be read.</p>
 </td>
       </tr>
     </tbody>
@@ -868,6 +1015,26 @@ otherwise, throws an error if the target file already exists.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Data_FileHandle_WriteBytes_System_Byte____examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;binary.bin&quot;);
+handle.WriteBytes(new byte[] { 1, 2, 3 });</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if writing to the file fails.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="UniUtils_Data_FileHandle_WriteText_" data-uid="UniUtils.Data.FileHandle.WriteText*"></a>
@@ -909,6 +1076,26 @@ otherwise, throws an error if the target file already exists.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if the operation was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileHandle_WriteText_System_String__examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;output.txt&quot;);
+handle.WriteText(&quot;Hello, world!&quot;);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if writing to the file fails.</p>
 </td>
       </tr>
     </tbody>
@@ -960,6 +1147,26 @@ otherwise, throws an error if the target file already exists.</p>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><code>true</code> if the operation was successful; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_FileHandle_WriteText_System_String_Encoding__examples">Examples</h5>
+  <pre><code>FileHandle handle = new FileHandle(&quot;utf8.txt&quot;);
+handle.WriteText(&quot;Hello&quot;, Encoding.UTF8);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.IOException</span></td>
+        <td><p>Thrown if writing to the file fails.</p>
 </td>
       </tr>
     </tbody>

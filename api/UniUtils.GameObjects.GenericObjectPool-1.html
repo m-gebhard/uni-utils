@@ -124,35 +124,6 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_GameObjects_GenericObjectPool_1_examples"><strong>Examples</strong></h5>
-  <pre><code>public class Bullet : MonoBehaviour
-{
-    // Bullet logic here
-}
-
-public class BulletPool : GenericObjectPool&lt;Bullet>
-{
-    // Optionally add pool-specific logic here
-    // The Pool has to be placed in the scene. Within the inspector, you have to assign it&apos;s prefab.
-}
-
-public class PlayerShooter : MonoBehaviour
-{
-    private void Shoot()
-    {
-        Bullet bullet = BulletPool.Instance.Get();
-        bullet.transform.position = transform.position;
-        bullet.gameObject.SetActive(true);
-
-        // Setup bullet, e.g., velocity, direction...
-    }
-
-    private void OnBulletFinished(Bullet bullet)
-    {
-        BulletPool.Instance.ReturnToPool(bullet);
-    }
-}</code></pre>
-
   <h3 id="fields">Fields
   </h3>
   
@@ -418,7 +389,8 @@ public class PlayerShooter : MonoBehaviour
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;T&gt;</td>
-        <td></td>
+        <td><p>The collection of currently active objects in the pool.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -443,7 +415,8 @@ public class PlayerShooter : MonoBehaviour
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The number of available slots in the pool for new objects.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -491,6 +464,35 @@ public class PlayerShooter : MonoBehaviour
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">UniUtils.GameObjects.Singleton&lt;UniUtils.GameObjects.GenericObjectPool&lt;T&gt;&gt;.Awake()</span></div>
+  <h5 id="UniUtils_GameObjects_GenericObjectPool_1_Awake_examples">Examples</h5>
+  <pre><code>public class Bullet : MonoBehaviour
+{
+    // Bullet logic here
+}
+
+public class BulletPool : GenericObjectPool&lt;Bullet>
+{
+    // Optionally add pool-specific logic here
+    // The Pool has to be placed in the scene. Within the inspector, you have to assign it&apos;s prefab.
+}
+
+public class PlayerShooter : MonoBehaviour
+{
+    private void Shoot()
+    {
+        Bullet bullet = BulletPool.Instance.Get();
+        bullet.transform.position = transform.position;
+        bullet.gameObject.SetActive(true);
+
+        // Setup bullet, e.g., velocity, direction...
+    }
+
+    private void OnBulletFinished(Bullet bullet)
+    {
+        BulletPool.Instance.ReturnToPool(bullet);
+    }
+}</code></pre>
+
   
   
   <a id="UniUtils_GameObjects_GenericObjectPool_1_CreateInstance_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.CreateInstance*"></a>
@@ -545,6 +547,14 @@ public class PlayerShooter : MonoBehaviour
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_GameObjects_GenericObjectPool_1_Get_examples">Examples</h5>
+  <pre><code>// Example: shooting bullets
+Bullet bullet = BulletPool.Instance.Get();
+if (bullet != null)
+{
+    bullet.transform.position = transform.position;
+}</code></pre>
+
   
   
   <a id="UniUtils_GameObjects_GenericObjectPool_1_Get_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.Get*"></a>
@@ -603,6 +613,11 @@ If no objects are available, attempts to create or recycle one.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_GameObjects_GenericObjectPool_1_Get_Vector3_Quaternion_Transform__examples">Examples</h5>
+  <pre><code>Vector3 pos = transform.position + transform.forward * 2f;
+Quaternion rot = Quaternion.identity;
+Bullet bullet = BulletPool.Instance.Get(pos, rot, this.transform);</code></pre>
+
   
   
   <a id="UniUtils_GameObjects_GenericObjectPool_1_GetOrCreateObject_" data-uid="UniUtils.GameObjects.GenericObjectPool`1.GetOrCreateObject*"></a>
@@ -758,6 +773,10 @@ This ensures that objects are properly initialized before use.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_GameObjects_GenericObjectPool_1_ReturnToPool__0__examples">Examples</h5>
+  <pre><code>// When a bullet finishes:
+BulletPool.Instance.ReturnToPool(bullet);</code></pre>
+
   <h3 id="events">Events
   </h3>
   

@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.FileHandle.html",
-          "hash": "YIvkVxAMZ/8c9vwN8ujXA2E8yCF5SAhkHimWP56GC50="
+          "hash": "IEPjR5+tYi7RKZZ3fjiTwS8OnVpGKeup8YY3nA5nAO8="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.FileManager.html",
-          "hash": "JSO+W0PKkgR8gfH6w3517Zr5r9pvM0lFoehfAOStLk8="
+          "hash": "IYrlOR+vFWcV6rCwNQxJi1w+LFQlt0MfuZxyKBHhd/M="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.LerpValue-1.html",
-          "hash": "ZrUcp5ppjAp0ogpmpcLfHdeN7CuZe1tGw1yOnA/V0lA="
+          "hash": "YGz7A1u+j/2ZMHyEChIP9NSOANg8SnB8Ane0mfMHRCY="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Debugging.ELogTypeMask.html",
-          "hash": "EvkNNr9/TPCAe8f+5buTWjSC8mhpcB71r6muZD2K5pg="
+          "hash": "3Bo7T0JkVQFPqlWNAaKg477PbFr7tb6AcRvbyBM4w9M="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Debugging.html",
-          "hash": "rHn7ztX8zXntTaY+VVGuN374sXcgCAhKijrBVZ836ek="
+          "hash": "VTaLHHVTIgCF5luEUUFRjENG/1Zs1XYFxh9m9laELTw="
         }
       },
       "is_incremental": false,
@@ -414,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Extensions.ColorExtension.html",
-          "hash": "hDscaKcS99HwURarZGP8dYnaT3dPu3BId8HzJAv3aQ0="
+          "hash": "uK/9ECdzA666zcNz9HMEOW6HRp90v+qS+/VUHCGWP4Q="
         }
       },
       "is_incremental": false,
@@ -462,7 +462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Extensions.LayerMaskExtension.html",
-          "hash": "w8BgP6CbDlq4ZKUA9qWRo2+rx1FVBCHuKWvjL0XJkOw="
+          "hash": "lCToxvgBs8OKu7n9GeFE/dqxslM+Tn/COeOIOgo2z1o="
         }
       },
       "is_incremental": false,
@@ -474,7 +474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Extensions.ListExtension.html",
-          "hash": "Tujv5NiaI6L4ivRktPZZMsVZjn2iX60oX38/xcfAvPg="
+          "hash": "Dt5mcD1sAYHxHfxUh/pTPlSeqNNFBgT9tEXpniRvPp4="
         }
       },
       "is_incremental": false,
@@ -594,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.GameObjects.ColliderEvent.html",
-          "hash": "efxkzM44v0i/ATGYVg0KO50SF/oX+SxtHSA6GXoVikc="
+          "hash": "HgLJMuqP9esh9cKi37iMcbaHRtN/dermmf+70RomJ6I="
         }
       },
       "is_incremental": false,
@@ -642,7 +642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.GameObjects.GenericObjectPool-1.html",
-          "hash": "kA5W18gCVIAfxbXJrE75ruC8jHpcmrDjx4gil01nbxM="
+          "hash": "i6lBuWBWE9IQg8h4h9FGdUBoGiiUl/ZwDx/wLc7CtEw="
         }
       },
       "is_incremental": false,
@@ -690,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.GameObjects.Singleton-1.html",
-          "hash": "ds6vJ8SCG4i2iwA9W3fsW9Dc1QCOjigvxyQFwtYy1/8="
+          "hash": "B9LzPjlNG788gHPGM77YwlUJ4lfBryIa+I3cJa6dlh8="
         }
       },
       "is_incremental": false,
@@ -702,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.GameObjects.html",
-          "hash": "QVOyMBaneHTRnjEbvNUxNfB+CZjIVI6XZm2D8PGuBe8="
+          "hash": "FvP9ghRFvZnysZjgRFfQhaEFqZOz9b2NV7YhM3u9VSc="
         }
       },
       "is_incremental": false,
@@ -714,7 +714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Reflection.PredefinedAssemblyUtil.html",
-          "hash": "fFU4MjJAfyuTgXUz2eZpDh2yjYL+8n+AbNdhAloeSuE="
+          "hash": "QJ2IEj9vOwzJqPBPgCs7jY/9RWHSctMcBGs8/A8u1nU="
         }
       },
       "is_incremental": false,
