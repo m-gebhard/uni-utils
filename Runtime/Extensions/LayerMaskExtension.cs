@@ -13,7 +13,7 @@ namespace UniUtils.Extensions
         /// </summary>
         /// <param name="layerIndices">An array of layer indices.</param>
         /// <returns>A LayerMask representing the specified layers.</returns>
-        /// <exception cref="Exception">Thrown when a layer index is out of the valid range (0-31).</exception>
+        /// <exception cref="System.ArgumentException">Thrown when a layer index is out of the valid range (0-31).</exception>
         /// <example>
         /// <code>
         /// // Create a LayerMask for layers 0, 2, and 5
@@ -32,7 +32,7 @@ namespace UniUtils.Extensions
                 }
                 else
                 {
-                    throw new Exception($"Layer index {layerIndex} is out of range (0-31)");
+                    throw new ArgumentException($"Layer index {layerIndex} is out of range (0-31)");
                 }
             }
 

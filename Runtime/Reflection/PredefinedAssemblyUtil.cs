@@ -15,6 +15,7 @@ namespace UniUtils.Reflection
         /// Gets a list of types that are subclasses of the specified generic base type.
         /// </summary>
         /// <param name="genericBaseType">The generic base type to match.</param>
+        /// <exception cref="System.Reflection.ReflectionTypeLoadException">Thrown when there is an error loading types from an assembly.</exception>
         /// <returns>A list of types that are subclasses of the specified generic base type.</returns>
         /// <example>
         /// Example usage:
@@ -47,7 +48,11 @@ namespace UniUtils.Reflection
                 }
                 catch (ReflectionTypeLoadException e)
                 {
-                    nameof(PredefinedAssemblyUtil).Log(e);
+                    throw new ReflectionTypeLoadException(
+                        e.Types,
+                        e.LoaderExceptions,
+                        $"Failed to load types from assembly '{assembly.FullName}': {e.Message}"
+                    );
                 }
             }
 

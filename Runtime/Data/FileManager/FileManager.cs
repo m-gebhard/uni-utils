@@ -15,16 +15,16 @@ namespace UniUtils.Data
         /// <summary>
         /// Retrieves a list of files from a specified directory within a given storage location.
         /// </summary>
-        /// <param name="relativePath">
-        /// The relative path to the directory from which to retrieve files.
-        /// </param>
-        /// <param name="location">
-        /// The storage location to use for resolving the directory path. Defaults to <see cref="EStorageLocation.Persistent"/>.
-        /// </param>
-        /// <returns>
-        /// A list of <see cref="FileHandle"/> objects representing the files in the specified directory.
-        /// If the directory does not exist, an empty list is returned.
-        /// </returns>
+        /// <param name="relativePath">The relative path to the directory from which to retrieve files.</param>
+        /// <param name="location">The storage location to use for resolving the directory path. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
+        /// <returns>A list of <see cref="FileHandle"/> objects representing the files in the specified directory. If the directory does not exist, an empty list is returned.</returns>
+        /// <example>
+        /// <code>
+        /// List&lt;FileHandle&gt; files = FileManager.GetFilesInDirectory("Logs");
+        /// foreach (FileHandle file in files)
+        ///     file.Delete();
+        /// </code>
+        /// </example>
         public static List<FileHandle> GetFilesInDirectory(
             string relativePath,
             EStorageLocation location = EStorageLocation.Persistent
@@ -52,6 +52,13 @@ namespace UniUtils.Data
         /// <param name="relativePath">The relative path to the directory from which to retrieve subdirectories.</param>
         /// <param name="location">The storage location to use for resolving the directory path. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
         /// <returns>A list of relative paths representing the subdirectories in the specified directory. If the directory does not exist, an empty list is returned.</returns>
+        /// <example>
+        /// <code>
+        /// List&lt;string&gt; subdirs = FileManager.GetSubdirectories("Projects");
+        /// foreach (string dir in subdirs)
+        ///     Debug.Log(dir);
+        /// </code>
+        /// </example>
         public static List<string> GetSubdirectories(
             string relativePath,
             EStorageLocation location = EStorageLocation.Persistent
@@ -72,30 +79,17 @@ namespace UniUtils.Data
         /// </summary>
         /// <param name="sourceRelativePath">The relative path of the source directory.</param>
         /// <param name="targetRelativePath">The relative path of the target directory.</param>
-        /// <param name="location">
-        /// The storage location to use for resolving the directory paths. Defaults to <see cref="EStorageLocation.Persistent"/>.
-        /// </param>
-        /// <returns>
-        /// <c>true</c> if the directory is copied successfully; <c>false</c> if the source directory does not exist.
-        /// </returns>
-        /// <remarks>
-        /// This method creates the target directory if it does not exist and copies all files and subdirectories
-        /// from the source directory to the target directory.
-        /// </remarks>
+        /// <param name="location">The storage location to use. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
+        /// <returns><c>true</c> if the copy was successful; otherwise throws an exception.</returns>
+        /// <exception cref="System.IO.DirectoryNotFoundException">Thrown if the source directory does not exist.</exception>
+        /// <exception cref="System.IO.IOException">Thrown if copying fails due to IO errors.</exception>
+        /// <exception cref="System.UnauthorizedAccessException">Thrown if the operation lacks necessary permissions.</exception>
         /// <example>
         /// <code>
-        /// bool success = FileManager.CopyDirectory("SourceDir", "TargetDir", EStorageLocation.DataPath);
-        /// if (success)
-        /// {
-        ///     Debug.Log("Directory copied successfully.");
-        /// }
-        /// else
-        /// {
-        ///     Debug.LogError("Failed to copy directory.");
-        /// }
+        /// FileManager.CopyDirectory("Configs", "Backup/Configs");
         /// </code>
         /// </example>
-         public static bool CopyDirectory(
+        public static bool CopyDirectory(
             string sourceRelativePath,
             string targetRelativePath,
             EStorageLocation location = EStorageLocation.Persistent)
@@ -106,9 +100,8 @@ namespace UniUtils.Data
 
             if (!Directory.Exists(sourcePath))
             {
-                nameof(FileManager).LogError(
+                throw new DirectoryNotFoundException(
                     $"Source directory '{sourceRelativePath}' does not exist in location '{location}'.");
-                return false;
             }
 
             Directory.CreateDirectory(targetPath);
@@ -121,7 +114,6 @@ namespace UniUtils.Data
 
             foreach (string dir in Directory.GetDirectories(sourcePath))
             {
-                string destDir = Path.Combine(targetPath, Path.GetFileName(dir));
                 CopyDirectory(Path.Combine(sourceRelativePath, Path.GetFileName(dir)),
                     Path.Combine(targetRelativePath, Path.GetFileName(dir)), location);
             }
@@ -130,12 +122,18 @@ namespace UniUtils.Data
         }
 
         /// <summary>
-        /// Moves a directory from one location to another within a given storage location.
+        /// Moves a directory from one path to another within a given storage location.
         /// </summary>
         /// <param name="fromRelativePath">The relative path of the source directory.</param>
         /// <param name="toRelativePath">The relative path of the target directory.</param>
-        /// <param name="location">The storage location to use for resolving the directory paths. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
-        /// <returns><c>true</c> if the directory is moved successfully; <c>false</c> if an error occurs.</returns>
+        /// <param name="location">The storage location. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
+        /// <returns><c>true</c> if the move succeeds; otherwise throws an exception.</returns>
+        /// <exception cref="System.IO.IOException">Thrown if the target directory already exists or if the move fails.</exception>
+        /// <example>
+        /// <code>
+        /// FileManager.MoveDirectory("TempData", "Archived/TempData");
+        /// </code>
+        /// </example>
         public static bool MoveDirectory(
             string fromRelativePath,
             string toRelativePath,
@@ -147,22 +145,28 @@ namespace UniUtils.Data
 
             if (Directory.Exists(to))
             {
-                nameof(FileManager).LogError(
+                throw new IOException(
                     $"Target directory '{toRelativePath}' already exists in location '{location}'.");
-                return false;
             }
 
             return TryIOAction(() => Directory.Move(from, to),
                 $"Failed to move directory from '{fromRelativePath}' to '{toRelativePath}'",
-                (ex, msg) => nameof(FileManager).LogError(msg)
+                (exception, _) => throw exception
             );
         }
 
         /// <summary>
-        /// Clears the contents of a specified directory within a given storage location.
+        /// Deletes all contents of a directory without deleting the directory itself.
         /// </summary>
         /// <param name="relativePath">The relative path of the directory to clear.</param>
-        /// <param name="location">The storage location to use for resolving the directory path. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
+        /// <param name="location">The storage location. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
+        /// <exception cref="System.IO.IOException">Thrown if file or directory deletion fails.</exception>
+        /// <exception cref="System.UnauthorizedAccessException">Thrown if the operation lacks necessary permissions.</exception>
+        /// <example>
+        /// <code>
+        /// FileManager.ClearDirectory("Cache");
+        /// </code>
+        /// </example>
         public static void ClearDirectory(
             string relativePath,
             EStorageLocation location = EStorageLocation.Persistent
@@ -177,14 +181,14 @@ namespace UniUtils.Data
                 TryIOAction(
                     () => File.Delete(file),
                     $"Failed to delete file '{file}'",
-                    (ex, msg) => nameof(FileManager).LogError(msg)
+                    (exception, _) => throw exception
                 );
 
             foreach (string dir in Directory.GetDirectories(fullPath))
                 TryIOAction(
                     () => Directory.Delete(dir, true),
                     $"Failed to delete directory '{dir}'",
-                    (ex, msg) => nameof(FileManager).LogError(msg)
+                    (exception, _) => throw exception
                 );
         }
 
@@ -194,6 +198,8 @@ namespace UniUtils.Data
         /// <param name="relativePath">The relative path of the directory to delete.</param>
         /// <param name="location">The storage location to use for resolving the directory path. Defaults to <see cref="EStorageLocation.Persistent"/>.</param>
         /// <returns><c>true</c> if the directory is deleted successfully; <c>false</c> if an error occurs.</returns>
+        /// <exception cref="System.IO.IOException">Thrown if file or directory deletion fails.</exception>
+        /// <exception cref="System.UnauthorizedAccessException">Thrown if the operation lacks necessary permissions.</exception>
         public static bool DeleteDirectory(
             string relativePath,
             EStorageLocation location = EStorageLocation.Persistent
@@ -205,7 +211,7 @@ namespace UniUtils.Data
             return TryIOAction(
                 () => Directory.Delete(fullDirPath, true),
                 $"Failed to delete directory '{relativePath}'",
-                (ex, msg) => nameof(FileManager).LogError(msg)
+                (exception, _) => throw exception
             );
         }
 

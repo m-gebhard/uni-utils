@@ -36,6 +36,8 @@ namespace UniUtils.Debugging
         [Header("Content & Filtering")]
         [Tooltip("The types of log messages to include in the log file.")]
         [SerializeField] private ELogTypeMask logTypeFilter = ELogTypeMask.All;
+        [Tooltip("Log entries containing these words will be included in the log file (None = Not filtered).")]
+        [SerializeField] private List<string> includedWords = new();
         [Tooltip("Log entries containing these words will be ignored.")]
         [SerializeField] private List<string> ignoredWords = new();
         [Tooltip("If enabled, stack traces will be appended to log entries.")]
@@ -182,7 +184,7 @@ namespace UniUtils.Debugging
         {
             if (string.IsNullOrEmpty(logString)) return;
             if (!logTypeFilter.HasFlag(ToLogTypeMask(type))) return;
-            if (ContainsIgnoredWord(logString) || ContainsIgnoredWord(stackTrace)) return;
+            if (ContainsInvalidLogString(logString) || ContainsInvalidLogString(stackTrace)) return;
 
             string stack = appendStackToLogs ? stackTrace : "";
 
@@ -221,17 +223,29 @@ namespace UniUtils.Debugging
             return sb.ToString();
         }
 
+        #region Helpers
 
         /// <summary>
-        /// Checks if the given text contains any ignored words.
+        /// Determines whether the given text contains invalid words based on the ignored and included word lists.
         /// </summary>
-        /// <param name="text">The text to check.</param>
-        /// <returns>True if the text contains any ignored words, otherwise false.</returns>
-        private bool ContainsIgnoredWord(string text)
+        /// <param name="text">The text to check for invalid words.</param>
+        /// <returns>
+        /// <c>true</c> if the text contains any ignored words or does not contain any included words (if the included list is not empty);
+        /// otherwise, <c>false</c>.
+        /// </returns>
+        private bool ContainsInvalidLogString(string text)
         {
             foreach (string word in ignoredWords)
             {
                 if (text.Contains(word))
+                    return true;
+            }
+
+            if (includedWords.Count == 0) return false;
+
+            foreach (string word in includedWords)
+            {
+                if (!text.Contains(word))
                     return true;
             }
 
@@ -255,5 +269,7 @@ namespace UniUtils.Debugging
                 _ => ELogTypeMask.None,
             };
         }
+
+        #endregion
     }
 }

@@ -55,16 +55,19 @@ namespace UniUtils.Data
         /// <summary>
         /// Gets the current interpolated value.
         /// </summary>
+        /// <returns>The current value.</returns>
         public T Value => currentValue;
 
         /// <summary>
         /// Gets the target value.
         /// </summary>
+        /// <returns>The target value.</returns>
         public T Target => targetValue;
 
         /// <summary>
         /// Gets the speed at which the value interpolates towards the target.
         /// </summary>
+        /// <returns>The speed of interpolation.</returns>
         public float LerpSpeed => lerpSpeed;
 
         /// <summary>
@@ -73,7 +76,7 @@ namespace UniUtils.Data
         /// <param name="initialValue">The initial value of the interpolation.</param>
         /// <param name="lerpFunction">The interpolation function to use.</param>
         /// <param name="speed">The speed of interpolation (default is 5f).</param>
-        /// <exception cref="ArgumentNullException">Thrown if <paramref name="lerpFunction"/> is null.</exception>
+        /// <exception cref="System.ArgumentNullException">ArgumentNullException: Thrown if <paramref name="lerpFunction"/> is null.</exception>
         public LerpValue(T initialValue, Func<T, T, float, T> lerpFunction, float speed = 5f)
         {
             currentValue = initialValue;

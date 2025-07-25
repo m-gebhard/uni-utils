@@ -13,6 +13,7 @@ namespace UniUtils.GameObjects
         /// <summary>
         /// Gets the singleton instance. If the instance is not found, it searches for it in the scene.
         /// </summary>
+        /// <returns name="T">The singleton instance of type T.</returns>
         public static T Instance
         {
             get

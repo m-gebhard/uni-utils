@@ -62,7 +62,7 @@ namespace UniUtils.Extensions
         /// </summary>
         /// <param name="hex">The hexadecimal string to convert.</param>
         /// <returns>The Color represented by the hexadecimal string.</returns>
-        /// <exception cref="Exception">Thrown when the hex string is in an invalid format.</exception>
+        /// <exception cref="System.ArgumentException">System.ArgumentException: Thrown when the hex string is in an invalid format.</exception>
         /// <example>
         /// <code>
         /// string hex = "#FF00FF";
@@ -81,7 +81,7 @@ namespace UniUtils.Extensions
         {
             if (ColorUtility.TryParseHtmlString(hex, out Color color))
             {
-                throw new Exception("Invalid hex color format.");
+                throw new ArgumentException("Invalid hex color format.");
             }
 
             return color;

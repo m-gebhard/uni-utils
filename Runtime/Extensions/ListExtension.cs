@@ -116,7 +116,7 @@ namespace UniUtils.Extensions
         /// <typeparam name="T">The type of elements in the list.</typeparam>
         /// <param name="list">The list to select a random element from.</param>
         /// <returns>A random element from the list.</returns>
-        /// <exception cref="System.ArgumentException">Thrown when the list is empty.</exception>
+        /// <exception cref="System.ArgumentException">System.ArgumentException: Thrown when the list is empty.</exception>
         /// <example>
         /// <code>
         /// List&lt;int&gt; values = new() { 10, 20, 30 };
@@ -145,7 +145,7 @@ namespace UniUtils.Extensions
         /// <param name="list">The list to select random elements from.</param>
         /// <param name="count">The number of unique random elements to return.</param>
         /// <returns>A list containing unique random elements from the original list.</returns>
-        /// <exception cref="ArgumentException">Thrown if count is greater than the list count or if count is negative.</exception>
+        /// <exception cref="System.ArgumentException">System.ArgumentException: Thrown if count is greater than the list count or if count is negative.</exception>
         /// <example>
         /// <code>
         /// List&lt;int&gt; numbers = new() { 1, 2, 3, 4, 5 };
@@ -227,7 +227,7 @@ namespace UniUtils.Extensions
         /// <param name="list">The list of floats to interpolate.</param>
         /// <param name="t">The interpolation parameter, typically between 0 and 1.</param>
         /// <returns>The interpolated float value.</returns>
-        /// <exception cref="System.ArgumentException">Thrown when the list is empty.</exception>
+        /// <exception cref="System.ArgumentException">System.ArgumentException: Thrown when the list is empty.</exception>
         /// <example>
         /// <code>
         /// List&lt;float&gt; points = new() { 0f, 10f, 20f };

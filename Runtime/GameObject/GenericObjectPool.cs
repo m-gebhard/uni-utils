@@ -11,37 +11,6 @@ namespace UniUtils.GameObjects
     /// A generic object pool for managing reusable objects of type T.
     /// </summary>
     /// <typeparam name="T">The type of objects to pool, which must be a Component.</typeparam>
-    /// <example>
-    /// <code>
-    /// public class Bullet : MonoBehaviour
-    /// {
-    ///     // Bullet logic here
-    /// }
-    ///
-    /// public class BulletPool : GenericObjectPool&lt;Bullet&gt;
-    /// {
-    ///     // Optionally add pool-specific logic here
-    ///     // The Pool has to be placed in the scene. Within the inspector, you have to assign it's prefab.
-    /// }
-    ///
-    /// public class PlayerShooter : MonoBehaviour
-    /// {
-    ///     private void Shoot()
-    ///     {
-    ///         Bullet bullet = BulletPool.Instance.Get();
-    ///         bullet.transform.position = transform.position;
-    ///         bullet.gameObject.SetActive(true);
-    ///
-    ///         // Setup bullet, e.g., velocity, direction...
-    ///     }
-    ///
-    ///     private void OnBulletFinished(Bullet bullet)
-    ///     {
-    ///         BulletPool.Instance.ReturnToPool(bullet);
-    ///     }
-    /// }
-    /// </code>
-    /// </example>
     public abstract class GenericObjectPool<T> : EphemeralSingleton<GenericObjectPool<T>> where T : Component
     {
         #region Fields
@@ -65,7 +34,9 @@ namespace UniUtils.GameObjects
             "Whether to allow recycling of old objects when the pool is full. Use OnObjectRecycled if you need to know of recycled objects.")]
         [SerializeField] protected bool allowObjectRecycling = true;
 
+        /// <returns name="ActiveObjects">The collection of currently active objects in the pool.</returns>
         public IReadOnlyCollection<T> ActiveObjects => activeObjects;
+        /// <returns name="AvailableSlots">The number of available slots in the pool for new objects.</returns>
         public int AvailableSlots => maxPoolSize - allObjects.Count;
 
         public event Action<T> OnObjectPooled;
@@ -82,6 +53,37 @@ namespace UniUtils.GameObjects
         /// <summary>
         /// Initializes the pool and prewarms objects if specified.
         /// </summary>
+        /// <example>
+        /// <code>
+        /// public class Bullet : MonoBehaviour
+        /// {
+        ///     // Bullet logic here
+        /// }
+        ///
+        /// public class BulletPool : GenericObjectPool&lt;Bullet&gt;
+        /// {
+        ///     // Optionally add pool-specific logic here
+        ///     // The Pool has to be placed in the scene. Within the inspector, you have to assign it's prefab.
+        /// }
+        ///
+        /// public class PlayerShooter : MonoBehaviour
+        /// {
+        ///     private void Shoot()
+        ///     {
+        ///         Bullet bullet = BulletPool.Instance.Get();
+        ///         bullet.transform.position = transform.position;
+        ///         bullet.gameObject.SetActive(true);
+        ///
+        ///         // Setup bullet, e.g., velocity, direction...
+        ///     }
+        ///
+        ///     private void OnBulletFinished(Bullet bullet)
+        ///     {
+        ///         BulletPool.Instance.ReturnToPool(bullet);
+        ///     }
+        /// }
+        /// </code>
+        /// </example>
         protected override void Awake()
         {
             base.Awake();
@@ -134,6 +136,16 @@ namespace UniUtils.GameObjects
         /// <returns>
         /// A pooled object of type <typeparamref name="T"/> or <c>null</c> if the operation fails.
         /// </returns>
+        /// <example>
+        /// <code>
+        /// // Example: shooting bullets
+        /// Bullet bullet = BulletPool.Instance.Get();
+        /// if (bullet != null)
+        /// {
+        ///     bullet.transform.position = transform.position;
+        /// }
+        /// </code>
+        /// </example>
         public virtual T Get()
         {
             T obj = GetOrCreateObject(out bool wasNew);
@@ -155,6 +167,13 @@ namespace UniUtils.GameObjects
         /// <returns>
         /// A pooled object of type <typeparamref name="T"/> or <c>null</c> if the operation fails.
         /// </returns>
+        /// <example>
+        /// <code>
+        /// Vector3 pos = transform.position + transform.forward * 2f;
+        /// Quaternion rot = Quaternion.identity;
+        /// Bullet bullet = BulletPool.Instance.Get(pos, rot, this.transform);
+        /// </code>
+        /// </example>
         public virtual T Get(Vector3 position, Quaternion rotation, Transform parent = null)
         {
             T obj = GetOrCreateObject(out bool wasNew);
@@ -176,6 +195,12 @@ namespace UniUtils.GameObjects
         /// Returns an object to the pool.
         /// </summary>
         /// <param name="objectToReturn">The object to return to the pool.</param>
+        /// <example>
+        /// <code>
+        /// // When a bullet finishes:
+        /// BulletPool.Instance.ReturnToPool(bullet);
+        /// </code>
+        /// </example>
         public virtual void ReturnToPool(T objectToReturn)
         {
             objectToReturn.transform.SetParent(transform, true);
