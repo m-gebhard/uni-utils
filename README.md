@@ -3,7 +3,7 @@
 A lightweight collection of modular C# utilities and extensions designed to streamline Unity development.  
 These tools help you prototype faster, write cleaner code, and reduce boilerplate.
 
-> 📘 **Full documentation is available online:** [UniUtils Docs](https://m-gebhard.github.io/uni-utils/)
+> 📘 **Full documentation is available online:** [UniUtils Docs](https://m-gebhard.github.io/uni-utils/api/UniUtils.Data.html)
 
 ---
 
