@@ -479,6 +479,11 @@ FileHandle copiedFile = file.Copy(&quot;data/destination.txt&quot;, canOverwrite
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if the new relative path is invalid.</p>
+</td>
+      </tr>
+      <tr>
         <td><span class="xref">System.IO.FileNotFoundException</span></td>
         <td><p>Thrown if the file does not exist.</p>
 </td>
@@ -677,6 +682,11 @@ FileHandle movedFile = file.Move(&quot;data/newname.txt&quot;, canOverwrite: tru
       <tr>
         <td><span class="xref">System.IO.FileNotFoundException</span></td>
         <td><p>Thrown if the file does not exist.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Thrown if the new relative path is invalid.</p>
 </td>
       </tr>
       <tr>
