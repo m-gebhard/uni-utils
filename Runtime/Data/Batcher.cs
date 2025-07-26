@@ -50,8 +50,8 @@ namespace UniUtils.Data
         /// IReadOnlyList&lt;int&gt; numbers = new IReadOnlyList&lt;int&gt;() { 1, 2, 3, 4, 5, 6, 7 };
         ///
         /// StartCoroutine(Batcher.ProcessInBatches(
-        ///     n =&gt; Debug.Log($&quot;Processing: {n}&quot;),
         ///     numbers,
+        ///     n =&gt; Debug.Log($&quot;Processing: {n}&quot;),
         ///     itemsPerBatch: 3,
         ///     batchDelay: 0.5f,
         ///     onBatchStart: batch =&gt; Debug.Log($&quot;Batch starting: {string.Join(&quot;, &quot;, batch)}&quot;),
@@ -138,8 +138,8 @@ namespace UniUtils.Data
         /// };
         ///
         /// StartCoroutine(Batcher.ProcessPreBatched(
-        ///     n =&gt; Debug.Log($&quot;Processing: {n}&quot;),
         ///     batches,
+        ///     n =&gt; Debug.Log($&quot;Processing: {n}&quot;),
         ///     batchDelay: 0.5f,
         ///     onBatchStart: batch =&gt; Debug.Log($&quot;Batch starting: {string.Join(&quot;, &quot;, batch)}&quot;),
         ///     onBatchFinished: batch =&gt; Debug.Log($&quot;Batch finished: {string.Join(&quot;, &quot;, batch)}&quot;),
