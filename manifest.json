@@ -14,6 +14,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.Data.Batcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.Data.Batcher.html",
+          "hash": "KuBIWFDCxGuzTDzUxYXZXxEWL8cfXUWbvV+emUL3vZo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UniUtils.Data.CacheDictionary-2.yml",
       "output": {
         ".html": {
@@ -66,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.FileHandle.html",
-          "hash": "IEPjR5+tYi7RKZZ3fjiTwS8OnVpGKeup8YY3nA5nAO8="
+          "hash": "pNNheqfYaJm2nI2asV9X4ZIhLPGxeZnLoQXofD8cSD4="
         }
       },
       "is_incremental": false,
@@ -126,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.LerpValue-1.html",
-          "hash": "YGz7A1u+j/2ZMHyEChIP9NSOANg8SnB8Ane0mfMHRCY="
+          "hash": "J0OZ+HAGPT04k8jIWbQo/GpiUIwfrrx77zMOzfrx8kU="
         }
       },
       "is_incremental": false,
@@ -174,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.html",
-          "hash": "IkhtR/JVvYNI43haKoI2ZcY6wvgJw/uNIfkJM81MVEs="
+          "hash": "ea7Wl2RxdQdG8J8RLUJhUbrdVvNgBhSsLVHAZEVSCfE="
         }
       },
       "is_incremental": false,
@@ -474,7 +486,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Extensions.ListExtension.html",
-          "hash": "Dt5mcD1sAYHxHfxUh/pTPlSeqNNFBgT9tEXpniRvPp4="
+          "hash": "kf0Non+jiCuVcuHRHsBqKz4VUhFjcxwpYqbsiWrNFD4="
         }
       },
       "is_incremental": false,
@@ -858,7 +870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "yqNPpcmrf9hSLOht9BqtzcYC7aidJeJA8rdMy+0Oz28="
+          "hash": "wq8DRhWJVRJ1ridD6CkGYuKOkxt9bWyKVlsoRufMqMM="
         }
       },
       "is_incremental": false,
@@ -924,7 +936,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 70,
+          "total_file_count": 71,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

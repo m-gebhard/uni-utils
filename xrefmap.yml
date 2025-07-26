@@ -7,6 +7,44 @@ references:
   commentId: N:UniUtils.Data
   fullName: UniUtils.Data
   nameWithType: UniUtils.Data
+- uid: UniUtils.Data.Batcher
+  name: Batcher
+  href: api/UniUtils.Data.Batcher.html
+  commentId: T:UniUtils.Data.Batcher
+  fullName: UniUtils.Data.Batcher
+  nameWithType: Batcher
+- uid: UniUtils.Data.Batcher.ProcessInBatches*
+  name: ProcessInBatches
+  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessInBatches_
+  commentId: Overload:UniUtils.Data.Batcher.ProcessInBatches
+  isSpec: "True"
+  fullName: UniUtils.Data.Batcher.ProcessInBatches
+  nameWithType: Batcher.ProcessInBatches
+- uid: UniUtils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  name: ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessInBatches__1_System_Collections_Generic_IReadOnlyList___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
+  commentId: M:UniUtils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  name.vb: ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
+  fullName: UniUtils.Data.Batcher.ProcessInBatches<T>(System.Collections.Generic.IReadOnlyList<T>, System.Action<T>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
+  fullName.vb: UniUtils.Data.Batcher.ProcessInBatches(Of T)(System.Collections.Generic.IReadOnlyList(Of T), System.Action(Of T), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  nameWithType: Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  nameWithType.vb: Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
+- uid: UniUtils.Data.Batcher.ProcessPreBatched*
+  name: ProcessPreBatched
+  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessPreBatched_
+  commentId: Overload:UniUtils.Data.Batcher.ProcessPreBatched
+  isSpec: "True"
+  fullName: UniUtils.Data.Batcher.ProcessPreBatched
+  nameWithType: Batcher.ProcessPreBatched
+- uid: UniUtils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  name: ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessPreBatched__1_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList___0___System_Action___0__System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
+  commentId: M:UniUtils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  name.vb: ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
+  fullName: UniUtils.Data.Batcher.ProcessPreBatched<T>(System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T>, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
+  fullName.vb: UniUtils.Data.Batcher.ProcessPreBatched(Of T)(System.Collections.Generic.IReadOnlyList(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T), System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  nameWithType: Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  nameWithType.vb: Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
 - uid: UniUtils.Data.CacheDictionary`2
   name: CacheDictionary<TKey, T>
   href: api/UniUtils.Data.CacheDictionary-2.html
@@ -2110,6 +2148,22 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Center
   nameWithType: ListExtension.Center
+- uid: UniUtils.Extensions.ListExtension.Chunk*
+  name: Chunk
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Chunk_
+  commentId: Overload:UniUtils.Extensions.ListExtension.Chunk
+  isSpec: "True"
+  fullName: UniUtils.Extensions.ListExtension.Chunk
+  nameWithType: ListExtension.Chunk
+- uid: UniUtils.Extensions.ListExtension.Chunk``1(System.Collections.Generic.List{``0},System.Int32)
+  name: Chunk<T>(List<T>, Int32)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Chunk__1_System_Collections_Generic_List___0__System_Int32_
+  commentId: M:UniUtils.Extensions.ListExtension.Chunk``1(System.Collections.Generic.List{``0},System.Int32)
+  name.vb: Chunk(Of T)(List(Of T), Int32)
+  fullName: UniUtils.Extensions.ListExtension.Chunk<T>(System.Collections.Generic.List<T>, System.Int32)
+  fullName.vb: UniUtils.Extensions.ListExtension.Chunk(Of T)(System.Collections.Generic.List(Of T), System.Int32)
+  nameWithType: ListExtension.Chunk<T>(List<T>, Int32)
+  nameWithType.vb: ListExtension.Chunk(Of T)(List(Of T), Int32)
 - uid: UniUtils.Extensions.ListExtension.Clone*
   name: Clone
   href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Clone_
@@ -2126,6 +2180,22 @@ references:
   fullName.vb: UniUtils.Extensions.ListExtension.Clone(Of T)(System.Collections.Generic.List(Of T))
   nameWithType: ListExtension.Clone<T>(List<T>)
   nameWithType.vb: ListExtension.Clone(Of T)(List(Of T))
+- uid: UniUtils.Extensions.ListExtension.Flatten*
+  name: Flatten
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Flatten_
+  commentId: Overload:UniUtils.Extensions.ListExtension.Flatten
+  isSpec: "True"
+  fullName: UniUtils.Extensions.ListExtension.Flatten
+  nameWithType: ListExtension.Flatten
+- uid: UniUtils.Extensions.ListExtension.Flatten``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+  name: Flatten<T>(List<List<T>>)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Flatten__1_System_Collections_Generic_List_System_Collections_Generic_List___0___
+  commentId: M:UniUtils.Extensions.ListExtension.Flatten``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+  name.vb: Flatten(Of T)(List(Of List(Of T)))
+  fullName: UniUtils.Extensions.ListExtension.Flatten<T>(System.Collections.Generic.List<System.Collections.Generic.List<T>>)
+  fullName.vb: UniUtils.Extensions.ListExtension.Flatten(Of T)(System.Collections.Generic.List(Of System.Collections.Generic.List(Of T)))
+  nameWithType: ListExtension.Flatten<T>(List<List<T>>)
+  nameWithType.vb: ListExtension.Flatten(Of T)(List(Of List(Of T)))
 - uid: UniUtils.Extensions.ListExtension.Furthest(System.Collections.Generic.List{Transform},Transform)
   name: Furthest(List<Transform>, Transform)
   href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Furthest_System_Collections_Generic_List_Transform__Transform_
@@ -2190,6 +2260,22 @@ references:
   fullName.vb: UniUtils.Extensions.ListExtension.Next(Of T)(System.Collections.Generic.List(Of T), T)
   nameWithType: ListExtension.Next<T>(List<T>, T)
   nameWithType.vb: ListExtension.Next(Of T)(List(Of T), T)
+- uid: UniUtils.Extensions.ListExtension.ProcessInBatches*
+  name: ProcessInBatches
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_ProcessInBatches_
+  commentId: Overload:UniUtils.Extensions.ListExtension.ProcessInBatches
+  isSpec: "True"
+  fullName: UniUtils.Extensions.ListExtension.ProcessInBatches
+  nameWithType: ListExtension.ProcessInBatches
+- uid: UniUtils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  name: ProcessInBatches<T>(List<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_ProcessInBatches__1_System_Collections_Generic_List___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
+  commentId: M:UniUtils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  name.vb: ProcessInBatches(Of T)(List(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
+  fullName: UniUtils.Extensions.ListExtension.ProcessInBatches<T>(System.Collections.Generic.List<T>, System.Action<T>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
+  fullName.vb: UniUtils.Extensions.ListExtension.ProcessInBatches(Of T)(System.Collections.Generic.List(Of T), System.Action(Of T), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  nameWithType: ListExtension.ProcessInBatches<T>(List<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  nameWithType.vb: ListExtension.ProcessInBatches(Of T)(List(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
 - uid: UniUtils.Extensions.ListExtension.Random*
   name: Random
   href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Random_

@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Batcher
+   | UniUtils Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Batcher
+   | UniUtils Documentation ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../templates/utils/images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UniUtils.Data.Batcher">
+  
+  
+  <h1 id="UniUtils_Data_Batcher" data-uid="UniUtils.Data.Batcher" class="text-break">Class Batcher
+  </h1>
+  <div class="markdown level0 summary"><p>Provides utility methods for processing items in batches with support for callbacks and error handling.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Batcher</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.Data.html">UniUtils.Data</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="UniUtils_Data_Batcher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Batcher</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UniUtils_Data_Batcher_ProcessInBatches_" data-uid="UniUtils.Data.Batcher.ProcessInBatches*"></a>
+  <h4 id="UniUtils_Data_Batcher_ProcessInBatches__1_System_Collections_Generic_IReadOnlyList___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__" data-uid="UniUtils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})">ProcessInBatches&lt;T&gt;(IReadOnlyList&lt;T&gt;, Action&lt;T&gt;, Int32, Single, Action&lt;T&gt;, Action&lt;T, Boolean&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;T, Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes an action on a list of items in batches, with optional callbacks for various stages of processing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ProcessInBatches&lt;T&gt;(IReadOnlyList&lt;T&gt; itemsList, Action&lt;T&gt; actionOnItem, int itemsPerBatch = 5, float batchDelay = 0.1F, Action&lt;T&gt; onItemProcessStart = null, Action&lt;T, bool&gt; onItemProcessFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchStart = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onFinished = null, Action&lt;T, Exception&gt; onError = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;</td>
+        <td><span class="parametername">itemsList</span></td>
+        <td><p>The list of items to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">actionOnItem</span></td>
+        <td><p>The action to execute on each item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">itemsPerBatch</span></td>
+        <td><p>The number of items to process per batch. Defaults to 5.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">batchDelay</span></td>
+        <td><p>The delay (in seconds) between processing batches. Defaults to 0.1f.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">onItemProcessStart</span></td>
+        <td><p>Optional callback invoked before processing each item;
+receives the item as <code>T</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">onItemProcessFinished</span></td>
+        <td><p>Optional callback invoked after processing each item;
+receives the item as <code>T</code> and a <code>bool</code> indicating success.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchStart</span></td>
+        <td><p>Optional callback invoked before processing each batch;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchFinished</span></td>
+        <td><p>Optional callback invoked when a batch is completed;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>Optional callback invoked when all items have been processed;
+receives the full list of processed items as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T, <span class="xref">System.Exception</span>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>Optional callback invoked when an error occurs during item processing;
+receives the item that failed (<code>T</code>) and the thrown <code>Exception</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span></td>
+        <td><p>An enumerator that can be used to execute the batches over time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_Batcher_ProcessInBatches__1_System_Collections_Generic_IReadOnlyList___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception___examples">Examples</h5>
+  <pre><code>IReadOnlyList&lt;int> numbers = new IReadOnlyList&lt;int>() { 1, 2, 3, 4, 5, 6, 7 };
+
+StartCoroutine(Batcher.ProcessInBatches(
+    n => Debug.Log($&quot;Processing: {n}&quot;),
+    numbers,
+    itemsPerBatch: 3,
+    batchDelay: 0.5f,
+    onBatchStart: batch => Debug.Log($&quot;Batch starting: {string.Join(&quot;, &quot;, batch)}&quot;),
+    onBatchFinished: batch => Debug.Log($&quot;Batch finished: {string.Join(&quot;, &quot;, batch)}&quot;),
+    onFinished: all => Debug.Log(&quot;All items processed.&quot;)
+));</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">actionOnItem</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_Data_Batcher_ProcessPreBatched_" data-uid="UniUtils.Data.Batcher.ProcessPreBatched*"></a>
+  <h4 id="UniUtils_Data_Batcher_ProcessPreBatched__1_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList___0___System_Action___0__System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__" data-uid="UniUtils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})">ProcessPreBatched&lt;T&gt;(IReadOnlyList&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;T&gt;, Single, Action&lt;T&gt;, Action&lt;T, Boolean&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;T, Exception&gt;)</h4>
+  <div class="markdown level1 summary"><p>Executes an action on pre-batched lists of items, with optional callbacks for various stages of processing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator ProcessPreBatched&lt;T&gt;(IReadOnlyList&lt;IReadOnlyList&lt;T&gt;&gt; preBatchedLists, Action&lt;T&gt; actionOnItem, float batchDelay = 0.1F, Action&lt;T&gt; onItemProcessStart = null, Action&lt;T, bool&gt; onItemProcessFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchStart = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onBatchFinished = null, Action&lt;IReadOnlyList&lt;T&gt;&gt; onFinished = null, Action&lt;T, Exception&gt; onError = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">preBatchedLists</span></td>
+        <td><p>The pre-batched lists of items to process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">actionOnItem</span></td>
+        <td><p>The action to execute on each item.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">batchDelay</span></td>
+        <td><p>The delay (in seconds) between processing batches. Defaults to 0.1f.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="parametername">onItemProcessStart</span></td>
+        <td><p>Optional callback invoked before processing each item;
+receives the item as <code>T</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">onItemProcessFinished</span></td>
+        <td><p>Optional callback invoked after processing each item;
+receives the item as <code>T</code> and a <code>bool</code> indicating success.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchStart</span></td>
+        <td><p>Optional callback invoked before processing each batch;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onBatchFinished</span></td>
+        <td><p>Optional callback invoked when a batch is completed;
+receives the batch as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onFinished</span></td>
+        <td><p>Optional callback invoked when all items have been processed;
+receives the full list of processed items as <code>IReadOnlyList&lt;T&gt;</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;T, <span class="xref">System.Exception</span>&gt;</td>
+        <td><span class="parametername">onError</span></td>
+        <td><p>Optional callback invoked when an error occurs during item processing;
+receives the item that failed (<code>T</code>) and the thrown <code>Exception</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span></td>
+        <td><p>An enumerator that can be used to execute the batches over time.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of items in the batches.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_Batcher_ProcessPreBatched__1_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList___0___System_Action___0__System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception___examples">Examples</h5>
+  <pre><code>IReadOnlyList&lt;IReadOnlyList&lt;int>> batches = new IReadOnlyList&lt;IReadOnlyList&lt;int>>()
+{
+    new IReadOnlyList&lt;int>() { 1, 2, 3 },
+    new IReadOnlyList&lt;int>() { 4, 5, 6 },
+    new IReadOnlyList&lt;int>() { 7 }
+};
+
+StartCoroutine(Batcher.ProcessPreBatched(
+    n => Debug.Log($&quot;Processing: {n}&quot;),
+    batches,
+    batchDelay: 0.5f,
+    onBatchStart: batch => Debug.Log($&quot;Batch starting: {string.Join(&quot;, &quot;, batch)}&quot;),
+    onBatchFinished: batch => Debug.Log($&quot;Batch finished: {string.Join(&quot;, &quot;, batch)}&quot;),
+    onFinished: all => Debug.Log(&quot;All items processed.&quot;)
+));</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">actionOnItem</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            UniUtils Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
