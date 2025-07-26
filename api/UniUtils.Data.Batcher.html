@@ -248,8 +248,8 @@ receives the item that failed (<code>T</code>) and the thrown <code>Exception</c
   <pre><code>IReadOnlyList&lt;int> numbers = new IReadOnlyList&lt;int>() { 1, 2, 3, 4, 5, 6, 7 };
 
 StartCoroutine(Batcher.ProcessInBatches(
-    n => Debug.Log($&quot;Processing: {n}&quot;),
     numbers,
+    n => Debug.Log($&quot;Processing: {n}&quot;),
     itemsPerBatch: 3,
     batchDelay: 0.5f,
     onBatchStart: batch => Debug.Log($&quot;Batch starting: {string.Join(&quot;, &quot;, batch)}&quot;),
@@ -397,8 +397,8 @@ receives the item that failed (<code>T</code>) and the thrown <code>Exception</c
 };
 
 StartCoroutine(Batcher.ProcessPreBatched(
-    n => Debug.Log($&quot;Processing: {n}&quot;),
     batches,
+    n => Debug.Log($&quot;Processing: {n}&quot;),
     batchDelay: 0.5f,
     onBatchStart: batch => Debug.Log($&quot;Batch starting: {string.Join(&quot;, &quot;, batch)}&quot;),
     onBatchFinished: batch => Debug.Log($&quot;Batch finished: {string.Join(&quot;, &quot;, batch)}&quot;),
