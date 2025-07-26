@@ -20,13 +20,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.Batcher.ProcessInBatches
   nameWithType: Batcher.ProcessInBatches
-- uid: UniUtils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+- uid: UniUtils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name: ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
-  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessInBatches__1_System_Collections_Generic_IReadOnlyList___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
-  commentId: M:UniUtils.Data.Batcher.ProcessInBatches``1(System.Collections.Generic.IReadOnlyList{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessInBatches__1_IReadOnlyList___0__Action___0__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__
+  commentId: M:UniUtils.Data.Batcher.ProcessInBatches``1(IReadOnlyList{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name.vb: ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-  fullName: UniUtils.Data.Batcher.ProcessInBatches<T>(System.Collections.Generic.IReadOnlyList<T>, System.Action<T>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
-  fullName.vb: UniUtils.Data.Batcher.ProcessInBatches(Of T)(System.Collections.Generic.IReadOnlyList(Of T), System.Action(Of T), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  fullName: UniUtils.Data.Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  fullName.vb: UniUtils.Data.Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: Batcher.ProcessInBatches<T>(IReadOnlyList<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: Batcher.ProcessInBatches(Of T)(IReadOnlyList(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
 - uid: UniUtils.Data.Batcher.ProcessPreBatched*
@@ -36,13 +36,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.Batcher.ProcessPreBatched
   nameWithType: Batcher.ProcessPreBatched
-- uid: UniUtils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+- uid: UniUtils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Action{``0},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name: ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
-  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessPreBatched__1_System_Collections_Generic_IReadOnlyList_System_Collections_Generic_IReadOnlyList___0___System_Action___0__System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
-  commentId: M:UniUtils.Data.Batcher.ProcessPreBatched``1(System.Collections.Generic.IReadOnlyList{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0},System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  href: api/UniUtils.Data.Batcher.html#UniUtils_Data_Batcher_ProcessPreBatched__1_IReadOnlyList_IReadOnlyList___0___Action___0__System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__
+  commentId: M:UniUtils.Data.Batcher.ProcessPreBatched``1(IReadOnlyList{IReadOnlyList{``0}},Action{``0},System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name.vb: ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-  fullName: UniUtils.Data.Batcher.ProcessPreBatched<T>(System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T>, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
-  fullName.vb: UniUtils.Data.Batcher.ProcessPreBatched(Of T)(System.Collections.Generic.IReadOnlyList(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T), System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  fullName: UniUtils.Data.Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  fullName.vb: UniUtils.Data.Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
 - uid: UniUtils.Data.CacheDictionary`2
@@ -105,13 +105,13 @@ references:
   fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).ContainsKey
   nameWithType: CacheDictionary<TKey, T>.ContainsKey
   nameWithType.vb: CacheDictionary(Of TKey, T).ContainsKey
-- uid: UniUtils.Data.CacheDictionary`2.GetOrAdd(`0,System.Func{`0,`1},System.Boolean)
+- uid: UniUtils.Data.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
   name: GetOrAdd(TKey, Func<TKey, T>, Boolean)
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_GetOrAdd__0_System_Func__0__1__System_Boolean_
-  commentId: M:UniUtils.Data.CacheDictionary`2.GetOrAdd(`0,System.Func{`0,`1},System.Boolean)
+  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_GetOrAdd__0_Func__0__1__System_Boolean_
+  commentId: M:UniUtils.Data.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
   name.vb: GetOrAdd(TKey, Func(Of TKey, T), Boolean)
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.GetOrAdd(TKey, System.Func<TKey, T>, System.Boolean)
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).GetOrAdd(TKey, System.Func(Of TKey, T), System.Boolean)
+  fullName: UniUtils.Data.CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, System.Boolean)
+  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), System.Boolean)
   nameWithType: CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, Boolean)
   nameWithType.vb: CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), Boolean)
 - uid: UniUtils.Data.CacheDictionary`2.GetOrAdd*
@@ -301,13 +301,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.FadeTransitions.FadeValue
   nameWithType: FadeTransitions.FadeValue
-- uid: UniUtils.Data.FadeTransitions.FadeValue``1(System.Func{``0},System.Action{``0},``0,System.Func{``0,``0,System.Single,``0},System.Single)
+- uid: UniUtils.Data.FadeTransitions.FadeValue``1(Func{``0},Action{``0},``0,Func{``0,``0,System.Single,``0},System.Single)
   name: FadeValue<T>(Func<T>, Action<T>, T, Func<T, T, Single, T>, Single)
-  href: api/UniUtils.Data.FadeTransitions.html#UniUtils_Data_FadeTransitions_FadeValue__1_System_Func___0__System_Action___0____0_System_Func___0___0_System_Single___0__System_Single_
-  commentId: M:UniUtils.Data.FadeTransitions.FadeValue``1(System.Func{``0},System.Action{``0},``0,System.Func{``0,``0,System.Single,``0},System.Single)
+  href: api/UniUtils.Data.FadeTransitions.html#UniUtils_Data_FadeTransitions_FadeValue__1_Func___0__Action___0____0_Func___0___0_System_Single___0__System_Single_
+  commentId: M:UniUtils.Data.FadeTransitions.FadeValue``1(Func{``0},Action{``0},``0,Func{``0,``0,System.Single,``0},System.Single)
   name.vb: FadeValue(Of T)(Func(Of T), Action(Of T), T, Func(Of T, T, Single, T), Single)
-  fullName: UniUtils.Data.FadeTransitions.FadeValue<T>(System.Func<T>, System.Action<T>, T, System.Func<T, T, System.Single, T>, System.Single)
-  fullName.vb: UniUtils.Data.FadeTransitions.FadeValue(Of T)(System.Func(Of T), System.Action(Of T), T, System.Func(Of T, T, System.Single, T), System.Single)
+  fullName: UniUtils.Data.FadeTransitions.FadeValue<T>(Func<T>, Action<T>, T, Func<T, T, System.Single, T>, System.Single)
+  fullName.vb: UniUtils.Data.FadeTransitions.FadeValue(Of T)(Func(Of T), Action(Of T), T, Func(Of T, T, System.Single, T), System.Single)
   nameWithType: FadeTransitions.FadeValue<T>(Func<T>, Action<T>, T, Func<T, T, Single, T>, Single)
   nameWithType.vb: FadeTransitions.FadeValue(Of T)(Func(Of T), Action(Of T), T, Func(Of T, T, Single, T), Single)
 - uid: UniUtils.Data.FileHandle
@@ -772,13 +772,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.FileManager.MoveDirectory
   nameWithType: FileManager.MoveDirectory
-- uid: UniUtils.Data.FileManager.TryIOAction(System.Action,System.String,System.Action{System.Exception,System.String})
+- uid: UniUtils.Data.FileManager.TryIOAction(Action,System.String,Action{Exception,System.String})
   name: TryIOAction(Action, String, Action<Exception, String>)
-  href: api/UniUtils.Data.FileManager.html#UniUtils_Data_FileManager_TryIOAction_System_Action_System_String_System_Action_System_Exception_System_String__
-  commentId: M:UniUtils.Data.FileManager.TryIOAction(System.Action,System.String,System.Action{System.Exception,System.String})
+  href: api/UniUtils.Data.FileManager.html#UniUtils_Data_FileManager_TryIOAction_Action_System_String_Action_Exception_System_String__
+  commentId: M:UniUtils.Data.FileManager.TryIOAction(Action,System.String,Action{Exception,System.String})
   name.vb: TryIOAction(Action, String, Action(Of Exception, String))
-  fullName: UniUtils.Data.FileManager.TryIOAction(System.Action, System.String, System.Action<System.Exception, System.String>)
-  fullName.vb: UniUtils.Data.FileManager.TryIOAction(System.Action, System.String, System.Action(Of System.Exception, System.String))
+  fullName: UniUtils.Data.FileManager.TryIOAction(Action, System.String, Action<Exception, System.String>)
+  fullName.vb: UniUtils.Data.FileManager.TryIOAction(Action, System.String, Action(Of Exception, System.String))
   nameWithType: FileManager.TryIOAction(Action, String, Action<Exception, String>)
   nameWithType.vb: FileManager.TryIOAction(Action, String, Action(Of Exception, String))
 - uid: UniUtils.Data.FileManager.TryIOAction*
@@ -872,13 +872,13 @@ references:
   fullName.vb: UniUtils.Data.LerpValue(Of T)
   nameWithType: LerpValue<T>
   nameWithType.vb: LerpValue(Of T)
-- uid: UniUtils.Data.LerpValue`1.#ctor(`0,System.Func{`0,`0,System.Single,`0},System.Single)
+- uid: UniUtils.Data.LerpValue`1.#ctor(`0,Func{`0,`0,System.Single,`0},System.Single)
   name: LerpValue(T, Func<T, T, Single, T>, Single)
-  href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1__ctor__0_System_Func__0__0_System_Single__0__System_Single_
-  commentId: M:UniUtils.Data.LerpValue`1.#ctor(`0,System.Func{`0,`0,System.Single,`0},System.Single)
+  href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1__ctor__0_Func__0__0_System_Single__0__System_Single_
+  commentId: M:UniUtils.Data.LerpValue`1.#ctor(`0,Func{`0,`0,System.Single,`0},System.Single)
   name.vb: LerpValue(T, Func(Of T, T, Single, T), Single)
-  fullName: UniUtils.Data.LerpValue<T>.LerpValue(T, System.Func<T, T, System.Single, T>, System.Single)
-  fullName.vb: UniUtils.Data.LerpValue(Of T).LerpValue(T, System.Func(Of T, T, System.Single, T), System.Single)
+  fullName: UniUtils.Data.LerpValue<T>.LerpValue(T, Func<T, T, System.Single, T>, System.Single)
+  fullName.vb: UniUtils.Data.LerpValue(Of T).LerpValue(T, Func(Of T, T, System.Single, T), System.Single)
   nameWithType: LerpValue<T>.LerpValue(T, Func<T, T, Single, T>, Single)
   nameWithType.vb: LerpValue(Of T).LerpValue(T, Func(Of T, T, Single, T), Single)
 - uid: UniUtils.Data.LerpValue`1.#ctor*
@@ -1293,11 +1293,11 @@ references:
   commentId: T:UniUtils.Debugging.LogEntry
   fullName: UniUtils.Debugging.LogEntry
   nameWithType: LogEntry
-- uid: UniUtils.Debugging.LogEntry.#ctor(System.String,System.DateTime,System.String,System.String)
+- uid: UniUtils.Debugging.LogEntry.#ctor(System.String,DateTime,System.String,System.String)
   name: LogEntry(String, DateTime, String, String)
-  href: api/UniUtils.Debugging.LogEntry.html#UniUtils_Debugging_LogEntry__ctor_System_String_System_DateTime_System_String_System_String_
-  commentId: M:UniUtils.Debugging.LogEntry.#ctor(System.String,System.DateTime,System.String,System.String)
-  fullName: UniUtils.Debugging.LogEntry.LogEntry(System.String, System.DateTime, System.String, System.String)
+  href: api/UniUtils.Debugging.LogEntry.html#UniUtils_Debugging_LogEntry__ctor_System_String_DateTime_System_String_System_String_
+  commentId: M:UniUtils.Debugging.LogEntry.#ctor(System.String,DateTime,System.String,System.String)
+  fullName: UniUtils.Debugging.LogEntry.LogEntry(System.String, DateTime, System.String, System.String)
   nameWithType: LogEntry.LogEntry(String, DateTime, String, String)
 - uid: UniUtils.Debugging.LogEntry.#ctor*
   name: LogEntry
@@ -1380,176 +1380,12 @@ references:
   commentId: N:UniUtils.Editor
   fullName: UniUtils.Editor
   nameWithType: UniUtils.Editor
-- uid: UniUtils.Editor.ColliderHighlighter
-  name: ColliderHighlighter
-  href: api/UniUtils.Editor.ColliderHighlighter.html
-  commentId: T:UniUtils.Editor.ColliderHighlighter
-  fullName: UniUtils.Editor.ColliderHighlighter
-  nameWithType: ColliderHighlighter
-- uid: UniUtils.Editor.ColliderHighlighter.ShowWindow
-  name: ShowWindow()
-  href: api/UniUtils.Editor.ColliderHighlighter.html#UniUtils_Editor_ColliderHighlighter_ShowWindow
-  commentId: M:UniUtils.Editor.ColliderHighlighter.ShowWindow
-  fullName: UniUtils.Editor.ColliderHighlighter.ShowWindow()
-  nameWithType: ColliderHighlighter.ShowWindow()
-- uid: UniUtils.Editor.ColliderHighlighter.ShowWindow*
-  name: ShowWindow
-  href: api/UniUtils.Editor.ColliderHighlighter.html#UniUtils_Editor_ColliderHighlighter_ShowWindow_
-  commentId: Overload:UniUtils.Editor.ColliderHighlighter.ShowWindow
-  isSpec: "True"
-  fullName: UniUtils.Editor.ColliderHighlighter.ShowWindow
-  nameWithType: ColliderHighlighter.ShowWindow
-- uid: UniUtils.Editor.CustomEditorDrawer`1
-  name: CustomEditorDrawer<T>
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html
-  commentId: T:UniUtils.Editor.CustomEditorDrawer`1
-  name.vb: CustomEditorDrawer(Of T)
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T)
-  nameWithType: CustomEditorDrawer<T>
-  nameWithType.vb: CustomEditorDrawer(Of T)
-- uid: UniUtils.Editor.CustomEditorDrawer`1.DrawProperties
-  name: DrawProperties()
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_DrawProperties
-  commentId: M:UniUtils.Editor.CustomEditorDrawer`1.DrawProperties
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.DrawProperties()
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).DrawProperties()
-  nameWithType: CustomEditorDrawer<T>.DrawProperties()
-  nameWithType.vb: CustomEditorDrawer(Of T).DrawProperties()
-- uid: UniUtils.Editor.CustomEditorDrawer`1.DrawProperties*
-  name: DrawProperties
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_DrawProperties_
-  commentId: Overload:UniUtils.Editor.CustomEditorDrawer`1.DrawProperties
-  isSpec: "True"
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.DrawProperties
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).DrawProperties
-  nameWithType: CustomEditorDrawer<T>.DrawProperties
-  nameWithType.vb: CustomEditorDrawer(Of T).DrawProperties
-- uid: UniUtils.Editor.CustomEditorDrawer`1.EditorButtons
-  name: EditorButtons
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_EditorButtons
-  commentId: P:UniUtils.Editor.CustomEditorDrawer`1.EditorButtons
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.EditorButtons
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).EditorButtons
-  nameWithType: CustomEditorDrawer<T>.EditorButtons
-  nameWithType.vb: CustomEditorDrawer(Of T).EditorButtons
-- uid: UniUtils.Editor.CustomEditorDrawer`1.EditorButtons*
-  name: EditorButtons
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_EditorButtons_
-  commentId: Overload:UniUtils.Editor.CustomEditorDrawer`1.EditorButtons
-  isSpec: "True"
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.EditorButtons
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).EditorButtons
-  nameWithType: CustomEditorDrawer<T>.EditorButtons
-  nameWithType.vb: CustomEditorDrawer(Of T).EditorButtons
-- uid: UniUtils.Editor.CustomEditorDrawer`1.Label
-  name: Label
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_Label
-  commentId: P:UniUtils.Editor.CustomEditorDrawer`1.Label
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.Label
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).Label
-  nameWithType: CustomEditorDrawer<T>.Label
-  nameWithType.vb: CustomEditorDrawer(Of T).Label
-- uid: UniUtils.Editor.CustomEditorDrawer`1.Label*
-  name: Label
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_Label_
-  commentId: Overload:UniUtils.Editor.CustomEditorDrawer`1.Label
-  isSpec: "True"
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.Label
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).Label
-  nameWithType: CustomEditorDrawer<T>.Label
-  nameWithType.vb: CustomEditorDrawer(Of T).Label
-- uid: UniUtils.Editor.CustomEditorDrawer`1.OnInspectorGUI
-  name: OnInspectorGUI()
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_OnInspectorGUI
-  commentId: M:UniUtils.Editor.CustomEditorDrawer`1.OnInspectorGUI
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.OnInspectorGUI()
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).OnInspectorGUI()
-  nameWithType: CustomEditorDrawer<T>.OnInspectorGUI()
-  nameWithType.vb: CustomEditorDrawer(Of T).OnInspectorGUI()
-- uid: UniUtils.Editor.CustomEditorDrawer`1.OnInspectorGUI*
-  name: OnInspectorGUI
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_OnInspectorGUI_
-  commentId: Overload:UniUtils.Editor.CustomEditorDrawer`1.OnInspectorGUI
-  isSpec: "True"
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.OnInspectorGUI
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).OnInspectorGUI
-  nameWithType: CustomEditorDrawer<T>.OnInspectorGUI
-  nameWithType.vb: CustomEditorDrawer(Of T).OnInspectorGUI
-- uid: UniUtils.Editor.CustomEditorDrawer`1.Target
-  name: Target
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_Target
-  commentId: P:UniUtils.Editor.CustomEditorDrawer`1.Target
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.Target
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).Target
-  nameWithType: CustomEditorDrawer<T>.Target
-  nameWithType.vb: CustomEditorDrawer(Of T).Target
-- uid: UniUtils.Editor.CustomEditorDrawer`1.Target*
-  name: Target
-  href: api/UniUtils.Editor.CustomEditorDrawer-1.html#UniUtils_Editor_CustomEditorDrawer_1_Target_
-  commentId: Overload:UniUtils.Editor.CustomEditorDrawer`1.Target
-  isSpec: "True"
-  fullName: UniUtils.Editor.CustomEditorDrawer<T>.Target
-  fullName.vb: UniUtils.Editor.CustomEditorDrawer(Of T).Target
-  nameWithType: CustomEditorDrawer<T>.Target
-  nameWithType.vb: CustomEditorDrawer(Of T).Target
-- uid: UniUtils.Editor.ObjectReplacer
-  name: ObjectReplacer
-  href: api/UniUtils.Editor.ObjectReplacer.html
-  commentId: T:UniUtils.Editor.ObjectReplacer
-  fullName: UniUtils.Editor.ObjectReplacer
-  nameWithType: ObjectReplacer
-- uid: UniUtils.Editor.ObjectReplacer.ShowWindow
-  name: ShowWindow()
-  href: api/UniUtils.Editor.ObjectReplacer.html#UniUtils_Editor_ObjectReplacer_ShowWindow
-  commentId: M:UniUtils.Editor.ObjectReplacer.ShowWindow
-  fullName: UniUtils.Editor.ObjectReplacer.ShowWindow()
-  nameWithType: ObjectReplacer.ShowWindow()
-- uid: UniUtils.Editor.ObjectReplacer.ShowWindow*
-  name: ShowWindow
-  href: api/UniUtils.Editor.ObjectReplacer.html#UniUtils_Editor_ObjectReplacer_ShowWindow_
-  commentId: Overload:UniUtils.Editor.ObjectReplacer.ShowWindow
-  isSpec: "True"
-  fullName: UniUtils.Editor.ObjectReplacer.ShowWindow
-  nameWithType: ObjectReplacer.ShowWindow
-- uid: UniUtils.Editor.PersistentObjectChecker
-  name: PersistentObjectChecker
-  href: api/UniUtils.Editor.PersistentObjectChecker.html
-  commentId: T:UniUtils.Editor.PersistentObjectChecker
-  fullName: UniUtils.Editor.PersistentObjectChecker
-  nameWithType: PersistentObjectChecker
-- uid: UniUtils.Editor.PersistentObjectChecker.CheckForDuplicateGUIDs
-  name: CheckForDuplicateGUIDs()
-  href: api/UniUtils.Editor.PersistentObjectChecker.html#UniUtils_Editor_PersistentObjectChecker_CheckForDuplicateGUIDs
-  commentId: M:UniUtils.Editor.PersistentObjectChecker.CheckForDuplicateGUIDs
-  fullName: UniUtils.Editor.PersistentObjectChecker.CheckForDuplicateGUIDs()
-  nameWithType: PersistentObjectChecker.CheckForDuplicateGUIDs()
-- uid: UniUtils.Editor.PersistentObjectChecker.CheckForDuplicateGUIDs*
-  name: CheckForDuplicateGUIDs
-  href: api/UniUtils.Editor.PersistentObjectChecker.html#UniUtils_Editor_PersistentObjectChecker_CheckForDuplicateGUIDs_
-  commentId: Overload:UniUtils.Editor.PersistentObjectChecker.CheckForDuplicateGUIDs
-  isSpec: "True"
-  fullName: UniUtils.Editor.PersistentObjectChecker.CheckForDuplicateGUIDs
-  nameWithType: PersistentObjectChecker.CheckForDuplicateGUIDs
-- uid: UniUtils.Editor.TextureSizeEditorWindow
-  name: TextureSizeEditorWindow
-  href: api/UniUtils.Editor.TextureSizeEditorWindow.html
-  commentId: T:UniUtils.Editor.TextureSizeEditorWindow
-  fullName: UniUtils.Editor.TextureSizeEditorWindow
-  nameWithType: TextureSizeEditorWindow
-- uid: UniUtils.Editor.TextureSizeEditorWindow.ShowWindow
-  name: ShowWindow()
-  href: api/UniUtils.Editor.TextureSizeEditorWindow.html#UniUtils_Editor_TextureSizeEditorWindow_ShowWindow
-  commentId: M:UniUtils.Editor.TextureSizeEditorWindow.ShowWindow
-  fullName: UniUtils.Editor.TextureSizeEditorWindow.ShowWindow()
-  nameWithType: TextureSizeEditorWindow.ShowWindow()
-- uid: UniUtils.Editor.TextureSizeEditorWindow.ShowWindow*
-  name: ShowWindow
-  href: api/UniUtils.Editor.TextureSizeEditorWindow.html#UniUtils_Editor_TextureSizeEditorWindow_ShowWindow_
-  commentId: Overload:UniUtils.Editor.TextureSizeEditorWindow.ShowWindow
-  isSpec: "True"
-  fullName: UniUtils.Editor.TextureSizeEditorWindow.ShowWindow
-  nameWithType: TextureSizeEditorWindow.ShowWindow
+- uid: UniUtils.Editor.ColliderBoundsDrawer
+  name: ColliderBoundsDrawer
+  href: api/UniUtils.Editor.ColliderBoundsDrawer.html
+  commentId: T:UniUtils.Editor.ColliderBoundsDrawer
+  fullName: UniUtils.Editor.ColliderBoundsDrawer
+  nameWithType: ColliderBoundsDrawer
 - uid: UniUtils.EventSystem
   name: UniUtils.EventSystem
   href: api/UniUtils.EventSystem.html
@@ -1565,13 +1401,13 @@ references:
   fullName.vb: UniUtils.EventSystem.EventChannel(Of TChannel)
   nameWithType: EventChannel<TChannel>
   nameWithType.vb: EventChannel(Of TChannel)
-- uid: UniUtils.EventSystem.EventChannel`1.HandleHandlersToRemove(System.Collections.Generic.Dictionary{System.Int32,System.Action{UniUtils.EventSystem.IEvent{`0}}})
+- uid: UniUtils.EventSystem.EventChannel`1.HandleHandlersToRemove(Dictionary{System.Int32,Action{UniUtils.EventSystem.IEvent{`0}}})
   name: HandleHandlersToRemove(Dictionary<Int32, Action<IEvent<TChannel>>>)
-  href: api/UniUtils.EventSystem.EventChannel-1.html#UniUtils_EventSystem_EventChannel_1_HandleHandlersToRemove_System_Collections_Generic_Dictionary_System_Int32_System_Action_UniUtils_EventSystem_IEvent__0____
-  commentId: M:UniUtils.EventSystem.EventChannel`1.HandleHandlersToRemove(System.Collections.Generic.Dictionary{System.Int32,System.Action{UniUtils.EventSystem.IEvent{`0}}})
+  href: api/UniUtils.EventSystem.EventChannel-1.html#UniUtils_EventSystem_EventChannel_1_HandleHandlersToRemove_Dictionary_System_Int32_Action_UniUtils_EventSystem_IEvent__0____
+  commentId: M:UniUtils.EventSystem.EventChannel`1.HandleHandlersToRemove(Dictionary{System.Int32,Action{UniUtils.EventSystem.IEvent{`0}}})
   name.vb: HandleHandlersToRemove(Dictionary(Of Int32, Action(Of IEvent(Of TChannel))))
-  fullName: UniUtils.EventSystem.EventChannel<TChannel>.HandleHandlersToRemove(System.Collections.Generic.Dictionary<System.Int32, System.Action<UniUtils.EventSystem.IEvent<TChannel>>>)
-  fullName.vb: UniUtils.EventSystem.EventChannel(Of TChannel).HandleHandlersToRemove(System.Collections.Generic.Dictionary(Of System.Int32, System.Action(Of UniUtils.EventSystem.IEvent(Of TChannel))))
+  fullName: UniUtils.EventSystem.EventChannel<TChannel>.HandleHandlersToRemove(Dictionary<System.Int32, Action<UniUtils.EventSystem.IEvent<TChannel>>>)
+  fullName.vb: UniUtils.EventSystem.EventChannel(Of TChannel).HandleHandlersToRemove(Dictionary(Of System.Int32, Action(Of UniUtils.EventSystem.IEvent(Of TChannel))))
   nameWithType: EventChannel<TChannel>.HandleHandlersToRemove(Dictionary<Int32, Action<IEvent<TChannel>>>)
   nameWithType.vb: EventChannel(Of TChannel).HandleHandlersToRemove(Dictionary(Of Int32, Action(Of IEvent(Of TChannel))))
 - uid: UniUtils.EventSystem.EventChannel`1.HandleHandlersToRemove*
@@ -1650,13 +1486,13 @@ references:
   fullName.vb: UniUtils.EventSystem.EventChannel(Of TChannel).Subscribe
   nameWithType: EventChannel<TChannel>.Subscribe
   nameWithType.vb: EventChannel(Of TChannel).Subscribe
-- uid: UniUtils.EventSystem.EventChannel`1.Subscribe``1(System.Action{``0})
+- uid: UniUtils.EventSystem.EventChannel`1.Subscribe``1(Action{``0})
   name: Subscribe<TEvent>(Action<TEvent>)
-  href: api/UniUtils.EventSystem.EventChannel-1.html#UniUtils_EventSystem_EventChannel_1_Subscribe__1_System_Action___0__
-  commentId: M:UniUtils.EventSystem.EventChannel`1.Subscribe``1(System.Action{``0})
+  href: api/UniUtils.EventSystem.EventChannel-1.html#UniUtils_EventSystem_EventChannel_1_Subscribe__1_Action___0__
+  commentId: M:UniUtils.EventSystem.EventChannel`1.Subscribe``1(Action{``0})
   name.vb: Subscribe(Of TEvent)(Action(Of TEvent))
-  fullName: UniUtils.EventSystem.EventChannel<TChannel>.Subscribe<TEvent>(System.Action<TEvent>)
-  fullName.vb: UniUtils.EventSystem.EventChannel(Of TChannel).Subscribe(Of TEvent)(System.Action(Of TEvent))
+  fullName: UniUtils.EventSystem.EventChannel<TChannel>.Subscribe<TEvent>(Action<TEvent>)
+  fullName.vb: UniUtils.EventSystem.EventChannel(Of TChannel).Subscribe(Of TEvent)(Action(Of TEvent))
   nameWithType: EventChannel<TChannel>.Subscribe<TEvent>(Action<TEvent>)
   nameWithType.vb: EventChannel(Of TChannel).Subscribe(Of TEvent)(Action(Of TEvent))
 - uid: UniUtils.EventSystem.EventChannel`1.Unsubscribe*
@@ -1771,13 +1607,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.EventSystem.EventManager.Subscribe
   nameWithType: EventManager.Subscribe
-- uid: UniUtils.EventSystem.EventManager.Subscribe``2(System.Action{``1})
+- uid: UniUtils.EventSystem.EventManager.Subscribe``2(Action{``1})
   name: Subscribe<TChannel, TEvent>(Action<TEvent>)
-  href: api/UniUtils.EventSystem.EventManager.html#UniUtils_EventSystem_EventManager_Subscribe__2_System_Action___1__
-  commentId: M:UniUtils.EventSystem.EventManager.Subscribe``2(System.Action{``1})
+  href: api/UniUtils.EventSystem.EventManager.html#UniUtils_EventSystem_EventManager_Subscribe__2_Action___1__
+  commentId: M:UniUtils.EventSystem.EventManager.Subscribe``2(Action{``1})
   name.vb: Subscribe(Of TChannel, TEvent)(Action(Of TEvent))
-  fullName: UniUtils.EventSystem.EventManager.Subscribe<TChannel, TEvent>(System.Action<TEvent>)
-  fullName.vb: UniUtils.EventSystem.EventManager.Subscribe(Of TChannel, TEvent)(System.Action(Of TEvent))
+  fullName: UniUtils.EventSystem.EventManager.Subscribe<TChannel, TEvent>(Action<TEvent>)
+  fullName.vb: UniUtils.EventSystem.EventManager.Subscribe(Of TChannel, TEvent)(Action(Of TEvent))
   nameWithType: EventManager.Subscribe<TChannel, TEvent>(Action<TEvent>)
   nameWithType.vb: EventManager.Subscribe(Of TChannel, TEvent)(Action(Of TEvent))
 - uid: UniUtils.EventSystem.EventManager.Unsubscribe*
@@ -1919,13 +1755,13 @@ references:
   commentId: T:UniUtils.Extensions.CameraExtension
   fullName: UniUtils.Extensions.CameraExtension
   nameWithType: CameraExtension
-- uid: UniUtils.Extensions.CameraExtension.Capture(Camera,System.Action{System.Byte[]},LayerMask)
+- uid: UniUtils.Extensions.CameraExtension.Capture(Camera,Action{System.Byte[]},LayerMask)
   name: Capture(Camera, Action<Byte[]>, LayerMask)
-  href: api/UniUtils.Extensions.CameraExtension.html#UniUtils_Extensions_CameraExtension_Capture_Camera_System_Action_System_Byte____LayerMask_
-  commentId: M:UniUtils.Extensions.CameraExtension.Capture(Camera,System.Action{System.Byte[]},LayerMask)
+  href: api/UniUtils.Extensions.CameraExtension.html#UniUtils_Extensions_CameraExtension_Capture_Camera_Action_System_Byte____LayerMask_
+  commentId: M:UniUtils.Extensions.CameraExtension.Capture(Camera,Action{System.Byte[]},LayerMask)
   name.vb: Capture(Camera, Action(Of Byte()), LayerMask)
-  fullName: UniUtils.Extensions.CameraExtension.Capture(Camera, System.Action<System.Byte[]>, LayerMask)
-  fullName.vb: UniUtils.Extensions.CameraExtension.Capture(Camera, System.Action(Of System.Byte()), LayerMask)
+  fullName: UniUtils.Extensions.CameraExtension.Capture(Camera, Action<System.Byte[]>, LayerMask)
+  fullName.vb: UniUtils.Extensions.CameraExtension.Capture(Camera, Action(Of System.Byte()), LayerMask)
   nameWithType: CameraExtension.Capture(Camera, Action<Byte[]>, LayerMask)
   nameWithType.vb: CameraExtension.Capture(Camera, Action(Of Byte()), LayerMask)
 - uid: UniUtils.Extensions.CameraExtension.Capture*
@@ -2009,28 +1845,6 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ColorExtension.WithAlpha
   nameWithType: ColorExtension.WithAlpha
-- uid: UniUtils.Extensions.EditorGUILayoutExtension
-  name: EditorGUILayoutExtension
-  href: api/UniUtils.Extensions.EditorGUILayoutExtension.html
-  commentId: T:UniUtils.Extensions.EditorGUILayoutExtension
-  fullName: UniUtils.Extensions.EditorGUILayoutExtension
-  nameWithType: EditorGUILayoutExtension
-- uid: UniUtils.Extensions.EditorGUILayoutExtension.DrawLine(System.Nullable{Color},System.Int32,System.Int32)
-  name: DrawLine(Nullable<Color>, Int32, Int32)
-  href: api/UniUtils.Extensions.EditorGUILayoutExtension.html#UniUtils_Extensions_EditorGUILayoutExtension_DrawLine_System_Nullable_Color__System_Int32_System_Int32_
-  commentId: M:UniUtils.Extensions.EditorGUILayoutExtension.DrawLine(System.Nullable{Color},System.Int32,System.Int32)
-  name.vb: DrawLine(Nullable(Of Color), Int32, Int32)
-  fullName: UniUtils.Extensions.EditorGUILayoutExtension.DrawLine(System.Nullable<Color>, System.Int32, System.Int32)
-  fullName.vb: UniUtils.Extensions.EditorGUILayoutExtension.DrawLine(System.Nullable(Of Color), System.Int32, System.Int32)
-  nameWithType: EditorGUILayoutExtension.DrawLine(Nullable<Color>, Int32, Int32)
-  nameWithType.vb: EditorGUILayoutExtension.DrawLine(Nullable(Of Color), Int32, Int32)
-- uid: UniUtils.Extensions.EditorGUILayoutExtension.DrawLine*
-  name: DrawLine
-  href: api/UniUtils.Extensions.EditorGUILayoutExtension.html#UniUtils_Extensions_EditorGUILayoutExtension_DrawLine_
-  commentId: Overload:UniUtils.Extensions.EditorGUILayoutExtension.DrawLine
-  isSpec: "True"
-  fullName: UniUtils.Extensions.EditorGUILayoutExtension.DrawLine
-  nameWithType: EditorGUILayoutExtension.DrawLine
 - uid: UniUtils.Extensions.EnumExtension
   name: EnumExtension
   href: api/UniUtils.Extensions.EnumExtension.html
@@ -2132,13 +1946,13 @@ references:
   commentId: T:UniUtils.Extensions.ListExtension
   fullName: UniUtils.Extensions.ListExtension
   nameWithType: ListExtension
-- uid: UniUtils.Extensions.ListExtension.Center(System.Collections.Generic.List{Vector3})
+- uid: UniUtils.Extensions.ListExtension.Center(List{Vector3})
   name: Center(List<Vector3>)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Center_System_Collections_Generic_List_Vector3__
-  commentId: M:UniUtils.Extensions.ListExtension.Center(System.Collections.Generic.List{Vector3})
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Center_List_Vector3__
+  commentId: M:UniUtils.Extensions.ListExtension.Center(List{Vector3})
   name.vb: Center(List(Of Vector3))
-  fullName: UniUtils.Extensions.ListExtension.Center(System.Collections.Generic.List<Vector3>)
-  fullName.vb: UniUtils.Extensions.ListExtension.Center(System.Collections.Generic.List(Of Vector3))
+  fullName: UniUtils.Extensions.ListExtension.Center(List<Vector3>)
+  fullName.vb: UniUtils.Extensions.ListExtension.Center(List(Of Vector3))
   nameWithType: ListExtension.Center(List<Vector3>)
   nameWithType.vb: ListExtension.Center(List(Of Vector3))
 - uid: UniUtils.Extensions.ListExtension.Center*
@@ -2155,13 +1969,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Chunk
   nameWithType: ListExtension.Chunk
-- uid: UniUtils.Extensions.ListExtension.Chunk``1(System.Collections.Generic.List{``0},System.Int32)
+- uid: UniUtils.Extensions.ListExtension.Chunk``1(List{``0},System.Int32)
   name: Chunk<T>(List<T>, Int32)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Chunk__1_System_Collections_Generic_List___0__System_Int32_
-  commentId: M:UniUtils.Extensions.ListExtension.Chunk``1(System.Collections.Generic.List{``0},System.Int32)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Chunk__1_List___0__System_Int32_
+  commentId: M:UniUtils.Extensions.ListExtension.Chunk``1(List{``0},System.Int32)
   name.vb: Chunk(Of T)(List(Of T), Int32)
-  fullName: UniUtils.Extensions.ListExtension.Chunk<T>(System.Collections.Generic.List<T>, System.Int32)
-  fullName.vb: UniUtils.Extensions.ListExtension.Chunk(Of T)(System.Collections.Generic.List(Of T), System.Int32)
+  fullName: UniUtils.Extensions.ListExtension.Chunk<T>(List<T>, System.Int32)
+  fullName.vb: UniUtils.Extensions.ListExtension.Chunk(Of T)(List(Of T), System.Int32)
   nameWithType: ListExtension.Chunk<T>(List<T>, Int32)
   nameWithType.vb: ListExtension.Chunk(Of T)(List(Of T), Int32)
 - uid: UniUtils.Extensions.ListExtension.Clone*
@@ -2171,13 +1985,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Clone
   nameWithType: ListExtension.Clone
-- uid: UniUtils.Extensions.ListExtension.Clone``1(System.Collections.Generic.List{``0})
+- uid: UniUtils.Extensions.ListExtension.Clone``1(List{``0})
   name: Clone<T>(List<T>)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Clone__1_System_Collections_Generic_List___0__
-  commentId: M:UniUtils.Extensions.ListExtension.Clone``1(System.Collections.Generic.List{``0})
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Clone__1_List___0__
+  commentId: M:UniUtils.Extensions.ListExtension.Clone``1(List{``0})
   name.vb: Clone(Of T)(List(Of T))
-  fullName: UniUtils.Extensions.ListExtension.Clone<T>(System.Collections.Generic.List<T>)
-  fullName.vb: UniUtils.Extensions.ListExtension.Clone(Of T)(System.Collections.Generic.List(Of T))
+  fullName: UniUtils.Extensions.ListExtension.Clone<T>(List<T>)
+  fullName.vb: UniUtils.Extensions.ListExtension.Clone(Of T)(List(Of T))
   nameWithType: ListExtension.Clone<T>(List<T>)
   nameWithType.vb: ListExtension.Clone(Of T)(List(Of T))
 - uid: UniUtils.Extensions.ListExtension.Flatten*
@@ -2187,22 +2001,22 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Flatten
   nameWithType: ListExtension.Flatten
-- uid: UniUtils.Extensions.ListExtension.Flatten``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+- uid: UniUtils.Extensions.ListExtension.Flatten``1(List{List{``0}})
   name: Flatten<T>(List<List<T>>)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Flatten__1_System_Collections_Generic_List_System_Collections_Generic_List___0___
-  commentId: M:UniUtils.Extensions.ListExtension.Flatten``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Flatten__1_List_List___0___
+  commentId: M:UniUtils.Extensions.ListExtension.Flatten``1(List{List{``0}})
   name.vb: Flatten(Of T)(List(Of List(Of T)))
-  fullName: UniUtils.Extensions.ListExtension.Flatten<T>(System.Collections.Generic.List<System.Collections.Generic.List<T>>)
-  fullName.vb: UniUtils.Extensions.ListExtension.Flatten(Of T)(System.Collections.Generic.List(Of System.Collections.Generic.List(Of T)))
+  fullName: UniUtils.Extensions.ListExtension.Flatten<T>(List<List<T>>)
+  fullName.vb: UniUtils.Extensions.ListExtension.Flatten(Of T)(List(Of List(Of T)))
   nameWithType: ListExtension.Flatten<T>(List<List<T>>)
   nameWithType.vb: ListExtension.Flatten(Of T)(List(Of List(Of T)))
-- uid: UniUtils.Extensions.ListExtension.Furthest(System.Collections.Generic.List{Transform},Transform)
+- uid: UniUtils.Extensions.ListExtension.Furthest(List{Transform},Transform)
   name: Furthest(List<Transform>, Transform)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Furthest_System_Collections_Generic_List_Transform__Transform_
-  commentId: M:UniUtils.Extensions.ListExtension.Furthest(System.Collections.Generic.List{Transform},Transform)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Furthest_List_Transform__Transform_
+  commentId: M:UniUtils.Extensions.ListExtension.Furthest(List{Transform},Transform)
   name.vb: Furthest(List(Of Transform), Transform)
-  fullName: UniUtils.Extensions.ListExtension.Furthest(System.Collections.Generic.List<Transform>, Transform)
-  fullName.vb: UniUtils.Extensions.ListExtension.Furthest(System.Collections.Generic.List(Of Transform), Transform)
+  fullName: UniUtils.Extensions.ListExtension.Furthest(List<Transform>, Transform)
+  fullName.vb: UniUtils.Extensions.ListExtension.Furthest(List(Of Transform), Transform)
   nameWithType: ListExtension.Furthest(List<Transform>, Transform)
   nameWithType.vb: ListExtension.Furthest(List(Of Transform), Transform)
 - uid: UniUtils.Extensions.ListExtension.Furthest*
@@ -2212,13 +2026,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Furthest
   nameWithType: ListExtension.Furthest
-- uid: UniUtils.Extensions.ListExtension.Lerp(System.Collections.Generic.List{System.Single},System.Single)
+- uid: UniUtils.Extensions.ListExtension.Lerp(List{System.Single},System.Single)
   name: Lerp(List<Single>, Single)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Lerp_System_Collections_Generic_List_System_Single__System_Single_
-  commentId: M:UniUtils.Extensions.ListExtension.Lerp(System.Collections.Generic.List{System.Single},System.Single)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Lerp_List_System_Single__System_Single_
+  commentId: M:UniUtils.Extensions.ListExtension.Lerp(List{System.Single},System.Single)
   name.vb: Lerp(List(Of Single), Single)
-  fullName: UniUtils.Extensions.ListExtension.Lerp(System.Collections.Generic.List<System.Single>, System.Single)
-  fullName.vb: UniUtils.Extensions.ListExtension.Lerp(System.Collections.Generic.List(Of System.Single), System.Single)
+  fullName: UniUtils.Extensions.ListExtension.Lerp(List<System.Single>, System.Single)
+  fullName.vb: UniUtils.Extensions.ListExtension.Lerp(List(Of System.Single), System.Single)
   nameWithType: ListExtension.Lerp(List<Single>, Single)
   nameWithType.vb: ListExtension.Lerp(List(Of Single), Single)
 - uid: UniUtils.Extensions.ListExtension.Lerp*
@@ -2228,13 +2042,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Lerp
   nameWithType: ListExtension.Lerp
-- uid: UniUtils.Extensions.ListExtension.Nearest(System.Collections.Generic.List{Transform},Transform)
+- uid: UniUtils.Extensions.ListExtension.Nearest(List{Transform},Transform)
   name: Nearest(List<Transform>, Transform)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Nearest_System_Collections_Generic_List_Transform__Transform_
-  commentId: M:UniUtils.Extensions.ListExtension.Nearest(System.Collections.Generic.List{Transform},Transform)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Nearest_List_Transform__Transform_
+  commentId: M:UniUtils.Extensions.ListExtension.Nearest(List{Transform},Transform)
   name.vb: Nearest(List(Of Transform), Transform)
-  fullName: UniUtils.Extensions.ListExtension.Nearest(System.Collections.Generic.List<Transform>, Transform)
-  fullName.vb: UniUtils.Extensions.ListExtension.Nearest(System.Collections.Generic.List(Of Transform), Transform)
+  fullName: UniUtils.Extensions.ListExtension.Nearest(List<Transform>, Transform)
+  fullName.vb: UniUtils.Extensions.ListExtension.Nearest(List(Of Transform), Transform)
   nameWithType: ListExtension.Nearest(List<Transform>, Transform)
   nameWithType.vb: ListExtension.Nearest(List(Of Transform), Transform)
 - uid: UniUtils.Extensions.ListExtension.Nearest*
@@ -2251,13 +2065,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Next
   nameWithType: ListExtension.Next
-- uid: UniUtils.Extensions.ListExtension.Next``1(System.Collections.Generic.List{``0},``0)
+- uid: UniUtils.Extensions.ListExtension.Next``1(List{``0},``0)
   name: Next<T>(List<T>, T)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Next__1_System_Collections_Generic_List___0____0_
-  commentId: M:UniUtils.Extensions.ListExtension.Next``1(System.Collections.Generic.List{``0},``0)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Next__1_List___0____0_
+  commentId: M:UniUtils.Extensions.ListExtension.Next``1(List{``0},``0)
   name.vb: Next(Of T)(List(Of T), T)
-  fullName: UniUtils.Extensions.ListExtension.Next<T>(System.Collections.Generic.List<T>, T)
-  fullName.vb: UniUtils.Extensions.ListExtension.Next(Of T)(System.Collections.Generic.List(Of T), T)
+  fullName: UniUtils.Extensions.ListExtension.Next<T>(List<T>, T)
+  fullName.vb: UniUtils.Extensions.ListExtension.Next(Of T)(List(Of T), T)
   nameWithType: ListExtension.Next<T>(List<T>, T)
   nameWithType.vb: ListExtension.Next(Of T)(List(Of T), T)
 - uid: UniUtils.Extensions.ListExtension.ProcessInBatches*
@@ -2267,13 +2081,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.ProcessInBatches
   nameWithType: ListExtension.ProcessInBatches
-- uid: UniUtils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+- uid: UniUtils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name: ProcessInBatches<T>(List<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_ProcessInBatches__1_System_Collections_Generic_List___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__
-  commentId: M:UniUtils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_ProcessInBatches__1_List___0__Action___0__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__
+  commentId: M:UniUtils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})
   name.vb: ProcessInBatches(Of T)(List(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-  fullName: UniUtils.Extensions.ListExtension.ProcessInBatches<T>(System.Collections.Generic.List<T>, System.Action<T>, System.Int32, System.Single, System.Action<T>, System.Action<T, System.Boolean>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<System.Collections.Generic.IReadOnlyList<T>>, System.Action<T, System.Exception>)
-  fullName.vb: UniUtils.Extensions.ListExtension.ProcessInBatches(Of T)(System.Collections.Generic.List(Of T), System.Action(Of T), System.Int32, System.Single, System.Action(Of T), System.Action(Of T, System.Boolean), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of System.Collections.Generic.IReadOnlyList(Of T)), System.Action(Of T, System.Exception))
+  fullName: UniUtils.Extensions.ListExtension.ProcessInBatches<T>(List<T>, Action<T>, System.Int32, System.Single, Action<T>, Action<T, System.Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
+  fullName.vb: UniUtils.Extensions.ListExtension.ProcessInBatches(Of T)(List(Of T), Action(Of T), System.Int32, System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: ListExtension.ProcessInBatches<T>(List<T>, Action<T>, Int32, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: ListExtension.ProcessInBatches(Of T)(List(Of T), Action(Of T), Int32, Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
 - uid: UniUtils.Extensions.ListExtension.Random*
@@ -2283,22 +2097,22 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Random
   nameWithType: ListExtension.Random
-- uid: UniUtils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0})
+- uid: UniUtils.Extensions.ListExtension.Random``1(List{``0})
   name: Random<T>(List<T>)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0__
-  commentId: M:UniUtils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0})
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Random__1_List___0__
+  commentId: M:UniUtils.Extensions.ListExtension.Random``1(List{``0})
   name.vb: Random(Of T)(List(Of T))
-  fullName: UniUtils.Extensions.ListExtension.Random<T>(System.Collections.Generic.List<T>)
-  fullName.vb: UniUtils.Extensions.ListExtension.Random(Of T)(System.Collections.Generic.List(Of T))
+  fullName: UniUtils.Extensions.ListExtension.Random<T>(List<T>)
+  fullName.vb: UniUtils.Extensions.ListExtension.Random(Of T)(List(Of T))
   nameWithType: ListExtension.Random<T>(List<T>)
   nameWithType.vb: ListExtension.Random(Of T)(List(Of T))
-- uid: UniUtils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0},System.Int32)
+- uid: UniUtils.Extensions.ListExtension.Random``1(List{``0},System.Int32)
   name: Random<T>(List<T>, Int32)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0__System_Int32_
-  commentId: M:UniUtils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0},System.Int32)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Random__1_List___0__System_Int32_
+  commentId: M:UniUtils.Extensions.ListExtension.Random``1(List{``0},System.Int32)
   name.vb: Random(Of T)(List(Of T), Int32)
-  fullName: UniUtils.Extensions.ListExtension.Random<T>(System.Collections.Generic.List<T>, System.Int32)
-  fullName.vb: UniUtils.Extensions.ListExtension.Random(Of T)(System.Collections.Generic.List(Of T), System.Int32)
+  fullName: UniUtils.Extensions.ListExtension.Random<T>(List<T>, System.Int32)
+  fullName.vb: UniUtils.Extensions.ListExtension.Random(Of T)(List(Of T), System.Int32)
   nameWithType: ListExtension.Random<T>(List<T>, Int32)
   nameWithType.vb: ListExtension.Random(Of T)(List(Of T), Int32)
 - uid: UniUtils.Extensions.ListExtension.Replace*
@@ -2308,13 +2122,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Replace
   nameWithType: ListExtension.Replace
-- uid: UniUtils.Extensions.ListExtension.Replace``1(System.Collections.Generic.List{``0},``0,``0)
+- uid: UniUtils.Extensions.ListExtension.Replace``1(List{``0},``0,``0)
   name: Replace<T>(List<T>, T, T)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Replace__1_System_Collections_Generic_List___0____0___0_
-  commentId: M:UniUtils.Extensions.ListExtension.Replace``1(System.Collections.Generic.List{``0},``0,``0)
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Replace__1_List___0____0___0_
+  commentId: M:UniUtils.Extensions.ListExtension.Replace``1(List{``0},``0,``0)
   name.vb: Replace(Of T)(List(Of T), T, T)
-  fullName: UniUtils.Extensions.ListExtension.Replace<T>(System.Collections.Generic.List<T>, T, T)
-  fullName.vb: UniUtils.Extensions.ListExtension.Replace(Of T)(System.Collections.Generic.List(Of T), T, T)
+  fullName: UniUtils.Extensions.ListExtension.Replace<T>(List<T>, T, T)
+  fullName.vb: UniUtils.Extensions.ListExtension.Replace(Of T)(List(Of T), T, T)
   nameWithType: ListExtension.Replace<T>(List<T>, T, T)
   nameWithType.vb: ListExtension.Replace(Of T)(List(Of T), T, T)
 - uid: UniUtils.Extensions.ListExtension.Shuffle*
@@ -2324,13 +2138,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.Shuffle
   nameWithType: ListExtension.Shuffle
-- uid: UniUtils.Extensions.ListExtension.Shuffle``1(System.Collections.Generic.List{``0})
+- uid: UniUtils.Extensions.ListExtension.Shuffle``1(List{``0})
   name: Shuffle<T>(List<T>)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Shuffle__1_System_Collections_Generic_List___0__
-  commentId: M:UniUtils.Extensions.ListExtension.Shuffle``1(System.Collections.Generic.List{``0})
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_Shuffle__1_List___0__
+  commentId: M:UniUtils.Extensions.ListExtension.Shuffle``1(List{``0})
   name.vb: Shuffle(Of T)(List(Of T))
-  fullName: UniUtils.Extensions.ListExtension.Shuffle<T>(System.Collections.Generic.List<T>)
-  fullName.vb: UniUtils.Extensions.ListExtension.Shuffle(Of T)(System.Collections.Generic.List(Of T))
+  fullName: UniUtils.Extensions.ListExtension.Shuffle<T>(List<T>)
+  fullName.vb: UniUtils.Extensions.ListExtension.Shuffle(Of T)(List(Of T))
   nameWithType: ListExtension.Shuffle<T>(List<T>)
   nameWithType.vb: ListExtension.Shuffle(Of T)(List(Of T))
 - uid: UniUtils.Extensions.ListExtension.SortInPlace*
@@ -2340,13 +2154,13 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ListExtension.SortInPlace
   nameWithType: ListExtension.SortInPlace
-- uid: UniUtils.Extensions.ListExtension.SortInPlace``1(System.Collections.Generic.List{``0},System.Comparison{``0})
+- uid: UniUtils.Extensions.ListExtension.SortInPlace``1(List{``0},Comparison{``0})
   name: SortInPlace<T>(List<T>, Comparison<T>)
-  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_SortInPlace__1_System_Collections_Generic_List___0__System_Comparison___0__
-  commentId: M:UniUtils.Extensions.ListExtension.SortInPlace``1(System.Collections.Generic.List{``0},System.Comparison{``0})
+  href: api/UniUtils.Extensions.ListExtension.html#UniUtils_Extensions_ListExtension_SortInPlace__1_List___0__Comparison___0__
+  commentId: M:UniUtils.Extensions.ListExtension.SortInPlace``1(List{``0},Comparison{``0})
   name.vb: SortInPlace(Of T)(List(Of T), Comparison(Of T))
-  fullName: UniUtils.Extensions.ListExtension.SortInPlace<T>(System.Collections.Generic.List<T>, System.Comparison<T>)
-  fullName.vb: UniUtils.Extensions.ListExtension.SortInPlace(Of T)(System.Collections.Generic.List(Of T), System.Comparison(Of T))
+  fullName: UniUtils.Extensions.ListExtension.SortInPlace<T>(List<T>, Comparison<T>)
+  fullName.vb: UniUtils.Extensions.ListExtension.SortInPlace(Of T)(List(Of T), Comparison(Of T))
   nameWithType: ListExtension.SortInPlace<T>(List<T>, Comparison<T>)
   nameWithType.vb: ListExtension.SortInPlace(Of T)(List(Of T), Comparison(Of T))
 - uid: UniUtils.Extensions.ObjectExtension
@@ -2399,17 +2213,17 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.ObjectExtension.LogError
   nameWithType: ObjectExtension.LogError
-- uid: UniUtils.Extensions.ObjectExtension.LogException(System.Object,System.Exception)
+- uid: UniUtils.Extensions.ObjectExtension.LogException(System.Object,Exception)
   name: LogException(Object, Exception)
-  href: api/UniUtils.Extensions.ObjectExtension.html#UniUtils_Extensions_ObjectExtension_LogException_System_Object_System_Exception_
-  commentId: M:UniUtils.Extensions.ObjectExtension.LogException(System.Object,System.Exception)
-  fullName: UniUtils.Extensions.ObjectExtension.LogException(System.Object, System.Exception)
+  href: api/UniUtils.Extensions.ObjectExtension.html#UniUtils_Extensions_ObjectExtension_LogException_System_Object_Exception_
+  commentId: M:UniUtils.Extensions.ObjectExtension.LogException(System.Object,Exception)
+  fullName: UniUtils.Extensions.ObjectExtension.LogException(System.Object, Exception)
   nameWithType: ObjectExtension.LogException(Object, Exception)
-- uid: UniUtils.Extensions.ObjectExtension.LogException(System.Object,System.String,System.Exception)
+- uid: UniUtils.Extensions.ObjectExtension.LogException(System.Object,System.String,Exception)
   name: LogException(Object, String, Exception)
-  href: api/UniUtils.Extensions.ObjectExtension.html#UniUtils_Extensions_ObjectExtension_LogException_System_Object_System_String_System_Exception_
-  commentId: M:UniUtils.Extensions.ObjectExtension.LogException(System.Object,System.String,System.Exception)
-  fullName: UniUtils.Extensions.ObjectExtension.LogException(System.Object, System.String, System.Exception)
+  href: api/UniUtils.Extensions.ObjectExtension.html#UniUtils_Extensions_ObjectExtension_LogException_System_Object_System_String_Exception_
+  commentId: M:UniUtils.Extensions.ObjectExtension.LogException(System.Object,System.String,Exception)
+  fullName: UniUtils.Extensions.ObjectExtension.LogException(System.Object, System.String, Exception)
   nameWithType: ObjectExtension.LogException(Object, String, Exception)
 - uid: UniUtils.Extensions.ObjectExtension.LogException*
   name: LogException
@@ -3223,11 +3037,11 @@ references:
   commentId: T:UniUtils.Reflection.PredefinedAssemblyUtil
   fullName: UniUtils.Reflection.PredefinedAssemblyUtil
   nameWithType: PredefinedAssemblyUtil
-- uid: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(System.Type)
+- uid: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)
   name: GetTypes(Type)
-  href: api/UniUtils.Reflection.PredefinedAssemblyUtil.html#UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_System_Type_
-  commentId: M:UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(System.Type)
-  fullName: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(System.Type)
+  href: api/UniUtils.Reflection.PredefinedAssemblyUtil.html#UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_
+  commentId: M:UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)
+  fullName: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)
   nameWithType: PredefinedAssemblyUtil.GetTypes(Type)
 - uid: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes*
   name: GetTypes
@@ -3248,11 +3062,11 @@ references:
   commentId: T:UniUtils.SceneManagement.SceneLoader
   fullName: UniUtils.SceneManagement.SceneLoader
   nameWithType: SceneLoader
-- uid: UniUtils.SceneManagement.SceneLoader.LoadScene(System.Int32,System.Action)
+- uid: UniUtils.SceneManagement.SceneLoader.LoadScene(System.Int32,Action)
   name: LoadScene(Int32, Action)
-  href: api/UniUtils.SceneManagement.SceneLoader.html#UniUtils_SceneManagement_SceneLoader_LoadScene_System_Int32_System_Action_
-  commentId: M:UniUtils.SceneManagement.SceneLoader.LoadScene(System.Int32,System.Action)
-  fullName: UniUtils.SceneManagement.SceneLoader.LoadScene(System.Int32, System.Action)
+  href: api/UniUtils.SceneManagement.SceneLoader.html#UniUtils_SceneManagement_SceneLoader_LoadScene_System_Int32_Action_
+  commentId: M:UniUtils.SceneManagement.SceneLoader.LoadScene(System.Int32,Action)
+  fullName: UniUtils.SceneManagement.SceneLoader.LoadScene(System.Int32, Action)
   nameWithType: SceneLoader.LoadScene(Int32, Action)
 - uid: UniUtils.SceneManagement.SceneLoader.LoadScene*
   name: LoadScene
@@ -3291,13 +3105,13 @@ references:
   commentId: T:UniUtils.StateMachine.FunctionPredicate
   fullName: UniUtils.StateMachine.FunctionPredicate
   nameWithType: FunctionPredicate
-- uid: UniUtils.StateMachine.FunctionPredicate.#ctor(System.Func{System.Boolean})
+- uid: UniUtils.StateMachine.FunctionPredicate.#ctor(Func{System.Boolean})
   name: FunctionPredicate(Func<Boolean>)
-  href: api/UniUtils.StateMachine.FunctionPredicate.html#UniUtils_StateMachine_FunctionPredicate__ctor_System_Func_System_Boolean__
-  commentId: M:UniUtils.StateMachine.FunctionPredicate.#ctor(System.Func{System.Boolean})
+  href: api/UniUtils.StateMachine.FunctionPredicate.html#UniUtils_StateMachine_FunctionPredicate__ctor_Func_System_Boolean__
+  commentId: M:UniUtils.StateMachine.FunctionPredicate.#ctor(Func{System.Boolean})
   name.vb: FunctionPredicate(Func(Of Boolean))
-  fullName: UniUtils.StateMachine.FunctionPredicate.FunctionPredicate(System.Func<System.Boolean>)
-  fullName.vb: UniUtils.StateMachine.FunctionPredicate.FunctionPredicate(System.Func(Of System.Boolean))
+  fullName: UniUtils.StateMachine.FunctionPredicate.FunctionPredicate(Func<System.Boolean>)
+  fullName.vb: UniUtils.StateMachine.FunctionPredicate.FunctionPredicate(Func(Of System.Boolean))
   nameWithType: FunctionPredicate.FunctionPredicate(Func<Boolean>)
   nameWithType.vb: FunctionPredicate.FunctionPredicate(Func(Of Boolean))
 - uid: UniUtils.StateMachine.FunctionPredicate.#ctor*

@@ -421,7 +421,7 @@ If the directory does not exist, it is created.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a>&gt;</td>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a>&gt;</td>
         <td><p>A list of <a class="xref" href="UniUtils.Data.FileHandle.html">FileHandle</a> objects representing the files in the specified directory. If the directory does not exist, an empty list is returned.</p>
 </td>
       </tr>
@@ -522,7 +522,7 @@ foreach (FileHandle file in files)
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>A list of relative paths representing the subdirectories in the specified directory. If the directory does not exist, an empty list is returned.</p>
 </td>
       </tr>
@@ -612,7 +612,7 @@ foreach (string dir in subdirs)
   
   
   <a id="UniUtils_Data_FileManager_TryIOAction_" data-uid="UniUtils.Data.FileManager.TryIOAction*"></a>
-  <h4 id="UniUtils_Data_FileManager_TryIOAction_System_Action_System_String_System_Action_System_Exception_System_String__" data-uid="UniUtils.Data.FileManager.TryIOAction(System.Action,System.String,System.Action{System.Exception,System.String})">TryIOAction(Action, String, Action&lt;Exception, String&gt;)</h4>
+  <h4 id="UniUtils_Data_FileManager_TryIOAction_Action_System_String_Action_Exception_System_String__" data-uid="UniUtils.Data.FileManager.TryIOAction(Action,System.String,Action{Exception,System.String})">TryIOAction(Action, String, Action&lt;Exception, String&gt;)</h4>
   <div class="markdown level1 summary"><p>Executes an I/O action and handles any exceptions that occur during its execution.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -631,7 +631,7 @@ foreach (string dir in subdirs)
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span></td>
+        <td><span class="xref">Action</span></td>
         <td><span class="parametername">action</span></td>
         <td><p>The I/O action to execute.</p>
 </td>
@@ -643,7 +643,7 @@ foreach (string dir in subdirs)
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Exception</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">Exception</span>, <span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">onError</span></td>
         <td><p>An optional callback to handle exceptions. The callback receives the exception and the formatted error message.</p>
 </td>

@@ -126,7 +126,7 @@
   
   
   <a id="UniUtils_Extensions_ListExtension_Center_" data-uid="UniUtils.Extensions.ListExtension.Center*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Center_System_Collections_Generic_List_Vector3__" data-uid="UniUtils.Extensions.ListExtension.Center(System.Collections.Generic.List{Vector3})">Center(List&lt;Vector3&gt;)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Center_List_Vector3__" data-uid="UniUtils.Extensions.ListExtension.Center(List{Vector3})">Center(List&lt;Vector3&gt;)</h4>
   <div class="markdown level1 summary"><p>Calculates the center point of a list of Vector3s.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -145,7 +145,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">Vector3</span>&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list of Vector3s to calculate the center point of.</p>
 </td>
@@ -168,7 +168,7 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Center_System_Collections_Generic_List_Vector3___examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Center_List_Vector3___examples">Examples</h5>
   <pre><code>List&lt;Vector3> positions = new()
 {
     new Vector3(1, 0, 0),
@@ -181,7 +181,7 @@ Vector3 centerPoint = positions.Center();
   
   
   <a id="UniUtils_Extensions_ListExtension_Chunk_" data-uid="UniUtils.Extensions.ListExtension.Chunk*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Chunk__1_System_Collections_Generic_List___0__System_Int32_" data-uid="UniUtils.Extensions.ListExtension.Chunk``1(System.Collections.Generic.List{``0},System.Int32)">Chunk&lt;T&gt;(List&lt;T&gt;, Int32)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Chunk__1_List___0__System_Int32_" data-uid="UniUtils.Extensions.ListExtension.Chunk``1(List{``0},System.Int32)">Chunk&lt;T&gt;(List&lt;T&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Splits a list into smaller chunks of a specified size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -200,7 +200,7 @@ Vector3 centerPoint = positions.Center();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The source list to split into chunks.</p>
 </td>
@@ -223,7 +223,7 @@ Vector3 centerPoint = positions.Center();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">List</span>&lt;T&gt;&gt;</td>
         <td><p>A list of smaller lists, each containing up to <code data-dev-comment-type="paramref" class="paramref">chunkSize</code> items.</p>
 </td>
       </tr>
@@ -248,7 +248,7 @@ Vector3 centerPoint = positions.Center();
   
   
   <a id="UniUtils_Extensions_ListExtension_Clone_" data-uid="UniUtils.Extensions.ListExtension.Clone*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Clone__1_System_Collections_Generic_List___0__" data-uid="UniUtils.Extensions.ListExtension.Clone``1(System.Collections.Generic.List{``0})">Clone&lt;T&gt;(List&lt;T&gt;)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Clone__1_List___0__" data-uid="UniUtils.Extensions.ListExtension.Clone``1(List{``0})">Clone&lt;T&gt;(List&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a shallow copy of the list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -267,7 +267,7 @@ Vector3 centerPoint = positions.Center();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list to clone.</p>
 </td>
@@ -284,7 +284,7 @@ Vector3 centerPoint = positions.Center();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><p>A new list containing the same elements as the original list.</p>
 </td>
       </tr>
@@ -306,7 +306,7 @@ Vector3 centerPoint = positions.Center();
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Clone__1_System_Collections_Generic_List___0___examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Clone__1_List___0___examples">Examples</h5>
   <pre><code>List&lt;float> original = new() { 1.0f, 2.0f, 3.0f };
 List&lt;float> copy = original.Clone();
 // copy contains the same elements as original</code></pre>
@@ -314,7 +314,7 @@ List&lt;float> copy = original.Clone();
   
   
   <a id="UniUtils_Extensions_ListExtension_Flatten_" data-uid="UniUtils.Extensions.ListExtension.Flatten*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Flatten__1_System_Collections_Generic_List_System_Collections_Generic_List___0___" data-uid="UniUtils.Extensions.ListExtension.Flatten``1(System.Collections.Generic.List{System.Collections.Generic.List{``0}})">Flatten&lt;T&gt;(List&lt;List&lt;T&gt;&gt;)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Flatten__1_List_List___0___" data-uid="UniUtils.Extensions.ListExtension.Flatten``1(List{List{``0}})">Flatten&lt;T&gt;(List&lt;List&lt;T&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Flattens a list of lists into a single list by concatenating all inner lists.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -333,7 +333,7 @@ List&lt;float> copy = original.Clone();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;T&gt;&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">List</span>&lt;T&gt;&gt;</td>
         <td><span class="parametername">listOfLists</span></td>
         <td><p>The list of lists to flatten.</p>
 </td>
@@ -350,7 +350,7 @@ List&lt;float> copy = original.Clone();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><p>A single list containing all elements from the inner lists.</p>
 </td>
       </tr>
@@ -372,7 +372,7 @@ List&lt;float> copy = original.Clone();
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Flatten__1_System_Collections_Generic_List_System_Collections_Generic_List___0____examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Flatten__1_List_List___0____examples">Examples</h5>
   <pre><code>List&lt;List&lt;int>> nested = new()
 {
     new List&lt;int> { 1, 2 },
@@ -385,7 +385,7 @@ List&lt;int> flat = nested.Flatten();
   
   
   <a id="UniUtils_Extensions_ListExtension_Furthest_" data-uid="UniUtils.Extensions.ListExtension.Furthest*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Furthest_System_Collections_Generic_List_Transform__Transform_" data-uid="UniUtils.Extensions.ListExtension.Furthest(System.Collections.Generic.List{Transform},Transform)">Furthest(List&lt;Transform&gt;, Transform)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Furthest_List_Transform__Transform_" data-uid="UniUtils.Extensions.ListExtension.Furthest(List{Transform},Transform)">Furthest(List&lt;Transform&gt;, Transform)</h4>
   <div class="markdown level1 summary"><p>Finds the furthest transform in the list from the specified transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -404,7 +404,7 @@ List&lt;int> flat = nested.Flatten();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Transform</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">Transform</span>&gt;</td>
         <td><span class="parametername">transformList</span></td>
         <td><p>The list of transforms to search.</p>
 </td>
@@ -433,7 +433,7 @@ List&lt;int> flat = nested.Flatten();
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Furthest_System_Collections_Generic_List_Transform__Transform__examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Furthest_List_Transform__Transform__examples">Examples</h5>
   <pre><code>List&lt;Transform> enemies = new List&lt;Transform>();
 Transform player = someGameObject.transform;
 Transform furthestEnemy = enemies.Furthest(player);
@@ -442,7 +442,7 @@ Transform furthestEnemy = enemies.Furthest(player);
   
   
   <a id="UniUtils_Extensions_ListExtension_Lerp_" data-uid="UniUtils.Extensions.ListExtension.Lerp*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Lerp_System_Collections_Generic_List_System_Single__System_Single_" data-uid="UniUtils.Extensions.ListExtension.Lerp(System.Collections.Generic.List{System.Single},System.Single)">Lerp(List&lt;Single&gt;, Single)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Lerp_List_System_Single__System_Single_" data-uid="UniUtils.Extensions.ListExtension.Lerp(List{System.Single},System.Single)">Lerp(List&lt;Single&gt;, Single)</h4>
   <div class="markdown level1 summary"><p>Linearly interpolates between elements in a list of floats based on a parameter t.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -461,7 +461,7 @@ Transform furthestEnemy = enemies.Furthest(player);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.Single</span>&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list of floats to interpolate.</p>
 </td>
@@ -490,7 +490,7 @@ Transform furthestEnemy = enemies.Furthest(player);
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Lerp_System_Collections_Generic_List_System_Single__System_Single__examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Lerp_List_System_Single__System_Single__examples">Examples</h5>
   <pre><code>List&lt;float> points = new() { 0f, 10f, 20f };
 float value = points.Lerp(0.25f);
 // value is interpolated between 0 and 10, roughly 2.5</code></pre>
@@ -514,7 +514,7 @@ float value = points.Lerp(0.25f);
   
   
   <a id="UniUtils_Extensions_ListExtension_Nearest_" data-uid="UniUtils.Extensions.ListExtension.Nearest*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Nearest_System_Collections_Generic_List_Transform__Transform_" data-uid="UniUtils.Extensions.ListExtension.Nearest(System.Collections.Generic.List{Transform},Transform)">Nearest(List&lt;Transform&gt;, Transform)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Nearest_List_Transform__Transform_" data-uid="UniUtils.Extensions.ListExtension.Nearest(List{Transform},Transform)">Nearest(List&lt;Transform&gt;, Transform)</h4>
   <div class="markdown level1 summary"><p>Finds the nearest transform in the list to the specified transform.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -533,7 +533,7 @@ float value = points.Lerp(0.25f);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Transform</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">Transform</span>&gt;</td>
         <td><span class="parametername">transformList</span></td>
         <td><p>The list of transforms to search.</p>
 </td>
@@ -562,7 +562,7 @@ float value = points.Lerp(0.25f);
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Nearest_System_Collections_Generic_List_Transform__Transform__examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Nearest_List_Transform__Transform__examples">Examples</h5>
   <pre><code>List&lt;Transform> enemies = new List&lt;Transform>();
 Transform player = someGameObject.transform;
 Transform nearestEnemy = enemies.Nearest(player);
@@ -571,7 +571,7 @@ Transform nearestEnemy = enemies.Nearest(player);
   
   
   <a id="UniUtils_Extensions_ListExtension_Next_" data-uid="UniUtils.Extensions.ListExtension.Next*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Next__1_System_Collections_Generic_List___0____0_" data-uid="UniUtils.Extensions.ListExtension.Next``1(System.Collections.Generic.List{``0},``0)">Next&lt;T&gt;(List&lt;T&gt;, T)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Next__1_List___0____0_" data-uid="UniUtils.Extensions.ListExtension.Next``1(List{``0},``0)">Next&lt;T&gt;(List&lt;T&gt;, T)</h4>
   <div class="markdown level1 summary"><p>Returns the next element in the list after the specified item.
 If the item is not found, returns the first element if the list is not empty, otherwise returns the default value for the type.</p>
 </div>
@@ -591,7 +591,7 @@ If the item is not found, returns the first element if the list is not empty, ot
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list to search.</p>
 </td>
@@ -636,7 +636,7 @@ If the item is not found, returns the first element if the list is not empty, ot
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Next__1_System_Collections_Generic_List___0____0__examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Next__1_List___0____0__examples">Examples</h5>
   <pre><code>List&lt;string> colors = new() { &quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot; };
 string nextColor = colors.Next(&quot;Green&quot;);
 // nextColor is &quot;Blue&quot;
@@ -646,7 +646,7 @@ string nextOfUnknown = colors.Next(&quot;Yellow&quot;);
   
   
   <a id="UniUtils_Extensions_ListExtension_ProcessInBatches_" data-uid="UniUtils.Extensions.ListExtension.ProcessInBatches*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_ProcessInBatches__1_System_Collections_Generic_List___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception__" data-uid="UniUtils.Extensions.ListExtension.ProcessInBatches``1(System.Collections.Generic.List{``0},System.Action{``0},System.Int32,System.Single,System.Action{``0},System.Action{``0,System.Boolean},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{System.Collections.Generic.IReadOnlyList{``0}},System.Action{``0,System.Exception})">ProcessInBatches&lt;T&gt;(List&lt;T&gt;, Action&lt;T&gt;, Int32, Single, Action&lt;T&gt;, Action&lt;T, Boolean&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;T, Exception&gt;)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_ProcessInBatches__1_List___0__Action___0__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception__" data-uid="UniUtils.Extensions.ListExtension.ProcessInBatches``1(List{``0},Action{``0},System.Int32,System.Single,Action{``0},Action{``0,System.Boolean},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{IReadOnlyList{``0}},Action{``0,Exception})">ProcessInBatches&lt;T&gt;(List&lt;T&gt;, Action&lt;T&gt;, Int32, Single, Action&lt;T&gt;, Action&lt;T, Boolean&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;IReadOnlyList&lt;T&gt;&gt;, Action&lt;T, Exception&gt;)</h4>
   <div class="markdown level1 summary"><p>Executes a batch operation on a list of items, processing them in groups with optional delays and callbacks.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -665,13 +665,13 @@ string nextOfUnknown = colors.Next(&quot;Yellow&quot;);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">itemsList</span></td>
         <td><p>The list of items to process in batches.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
         <td><span class="parametername">actionOnItem</span></td>
         <td><p>The action to execute on each item in the batch.</p>
 </td>
@@ -689,37 +689,37 @@ string nextOfUnknown = colors.Next(&quot;Yellow&quot;);
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
+        <td><span class="xref">Action</span>&lt;T&gt;</td>
         <td><span class="parametername">onItemProcessStart</span></td>
         <td><p>Optional callback invoked before processing each item; receives the item as <code>T</code>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">onItemProcessFinished</span></td>
         <td><p>Optional callback invoked after processing each item; receives the item as <code>T</code> and a <code>bool</code> indicating success.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
         <td><span class="parametername">onBatchStart</span></td>
         <td><p>Optional callback invoked at the start of each batch; receives the current batch as a <code>IReadOnlyList&lt;T&gt;</code>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
         <td><span class="parametername">onBatchFinished</span></td>
         <td><p>Optional callback invoked at the end of each batch; receives the processed batch as a <code>IReadOnlyList&lt;T&gt;</code>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;T&gt;&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">IReadOnlyList</span>&lt;T&gt;&gt;</td>
         <td><span class="parametername">onFinished</span></td>
         <td><p>Optional callback invoked after all batches are processed; receives the entire list as a <code>IReadOnlyList&lt;T&gt;</code>.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;T, <span class="xref">System.Exception</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;T, <span class="xref">Exception</span>&gt;</td>
         <td><span class="parametername">onError</span></td>
         <td><p>Optional callback invoked when an error occurs during item processing; receives the item that failed (<code>T</code>) and the thrown <code>Exception</code>.</p>
 </td>
@@ -736,7 +736,7 @@ string nextOfUnknown = colors.Next(&quot;Yellow&quot;);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerator</span></td>
+        <td><span class="xref">IEnumerator</span></td>
         <td><p>An enumerator that can be used to execute the batch operation.</p>
 </td>
       </tr>
@@ -758,7 +758,7 @@ string nextOfUnknown = colors.Next(&quot;Yellow&quot;);
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_ProcessInBatches__1_System_Collections_Generic_List___0__System_Action___0__System_Int32_System_Single_System_Action___0__System_Action___0_System_Boolean__System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action_System_Collections_Generic_IReadOnlyList___0___System_Action___0_System_Exception___examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_ProcessInBatches__1_List___0__Action___0__System_Int32_System_Single_Action___0__Action___0_System_Boolean__Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action_IReadOnlyList___0___Action___0_Exception___examples">Examples</h5>
   <pre><code>List&lt;int> numbers = new() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 IEnumerator batch = numbers.ProcessInBatches(
     item => Debug.Log($&quot;Processing: {item}&quot;),
@@ -773,7 +773,7 @@ IEnumerator batch = numbers.ProcessInBatches(
   
   
   <a id="UniUtils_Extensions_ListExtension_Random_" data-uid="UniUtils.Extensions.ListExtension.Random*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0__" data-uid="UniUtils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0})">Random&lt;T&gt;(List&lt;T&gt;)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Random__1_List___0__" data-uid="UniUtils.Extensions.ListExtension.Random``1(List{``0})">Random&lt;T&gt;(List&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Returns a random element from the list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -792,7 +792,7 @@ IEnumerator batch = numbers.ProcessInBatches(
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list to select a random element from.</p>
 </td>
@@ -831,7 +831,7 @@ IEnumerator batch = numbers.ProcessInBatches(
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0___examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Random__1_List___0___examples">Examples</h5>
   <pre><code>List&lt;int> values = new() { 10, 20, 30 };
 int randomValue = values.Random();
 // randomValue is one of 10, 20, or 30</code></pre>
@@ -855,7 +855,7 @@ int randomValue = values.Random();
   
   
   <a id="UniUtils_Extensions_ListExtension_Random_" data-uid="UniUtils.Extensions.ListExtension.Random*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0__System_Int32_" data-uid="UniUtils.Extensions.ListExtension.Random``1(System.Collections.Generic.List{``0},System.Int32)">Random&lt;T&gt;(List&lt;T&gt;, Int32)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Random__1_List___0__System_Int32_" data-uid="UniUtils.Extensions.ListExtension.Random``1(List{``0},System.Int32)">Random&lt;T&gt;(List&lt;T&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Returns a list of unique random elements from the list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -874,7 +874,7 @@ int randomValue = values.Random();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list to select random elements from.</p>
 </td>
@@ -897,7 +897,7 @@ int randomValue = values.Random();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><p>A list containing unique random elements from the original list.</p>
 </td>
       </tr>
@@ -919,7 +919,7 @@ int randomValue = values.Random();
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Random__1_System_Collections_Generic_List___0__System_Int32__examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Random__1_List___0__System_Int32__examples">Examples</h5>
   <pre><code>List&lt;int> numbers = new() { 1, 2, 3, 4, 5 };
 List&lt;int> randomSubset = numbers.Random(3);
 // randomSubset contains 3 unique elements randomly selected from numbers</code></pre>
@@ -943,7 +943,7 @@ List&lt;int> randomSubset = numbers.Random(3);
   
   
   <a id="UniUtils_Extensions_ListExtension_Replace_" data-uid="UniUtils.Extensions.ListExtension.Replace*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Replace__1_System_Collections_Generic_List___0____0___0_" data-uid="UniUtils.Extensions.ListExtension.Replace``1(System.Collections.Generic.List{``0},``0,``0)">Replace&lt;T&gt;(List&lt;T&gt;, T, T)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Replace__1_List___0____0___0_" data-uid="UniUtils.Extensions.ListExtension.Replace``1(List{``0},``0,``0)">Replace&lt;T&gt;(List&lt;T&gt;, T, T)</h4>
   <div class="markdown level1 summary"><p>Replaces the first occurrence of a specified item in the list with a new item.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -962,7 +962,7 @@ List&lt;int> randomSubset = numbers.Random(3);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list in which the replacement will occur.</p>
 </td>
@@ -991,7 +991,7 @@ List&lt;int> randomSubset = numbers.Random(3);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><p>The original list with the specified item replaced.</p>
 </td>
       </tr>
@@ -1013,7 +1013,7 @@ List&lt;int> randomSubset = numbers.Random(3);
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Replace__1_System_Collections_Generic_List___0____0___0__examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Replace__1_List___0____0___0__examples">Examples</h5>
   <pre><code>List&lt;string> fruits = new() { &quot;Apple&quot;, &quot;Banana&quot;, &quot;Cherry&quot; };
 fruits.Replace(&quot;Banana&quot;, &quot;Orange&quot;);
 // fruits is now { &quot;Apple&quot;, &quot;Orange&quot;, &quot;Cherry&quot; }</code></pre>
@@ -1021,7 +1021,7 @@ fruits.Replace(&quot;Banana&quot;, &quot;Orange&quot;);
   
   
   <a id="UniUtils_Extensions_ListExtension_Shuffle_" data-uid="UniUtils.Extensions.ListExtension.Shuffle*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_Shuffle__1_System_Collections_Generic_List___0__" data-uid="UniUtils.Extensions.ListExtension.Shuffle``1(System.Collections.Generic.List{``0})">Shuffle&lt;T&gt;(List&lt;T&gt;)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_Shuffle__1_List___0__" data-uid="UniUtils.Extensions.ListExtension.Shuffle``1(List{``0})">Shuffle&lt;T&gt;(List&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Shuffles the elements of a list in place using the Fisher-Yates algorithm.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1040,7 +1040,7 @@ fruits.Replace(&quot;Banana&quot;, &quot;Orange&quot;);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list to shuffle.</p>
 </td>
@@ -1057,7 +1057,7 @@ fruits.Replace(&quot;Banana&quot;, &quot;Orange&quot;);
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1078,7 +1078,7 @@ fruits.Replace(&quot;Banana&quot;, &quot;Orange&quot;);
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_Shuffle__1_System_Collections_Generic_List___0___examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_Shuffle__1_List___0___examples">Examples</h5>
   <pre><code>List&lt;string> names = new() { &quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot; };
 names.Shuffle();
 // names order is now randomized, e.g., &quot;Charlie&quot;, &quot;Alice&quot;, &quot;Bob&quot;</code></pre>
@@ -1086,7 +1086,7 @@ names.Shuffle();
   
   
   <a id="UniUtils_Extensions_ListExtension_SortInPlace_" data-uid="UniUtils.Extensions.ListExtension.SortInPlace*"></a>
-  <h4 id="UniUtils_Extensions_ListExtension_SortInPlace__1_System_Collections_Generic_List___0__System_Comparison___0__" data-uid="UniUtils.Extensions.ListExtension.SortInPlace``1(System.Collections.Generic.List{``0},System.Comparison{``0})">SortInPlace&lt;T&gt;(List&lt;T&gt;, Comparison&lt;T&gt;)</h4>
+  <h4 id="UniUtils_Extensions_ListExtension_SortInPlace__1_List___0__Comparison___0__" data-uid="UniUtils.Extensions.ListExtension.SortInPlace``1(List{``0},Comparison{``0})">SortInPlace&lt;T&gt;(List&lt;T&gt;, Comparison&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Sorts the elements of the list in place using the specified comparison.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1105,13 +1105,13 @@ names.Shuffle();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><span class="parametername">list</span></td>
         <td><p>The list to sort.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Comparison</span>&lt;T&gt;</td>
+        <td><span class="xref">Comparison</span>&lt;T&gt;</td>
         <td><span class="parametername">comparison</span></td>
         <td><p>The comparison to use for sorting the elements.</p>
 </td>
@@ -1128,7 +1128,7 @@ names.Shuffle();
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;T&gt;</td>
+        <td><span class="xref">List</span>&lt;T&gt;</td>
         <td><p>The sorted list.</p>
 </td>
       </tr>
@@ -1150,7 +1150,7 @@ names.Shuffle();
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_ListExtension_SortInPlace__1_System_Collections_Generic_List___0__System_Comparison___0___examples">Examples</h5>
+  <h5 id="UniUtils_Extensions_ListExtension_SortInPlace__1_List___0__Comparison___0___examples">Examples</h5>
   <pre><code>List&lt;int> numbers = new() { 5, 3, 8, 1 };
 numbers.SortInPlace((a, b) => a.CompareTo(b));
 // numbers is now sorted: 1, 3, 5, 8</code></pre>

@@ -126,7 +126,7 @@
   
   
   <a id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_" data-uid="UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes*"></a>
-  <h4 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_System_Type_" data-uid="UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(System.Type)">GetTypes(Type)</h4>
+  <h4 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_" data-uid="UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)">GetTypes(Type)</h4>
   <div class="markdown level1 summary"><p>Gets a list of types that are subclasses of the specified generic base type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -145,7 +145,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Type</span></td>
+        <td><span class="xref">Type</span></td>
         <td><span class="parametername">genericBaseType</span></td>
         <td><p>The generic base type to match.</p>
 </td>
@@ -162,13 +162,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Type</span>&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">Type</span>&gt;</td>
         <td><p>A list of types that are subclasses of the specified generic base type.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_System_Type__examples">Examples</h5>
+  <h5 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type__examples">Examples</h5>
   <p>Example usage:</p>
 <pre><code>List&lt;Type> derivedTypes = TypeUtility.GetTypes(typeof(MyGenericBase&lt;>));
 foreach (Type t in derivedTypes)
