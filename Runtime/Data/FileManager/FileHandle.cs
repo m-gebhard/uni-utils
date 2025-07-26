@@ -314,7 +314,7 @@ namespace UniUtils.Data
         /// Opens and returns a read-only FileStream for this file.
         /// </summary>
         /// <returns>A <see cref="System.IO.FileStream"/> opened for read.</returns>
-        /// <exception cref="System.IO.FileNotFoundException">FileNotFoundException: Thrown if the file does not exist.</exception>
+        /// <exception cref="System.IO.FileNotFoundException">Thrown if the file does not exist.</exception>
         /// <example>
         /// <code>
         /// FileHandle handle = new FileHandle("data.txt");

@@ -76,7 +76,7 @@ namespace UniUtils.Data
         /// <param name="initialValue">The initial value of the interpolation.</param>
         /// <param name="lerpFunction">The interpolation function to use.</param>
         /// <param name="speed">The speed of interpolation (default is 5f).</param>
-        /// <exception cref="System.ArgumentNullException">ArgumentNullException: Thrown if <paramref name="lerpFunction"/> is null.</exception>
+        /// <exception cref="System.ArgumentNullException">Thrown if <paramref name="lerpFunction"/> is null.</exception>
         public LerpValue(T initialValue, Func<T, T, float, T> lerpFunction, float speed = 5f)
         {
             currentValue = initialValue;
