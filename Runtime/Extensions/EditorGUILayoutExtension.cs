@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 namespace UniUtils.Extensions
 {
     /// <summary>
@@ -32,3 +33,4 @@ namespace UniUtils.Extensions
         }
     }
 }
+#endif

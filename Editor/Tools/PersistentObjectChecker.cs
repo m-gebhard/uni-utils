@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UniUtils.GameObjects;
 
+#if UNITY_EDITOR
 namespace UniUtils.Editor
 {
     public class PersistentObjectChecker : EditorWindow
@@ -48,3 +49,4 @@ namespace UniUtils.Editor
         }
     }
 }
+#endif

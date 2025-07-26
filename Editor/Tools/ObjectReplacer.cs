@@ -2,6 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
 
+#if UNITY_EDITOR
 namespace UniUtils.Editor
 {
     /// <summary>
@@ -140,3 +141,4 @@ namespace UniUtils.Editor
         }
     }
 }
+#endif
