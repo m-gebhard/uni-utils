@@ -25,8 +25,10 @@ namespace UniUtils.Data
         public string Extension => Path.GetExtension(FullPath);
         /// <returns name="IsReadOnly">Returns <c>true</c> if the file is read-only; otherwise, <c>false</c>.</returns>
         public virtual bool IsReadOnly => Exists && new FileInfo(FullPath).IsReadOnly;
+
         /// <returns name="FileSizeBytes">Returns the size of the file in bytes, or 0 if the file does not exist.</returns>
         public virtual long FileSizeBytes() => Exists ? new FileInfo(FullPath).Length : 0;
+
         /// <returns name="LastModified">Returns the last modified date and time of the file, or <c>null</c> if the file does not exist.</returns>
         public virtual DateTime? LastModified() => Exists ? File.GetLastWriteTime(FullPath) : null;
 
@@ -62,6 +64,7 @@ namespace UniUtils.Data
         /// <returns>
         /// A new <see cref="FileHandle"/> instance representing the copied file, or <c>null</c> if the operation fails.
         /// </returns>
+        /// <exception cref="System.ArgumentException">Thrown if the new relative path is invalid.</exception>
         /// <exception cref="System.IO.FileNotFoundException">Thrown if the file does not exist.</exception>
         /// <exception cref="System.IO.IOException">Thrown if writing to the file fails.</exception>
         /// <example>
@@ -77,7 +80,12 @@ namespace UniUtils.Data
         {
             location ??= Location;
             string newFullPath = Path.Combine(FileManager.GetRootPath(location.Value), newRelativePath);
-            string? newDir = Path.GetDirectoryName(newFullPath);
+            string newDir = Path.GetDirectoryName(newFullPath);
+            if (newDir == null)
+            {
+                throw new ArgumentException($"Invalid path '{newFullPath}' for copying file.");
+            }
+
             FileManager.EnsureDirectoryExists(newDir, location.Value);
 
             bool wasSuccessful = FileManager.TryIOAction(
@@ -101,6 +109,7 @@ namespace UniUtils.Data
         /// A new <see cref="FileHandle"/> instance representing the moved file, or <c>null</c> if the operation fails.
         /// </returns>
         /// <exception cref="System.IO.FileNotFoundException">Thrown if the file does not exist.</exception>
+        /// <exception cref="System.ArgumentException">Thrown if the new relative path is invalid.</exception>
         /// <exception cref="System.IO.IOException">Thrown if the target file already exists.</exception>
         /// <exception cref="System.IO.IOException">Thrown if writing to the file fails.</exception>
         /// <example>
@@ -124,7 +133,12 @@ namespace UniUtils.Data
                     $"Cannot move file '{FullPath}' to '{newFullPath}' because the target file already exists.");
             }
 
-            string? newDir = Path.GetDirectoryName(newFullPath);
+            string newDir = Path.GetDirectoryName(newFullPath);
+            if (newDir == null)
+            {
+                throw new ArgumentException($"Invalid path '{newFullPath}' for moving file.");
+            }
+
             FileManager.EnsureDirectoryExists(newDir, location.Value);
 
             bool wasSuccessful = FileManager.TryIOAction(
