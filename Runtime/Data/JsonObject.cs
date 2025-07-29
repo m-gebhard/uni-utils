@@ -34,26 +34,34 @@ namespace UniUtils.Data
             return JsonUtility.ToJson(this);
         }
 
-        /// <summary>
-        /// Deserializes the given JSON string to an object of type T.
-        /// </summary>
-        /// <param name="json">The JSON string to deserialize.</param>
-        /// <returns>An object of type T deserialized from the JSON string.</returns>
         /// <example>
         /// <code>
+        /// // Define a serializable data model
         /// [Serializable]
-        /// public class PlayerData : JSONObject&lt;PlayerData&gt;
+        /// public class PlayerData : JsonObject&lt;PlayerData&gt;
         /// {
         ///     public string playerName;
         ///     public int score;
         /// }
         ///
-        /// string json = "{\"playerName\":\"Alex\",\"score\":150}";
-        /// PlayerData data = new PlayerData().FromJson(json);
-        /// Debug.Log($"{data.playerName} scored {data.score}"); // Output: Alex scored 150
+        /// // Create an instance and serialize it
+        /// PlayerData data = new PlayerData
+        /// {
+        ///     playerName = "Alex",
+        ///     score = 150
+        /// };
+        ///
+        /// string json = data.ToJson();
+        /// Debug.Log(json);
+        /// // Output: {"playerName":"Alex","score":150}
+        ///
+        /// // You can also deserialize it back:
+        /// PlayerData deserialized = PlayerData.FromJson(json);
+        /// Debug.Log(deserialized.playerName);
+        /// // Output: Alex
         /// </code>
         /// </example>
-        public T FromJson(string json)
+        public static T FromJson(string json)
         {
             return JsonUtility.FromJson<T>(json);
         }
