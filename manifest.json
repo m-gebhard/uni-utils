@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.JsonObject-1.html",
-          "hash": "INB4w6YLV3ptfT1nkBFk2eWhSqSZkLQqH9vhsSY19XY="
+          "hash": "m+vkB9oF2wWJmoi3Rdiy/q7+lMXbdEft2KJ+pUI7X1U="
         }
       },
       "is_incremental": false,
@@ -542,6 +542,114 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.FunctionPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.FunctionPredicate.html",
+          "hash": "oULaqqbZjvY0FJjV2FdaxkksAHY/JVT3+2wOV6cLAG0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.IPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.IPredicate.html",
+          "hash": "fAHznbbp2r8FdSiCxbKyoyuXMSBd/iumJyjxIt0qE7k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.IState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.IState.html",
+          "hash": "rR5Sv9vg4yZ9odCattpxXiIfqVezFGgu+zZBP7hWcTg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.ITransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.ITransition.html",
+          "hash": "Z8sWtsxVDAdPqywcJUwqdKxj/tc0+nKcT+ixUXkjdEE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.NotPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.NotPredicate.html",
+          "hash": "8zXTlPy52YiWOyIsHf7hxmY1wuDsdLM8T15JQ5zAoFk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.StateMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.StateMachine.html",
+          "hash": "Ju5/EE17w5wl4OIfeiN1OqCheurEsI9a35kwozdhy3o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.StateNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.StateNode.html",
+          "hash": "FK0MTE7J5BnAjBodFDf0k/yVS5T2/X0hAB1goHhwWEg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.Transition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.Transition.html",
+          "hash": "o53G3U1mwjkA4VY8mTGi37qxeBWF0JeXNWmciNvZmMM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.FSM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.FSM.html",
+          "hash": "9YW47+dlrL8DEDhxBfhgTmMoApMUxA6rEgjCdV5bzto="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UniUtils.GameObjects.ColliderEvent.yml",
       "output": {
         ".html": {
@@ -709,108 +817,12 @@
       "version": ""
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.FunctionPredicate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.FunctionPredicate.html",
-          "hash": "gvPdMLjxXSObcL5d3cZW1nifBuDhzk90xthgyyS2C+w="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.IPredicate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.IPredicate.html",
-          "hash": "SfsojfqhHwIeMpwvkZTl16KG+F3+Il7L8p8KvshY0cc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.IState.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.IState.html",
-          "hash": "YyNeAT++DmtbD/6r0zHubon93+qi7QH2jJLepSMAuTg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.ITransition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.ITransition.html",
-          "hash": "gXfO7jSvAetyspEcMb+PteQKfaKwpn7Z7FdFhu9EYsw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.StateMachine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.StateMachine.html",
-          "hash": "dZXh+RcD0r5U49y/uK3ofSV/rd08+DSFmFP4fuPJCH8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.StateNode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.StateNode.html",
-          "hash": "ead8xiOrVmyB9bIv1mgOECDHqzasI5Lww8rQeIMzMTY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.Transition.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.Transition.html",
-          "hash": "rXmh0rsnF7wzt6A3ucfPrrqvZVugPG/VDpTn9ORx+vU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.StateMachine.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.StateMachine.html",
-          "hash": "spb3g+E7Dc71idkt2zP0KXM8T/42rIAqzWbnWyP3xug="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "mCIOHc/339iG1YSkXlrUS5AsoqD09A0JBr4xQnQvMxQ="
+          "hash": "IgmMEP57FYdNACEc8qhA5zj9JPlVmOxzcHeCe+jC+Jc="
         }
       },
       "is_incremental": false,
@@ -876,7 +888,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 66,
+          "total_file_count": 67,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

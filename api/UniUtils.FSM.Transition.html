@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class JsonObject&lt;T&gt;
+    <title>Class Transition
    | UniUtils Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class JsonObject&lt;T&gt;
+    <meta name="title" content="Class Transition
    | UniUtils Documentation ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -78,19 +78,22 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="UniUtils.Data.JsonObject`1">
+            <article class="content wrap" id="_content" data-uid="UniUtils.FSM.Transition">
   
   
-  <h1 id="UniUtils_Data_JsonObject_1" data-uid="UniUtils.Data.JsonObject`1" class="text-break">Class JsonObject&lt;T&gt;
+  <h1 id="UniUtils_FSM_Transition" data-uid="UniUtils.FSM.Transition" class="text-break">Class Transition
   </h1>
-  <div class="markdown level0 summary"><p>Represents a generic JSON object that can be serialized and deserialized using Unity&apos;s JsonUtility.
-The derived class is required to have the [Serializable] attribute.</p>
+  <div class="markdown level0 summary"><p>Implements a transition between states in a state machine.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">JsonObject&lt;T&gt;</span></div>
+    <div class="level1"><span class="xref">Transition</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UniUtils.FSM.ITransition.html">ITransition</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,39 +119,40 @@ The derived class is required to have the [Serializable] attribute.</p>
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.Data.html">UniUtils.Data</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.FSM.html">UniUtils.FSM</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="UniUtils_Data_JsonObject_1_syntax">Syntax</h5>
+  <h5 id="UniUtils_FSM_Transition_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class JsonObject&lt;T&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Transition : ITransition</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the object to be deserialized.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
+  <h5 id="UniUtils_FSM_Transition_examples"><strong>Examples</strong></h5>
+  <p>Example usage:</p>
+<pre><code>void CreateTransition()
+{
+    IState idle = new IdleState();
+    IState move = new MoveState();
+
+    IPredicate canMove = new FunctionPredicate(() => Input.GetKey(KeyCode.Space));
+
+    ITransition transition = new Transition(canMove, move);
+
+    // Example: use in a state machine
+    StateMachine stateMachine = new StateMachine();
+    stateMachine.AddTransition(idle, move, canMove);
+}</code></pre>
+
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="UniUtils_Data_JsonObject_1_FromJson_" data-uid="UniUtils.Data.JsonObject`1.FromJson*"></a>
-  <h4 id="UniUtils_Data_JsonObject_1_FromJson_System_String_" data-uid="UniUtils.Data.JsonObject`1.FromJson(System.String)">FromJson(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="UniUtils_FSM_Transition__ctor_" data-uid="UniUtils.FSM.Transition.#ctor*"></a>
+  <h4 id="UniUtils_FSM_Transition__ctor_UniUtils_FSM_IPredicate_UniUtils_FSM_IState_" data-uid="UniUtils.FSM.Transition.#ctor(UniUtils.FSM.IPredicate,UniUtils.FSM.IState)">Transition(IPredicate, IState)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="UniUtils.FSM.Transition.html">Transition</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static T FromJson(string json)</code></pre>
+    <pre><code class="lang-csharp hljs">public Transition(IPredicate predicate, IState targetState)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -161,91 +165,77 @@ The derived class is required to have the [Serializable] attribute.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">json</span></td>
-        <td></td>
+        <td><a class="xref" href="UniUtils.FSM.IPredicate.html">IPredicate</a></td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate that determines if the transition should occur.</p>
+</td>
       </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="UniUtils_Data_JsonObject_1_FromJson_System_String__examples">Examples</h5>
-  <pre><code>// Define a serializable data model
-[Serializable]
-public class PlayerData : JsonObject&lt;PlayerData>
-{
-    public string playerName;
-    public int score;
-}
-
-// Create an instance and serialize it
-PlayerData data = new PlayerData
-{
-    playerName = &quot;Alex&quot;,
-    score = 150
-};
-
-string json = data.ToJson();
-Debug.Log(json);
-// Output: {&quot;playerName&quot;:&quot;Alex&quot;,&quot;score&quot;:150}
-
-// You can also deserialize it back:
-PlayerData deserialized = PlayerData.FromJson(json);
-Debug.Log(deserialized.playerName);
-// Output: Alex</code></pre>
-
-  
-  
-  <a id="UniUtils_Data_JsonObject_1_ToJson_" data-uid="UniUtils.Data.JsonObject`1.ToJson*"></a>
-  <h4 id="UniUtils_Data_JsonObject_1_ToJson" data-uid="UniUtils.Data.JsonObject`1.ToJson">ToJson()</h4>
-  <div class="markdown level1 summary"><p>Serializes the current object to a JSON string.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToJson()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>A JSON string representation of the current object.</p>
+        <td><a class="xref" href="UniUtils.FSM.IState.html">IState</a></td>
+        <td><span class="parametername">targetState</span></td>
+        <td><p>The target state of the transition.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Data_JsonObject_1_ToJson_examples">Examples</h5>
-  <pre><code>[Serializable]
-public class PlayerData : JSONObject&lt;PlayerData>
-{
-    public string playerName;
-    public int score;
-}
-
-PlayerData data = new PlayerData { playerName = &quot;Alex&quot;, score = 150 };
-string json = data.ToJson();
-Debug.Log(json); // Output: {&quot;playerName&quot;:&quot;Alex&quot;,&quot;score&quot;:150}</code></pre>
-
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UniUtils_FSM_Transition_Predicate_" data-uid="UniUtils.FSM.Transition.Predicate*"></a>
+  <h4 id="UniUtils_FSM_Transition_Predicate" data-uid="UniUtils.FSM.Transition.Predicate">Predicate</h4>
+  <div class="markdown level1 summary"><p>Gets the predicate that determines if the transition should occur.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPredicate Predicate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UniUtils.FSM.IPredicate.html">IPredicate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_FSM_Transition_TargetState_" data-uid="UniUtils.FSM.Transition.TargetState*"></a>
+  <h4 id="UniUtils_FSM_Transition_TargetState" data-uid="UniUtils.FSM.Transition.TargetState">TargetState</h4>
+  <div class="markdown level1 summary"><p>Gets the target state of the transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IState TargetState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UniUtils.FSM.IState.html">IState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UniUtils.FSM.ITransition.html">ITransition</a>
+  </div>
 </article>
           </div>
           

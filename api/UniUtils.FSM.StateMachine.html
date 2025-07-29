@@ -78,10 +78,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="UniUtils.StateMachine.StateMachine">
+            <article class="content wrap" id="_content" data-uid="UniUtils.FSM.StateMachine">
   
   
-  <h1 id="UniUtils_StateMachine_StateMachine" data-uid="UniUtils.StateMachine.StateMachine" class="text-break">Class StateMachine
+  <h1 id="UniUtils_FSM_StateMachine" data-uid="UniUtils.FSM.StateMachine" class="text-break">Class StateMachine
   </h1>
   <div class="markdown level0 summary"><p>Represents a state machine that manages state transitions and updates.</p>
 </div>
@@ -115,13 +115,13 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.StateMachine.html">UniUtils.StateMachine</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.FSM.html">UniUtils.FSM</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="UniUtils_StateMachine_StateMachine_syntax">Syntax</h5>
+  <h5 id="UniUtils_FSM_StateMachine_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class StateMachine</code></pre>
   </div>
-  <h5 id="UniUtils_StateMachine_StateMachine_examples"><strong>Examples</strong></h5>
+  <h5 id="UniUtils_FSM_StateMachine_examples"><strong>Examples</strong></h5>
   <p>Example usage:</p>
 <pre><code>public class IdleState : IState
 {
@@ -160,8 +160,8 @@ void SetupStateMachine()
   </h3>
   
   
-  <a id="UniUtils_StateMachine_StateMachine_CurrentState_" data-uid="UniUtils.StateMachine.StateMachine.CurrentState*"></a>
-  <h4 id="UniUtils_StateMachine_StateMachine_CurrentState" data-uid="UniUtils.StateMachine.StateMachine.CurrentState">CurrentState</h4>
+  <a id="UniUtils_FSM_StateMachine_CurrentState_" data-uid="UniUtils.FSM.StateMachine.CurrentState*"></a>
+  <h4 id="UniUtils_FSM_StateMachine_CurrentState" data-uid="UniUtils.FSM.StateMachine.CurrentState">CurrentState</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -178,7 +178,7 @@ void SetupStateMachine()
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="UniUtils.StateMachine.StateNode.html">StateNode</a></td>
+        <td><a class="xref" href="UniUtils.FSM.StateNode.html">StateNode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -187,8 +187,8 @@ void SetupStateMachine()
   </h3>
   
   
-  <a id="UniUtils_StateMachine_StateMachine_AddAnyTransition_" data-uid="UniUtils.StateMachine.StateMachine.AddAnyTransition*"></a>
-  <h4 id="UniUtils_StateMachine_StateMachine_AddAnyTransition_UniUtils_StateMachine_IState_UniUtils_StateMachine_IPredicate_" data-uid="UniUtils.StateMachine.StateMachine.AddAnyTransition(UniUtils.StateMachine.IState,UniUtils.StateMachine.IPredicate)">AddAnyTransition(IState, IPredicate)</h4>
+  <a id="UniUtils_FSM_StateMachine_AddAnyTransition_" data-uid="UniUtils.FSM.StateMachine.AddAnyTransition*"></a>
+  <h4 id="UniUtils_FSM_StateMachine_AddAnyTransition_UniUtils_FSM_IState_UniUtils_FSM_IPredicate_" data-uid="UniUtils.FSM.StateMachine.AddAnyTransition(UniUtils.FSM.IState,UniUtils.FSM.IPredicate)">AddAnyTransition(IState, IPredicate)</h4>
   <div class="markdown level1 summary"><p>Adds a transition from any state to a specified state with a specified predicate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -207,13 +207,13 @@ void SetupStateMachine()
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="UniUtils.StateMachine.IState.html">IState</a></td>
+        <td><a class="xref" href="UniUtils.FSM.IState.html">IState</a></td>
         <td><span class="parametername">to</span></td>
         <td><p>The state to transition to.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="UniUtils.StateMachine.IPredicate.html">IPredicate</a></td>
+        <td><a class="xref" href="UniUtils.FSM.IPredicate.html">IPredicate</a></td>
         <td><span class="parametername">predicate</span></td>
         <td><p>The predicate that determines if the transition should occur.</p>
 </td>
@@ -222,8 +222,8 @@ void SetupStateMachine()
   </table>
   
   
-  <a id="UniUtils_StateMachine_StateMachine_AddTransition_" data-uid="UniUtils.StateMachine.StateMachine.AddTransition*"></a>
-  <h4 id="UniUtils_StateMachine_StateMachine_AddTransition_UniUtils_StateMachine_IState_UniUtils_StateMachine_IState_UniUtils_StateMachine_IPredicate_" data-uid="UniUtils.StateMachine.StateMachine.AddTransition(UniUtils.StateMachine.IState,UniUtils.StateMachine.IState,UniUtils.StateMachine.IPredicate)">AddTransition(IState, IState, IPredicate)</h4>
+  <a id="UniUtils_FSM_StateMachine_AddTransition_" data-uid="UniUtils.FSM.StateMachine.AddTransition*"></a>
+  <h4 id="UniUtils_FSM_StateMachine_AddTransition_UniUtils_FSM_IState_UniUtils_FSM_IState_UniUtils_FSM_IPredicate_" data-uid="UniUtils.FSM.StateMachine.AddTransition(UniUtils.FSM.IState,UniUtils.FSM.IState,UniUtils.FSM.IPredicate)">AddTransition(IState, IState, IPredicate)</h4>
   <div class="markdown level1 summary"><p>Adds a transition from one state to another with a specified predicate.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -242,19 +242,19 @@ void SetupStateMachine()
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="UniUtils.StateMachine.IState.html">IState</a></td>
+        <td><a class="xref" href="UniUtils.FSM.IState.html">IState</a></td>
         <td><span class="parametername">from</span></td>
         <td><p>The state to transition from.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="UniUtils.StateMachine.IState.html">IState</a></td>
+        <td><a class="xref" href="UniUtils.FSM.IState.html">IState</a></td>
         <td><span class="parametername">to</span></td>
         <td><p>The state to transition to.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="UniUtils.StateMachine.IPredicate.html">IPredicate</a></td>
+        <td><a class="xref" href="UniUtils.FSM.IPredicate.html">IPredicate</a></td>
         <td><span class="parametername">predicate</span></td>
         <td><p>The predicate that determines if the transition should occur.</p>
 </td>
@@ -263,8 +263,8 @@ void SetupStateMachine()
   </table>
   
   
-  <a id="UniUtils_StateMachine_StateMachine_FixedUpdate_" data-uid="UniUtils.StateMachine.StateMachine.FixedUpdate*"></a>
-  <h4 id="UniUtils_StateMachine_StateMachine_FixedUpdate" data-uid="UniUtils.StateMachine.StateMachine.FixedUpdate">FixedUpdate()</h4>
+  <a id="UniUtils_FSM_StateMachine_FixedUpdate_" data-uid="UniUtils.FSM.StateMachine.FixedUpdate*"></a>
+  <h4 id="UniUtils_FSM_StateMachine_FixedUpdate" data-uid="UniUtils.FSM.StateMachine.FixedUpdate">FixedUpdate()</h4>
   <div class="markdown level1 summary"><p>Calls the FixedUpdate method on the current state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -274,8 +274,8 @@ void SetupStateMachine()
   </div>
   
   
-  <a id="UniUtils_StateMachine_StateMachine_SetState_" data-uid="UniUtils.StateMachine.StateMachine.SetState*"></a>
-  <h4 id="UniUtils_StateMachine_StateMachine_SetState_UniUtils_StateMachine_IState_" data-uid="UniUtils.StateMachine.StateMachine.SetState(UniUtils.StateMachine.IState)">SetState(IState)</h4>
+  <a id="UniUtils_FSM_StateMachine_SetState_" data-uid="UniUtils.FSM.StateMachine.SetState*"></a>
+  <h4 id="UniUtils_FSM_StateMachine_SetState_UniUtils_FSM_IState_" data-uid="UniUtils.FSM.StateMachine.SetState(UniUtils.FSM.IState)">SetState(IState)</h4>
   <div class="markdown level1 summary"><p>Sets the current state of the state machine.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -294,7 +294,7 @@ void SetupStateMachine()
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="UniUtils.StateMachine.IState.html">IState</a></td>
+        <td><a class="xref" href="UniUtils.FSM.IState.html">IState</a></td>
         <td><span class="parametername">state</span></td>
         <td><p>The new state to set.</p>
 </td>
@@ -303,8 +303,8 @@ void SetupStateMachine()
   </table>
   
   
-  <a id="UniUtils_StateMachine_StateMachine_Update_" data-uid="UniUtils.StateMachine.StateMachine.Update*"></a>
-  <h4 id="UniUtils_StateMachine_StateMachine_Update" data-uid="UniUtils.StateMachine.StateMachine.Update">Update()</h4>
+  <a id="UniUtils_FSM_StateMachine_Update_" data-uid="UniUtils.FSM.StateMachine.Update*"></a>
+  <h4 id="UniUtils_FSM_StateMachine_Update" data-uid="UniUtils.FSM.StateMachine.Update">Update()</h4>
   <div class="markdown level1 summary"><p>Updates the state machine, checking for transitions and updating the current state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -316,7 +316,7 @@ void SetupStateMachine()
   </h3>
   
   
-  <h4 id="UniUtils_StateMachine_StateMachine_OnStateChanged" data-uid="UniUtils.StateMachine.StateMachine.OnStateChanged">OnStateChanged</h4>
+  <h4 id="UniUtils_FSM_StateMachine_OnStateChanged" data-uid="UniUtils.FSM.StateMachine.OnStateChanged">OnStateChanged</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -333,7 +333,7 @@ void SetupStateMachine()
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="UniUtils.StateMachine.IState.html">IState</a>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="UniUtils.FSM.IState.html">IState</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
