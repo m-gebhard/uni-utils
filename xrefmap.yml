@@ -1704,19 +1704,19 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.AudioSourceExtension.FadeVolume
   nameWithType: AudioSourceExtension.FadeVolume
-- uid: UniUtils.Extensions.AudioSourceExtension.PlayAndWait
-  name: PlayAndWait()
-  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_PlayAndWait
-  commentId: M:UniUtils.Extensions.AudioSourceExtension.PlayAndWait
-  fullName: UniUtils.Extensions.AudioSourceExtension.PlayAndWait()
-  nameWithType: AudioSourceExtension.PlayAndWait()
-- uid: UniUtils.Extensions.AudioSourceExtension.PlayAndWait*
-  name: PlayAndWait
-  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_PlayAndWait_
-  commentId: Overload:UniUtils.Extensions.AudioSourceExtension.PlayAndWait
+- uid: UniUtils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,Action)
+  name: PlayAndWaitUntilFinished(AudioSource, AudioClip, Single, Action)
+  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_AudioSource_AudioClip_System_Single_Action_
+  commentId: M:UniUtils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource,AudioClip,System.Single,Action)
+  fullName: UniUtils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource, AudioClip, System.Single, Action)
+  nameWithType: AudioSourceExtension.PlayAndWaitUntilFinished(AudioSource, AudioClip, Single, Action)
+- uid: UniUtils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished*
+  name: PlayAndWaitUntilFinished
+  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_PlayAndWaitUntilFinished_
+  commentId: Overload:UniUtils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished
   isSpec: "True"
-  fullName: UniUtils.Extensions.AudioSourceExtension.PlayAndWait
-  nameWithType: AudioSourceExtension.PlayAndWait
+  fullName: UniUtils.Extensions.AudioSourceExtension.PlayAndWaitUntilFinished
+  nameWithType: AudioSourceExtension.PlayAndWaitUntilFinished
 - uid: UniUtils.Extensions.AudioSourceExtension.PlayOneShotWithVariance(AudioSource,AudioClip,System.Single,System.Single,System.Single)
   name: PlayOneShotWithVariance(AudioSource, AudioClip, Single, Single, Single)
   href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_PlayOneShotWithVariance_AudioSource_AudioClip_System_Single_System_Single_System_Single_
@@ -1730,6 +1730,35 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.AudioSourceExtension.PlayOneShotWithVariance
   nameWithType: AudioSourceExtension.PlayOneShotWithVariance
+- uid: UniUtils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,Action)
+  name: TransitionToClip(AudioSource, AudioClip, Nullable<Single>, Single, Action)
+  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_TransitionToClip_AudioSource_AudioClip_System_Nullable_System_Single__System_Single_Action_
+  commentId: M:UniUtils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource,AudioClip,System.Nullable{System.Single},System.Single,Action)
+  name.vb: TransitionToClip(AudioSource, AudioClip, Nullable(Of Single), Single, Action)
+  fullName: UniUtils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, System.Nullable<System.Single>, System.Single, Action)
+  fullName.vb: UniUtils.Extensions.AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, System.Nullable(Of System.Single), System.Single, Action)
+  nameWithType: AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, Nullable<Single>, Single, Action)
+  nameWithType.vb: AudioSourceExtension.TransitionToClip(AudioSource, AudioClip, Nullable(Of Single), Single, Action)
+- uid: UniUtils.Extensions.AudioSourceExtension.TransitionToClip*
+  name: TransitionToClip
+  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_TransitionToClip_
+  commentId: Overload:UniUtils.Extensions.AudioSourceExtension.TransitionToClip
+  isSpec: "True"
+  fullName: UniUtils.Extensions.AudioSourceExtension.TransitionToClip
+  nameWithType: AudioSourceExtension.TransitionToClip
+- uid: UniUtils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,Action)
+  name: WaitUntilFinished(AudioSource, Single, Action)
+  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_WaitUntilFinished_AudioSource_System_Single_Action_
+  commentId: M:UniUtils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource,System.Single,Action)
+  fullName: UniUtils.Extensions.AudioSourceExtension.WaitUntilFinished(AudioSource, System.Single, Action)
+  nameWithType: AudioSourceExtension.WaitUntilFinished(AudioSource, Single, Action)
+- uid: UniUtils.Extensions.AudioSourceExtension.WaitUntilFinished*
+  name: WaitUntilFinished
+  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_WaitUntilFinished_
+  commentId: Overload:UniUtils.Extensions.AudioSourceExtension.WaitUntilFinished
+  isSpec: "True"
+  fullName: UniUtils.Extensions.AudioSourceExtension.WaitUntilFinished
+  nameWithType: AudioSourceExtension.WaitUntilFinished
 - uid: UniUtils.Extensions.BoxColliderExtension
   name: BoxColliderExtension
   href: api/UniUtils.Extensions.BoxColliderExtension.html
