@@ -27,5 +27,10 @@ namespace UniUtils.FSM
         }
 
         public bool Evaluate() => predicate();
+
+        public static IPredicate operator !(FunctionPredicate original)
+        {
+            return new NotPredicate(original);
+        }
     }
 }
