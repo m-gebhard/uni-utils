@@ -1,6 +1,6 @@
 using System;
 
-namespace UniUtils.StateMachine
+namespace UniUtils.FSM
 {
     /// <summary>
     /// A concrete implementation of <see cref="IPredicate"/> that uses a function delegate to evaluate a condition.

@@ -1,4 +1,4 @@
-namespace UniUtils.StateMachine
+namespace UniUtils.FSM
 {
     /// <summary>
     /// Represents a predicate that can be evaluated to determine a boolean condition.

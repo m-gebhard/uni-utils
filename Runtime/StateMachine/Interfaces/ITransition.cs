@@ -1,4 +1,4 @@
-namespace UniUtils.StateMachine
+namespace UniUtils.FSM
 {
     /// <summary>
     /// Represents a transition between states in a state machine.

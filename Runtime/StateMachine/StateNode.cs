@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace UniUtils.StateMachine
+namespace UniUtils.FSM
 {
     /// <summary>
     /// Represents a node in the state machine, holding a state and its transitions.

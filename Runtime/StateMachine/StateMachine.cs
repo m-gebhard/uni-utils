@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace UniUtils.StateMachine
+namespace UniUtils.FSM
 {
     /// <summary>
     /// Represents a state machine that manages state transitions and updates.
