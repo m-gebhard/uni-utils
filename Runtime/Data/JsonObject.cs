@@ -65,5 +65,11 @@ namespace UniUtils.Data
         {
             return JsonUtility.FromJson<T>(json);
         }
+
+        /// <summary>
+        /// Overrides the ToString method to return the JSON representation of the object.
+        /// </summary>
+        /// <returns>A JSON string representation of the current object.</returns>
+        public override string ToString() => ToJson();
     }
 }
