@@ -14,6 +14,7 @@ namespace UniUtils.Data
         /// <summary>
         /// Serializes the current object to a JSON string.
         /// </summary>
+        /// <param name="prettyPrint">If true, formats the JSON string with better readability.</param>
         /// <returns>A JSON string representation of the current object.</returns>
         /// <example>
         /// <code>
@@ -29,9 +30,9 @@ namespace UniUtils.Data
         /// Debug.Log(json); // Output: {"playerName":"Alex","score":150}
         /// </code>
         /// </example>
-        public string ToJson()
+        public string ToJson(bool prettyPrint = false)
         {
-            return JsonUtility.ToJson(this);
+            return JsonUtility.ToJson(this, prettyPrint);
         }
 
         /// <example>
