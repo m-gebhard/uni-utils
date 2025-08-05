@@ -50,5 +50,54 @@ namespace UniUtils.Extensions
 
             return text;
         }
+
+        /// <summary>
+        /// Truncates the input string to a specified maximum length without cutting off words.
+        /// Appends a truncation indicator if necessary.
+        /// </summary>
+        /// <param name="text">The input string to be truncated.</param>
+        /// <param name="maxLength">The maximum length of the truncated string (not counting the indicator).</param>
+        /// <param name="indicator">The string to append if truncation occurs. Defaults to "...".</param>
+        /// <returns>
+        /// A truncated string that ends on a word boundary (space/tab/newline) with the truncation indicator appended.
+        /// Returns the original string if it's shorter than or equal to maxLength.
+        /// Returns an empty string if the input is null or maxLength is negative.
+        /// </returns>
+        /// <example>
+        /// <code>
+        /// string t1 = "This is a long string".Truncate(10);
+        /// // t1 == "This is a…"
+        ///
+        /// string t2 = "Short".Truncate(10);
+        /// // t2 == "Short"
+        ///
+        /// string t3 = null.Truncate(5);
+        /// // t3 == ""
+        ///
+        /// string t4 = "Supercalifragilistic".Truncate(5);
+        /// // t4 == "Super…"
+        /// </code>
+        /// </example>
+        public static string Truncate(this string text, int maxLength, string indicator = "...")
+        {
+            if (string.IsNullOrEmpty(text) || maxLength < 0)
+                return string.Empty;
+
+            if (text.Length <= maxLength)
+                return text;
+
+            string slice = text[..maxLength];
+
+            // Find the last whitespace character in the slice
+            int lastSpace = slice.LastIndexOfAny(new[] { ' ', '\t', '\r', '\n' });
+
+            if (lastSpace > 0)
+            {
+                // Cut at the last word boundary
+                slice = slice[..lastSpace];
+            }
+
+            return slice + indicator;
+        }
     }
 }
