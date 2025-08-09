@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using UnityEngine;
-using UniUtils.Extensions;
 
 namespace UniUtils.Reflection
 {
@@ -15,6 +13,7 @@ namespace UniUtils.Reflection
         /// Gets a list of types that are subclasses of the specified generic base type.
         /// </summary>
         /// <param name="genericBaseType">The generic base type to match.</param>
+        /// <param name="includeInterfaces">Whether to include interfaces in the search.</param>
         /// <exception cref="System.Reflection.ReflectionTypeLoadException">Thrown when there is an error loading types from an assembly.</exception>
         /// <returns>A list of types that are subclasses of the specified generic base type.</returns>
         /// <example>
@@ -27,7 +26,7 @@ namespace UniUtils.Reflection
         /// }
         /// </code>
         /// </example>
-        public static List<Type> GetTypes(Type genericBaseType)
+        public static List<Type> GetTypes(Type genericBaseType, bool includeInterfaces = false)
         {
             List<Type> types = new List<Type>();
 
@@ -40,7 +39,8 @@ namespace UniUtils.Reflection
                     foreach (Type type in assembly.GetTypes())
                     {
                         // Check if the type is a subclass of the specified generic type
-                        if (type.IsClass && !type.IsAbstract && HasGenericBaseType(type, genericBaseType))
+                        bool hasGenericBaseType = HasGenericBaseOrInterface(type, genericBaseType, includeInterfaces);
+                        if (type.IsClass && !type.IsAbstract && hasGenericBaseType)
                         {
                             types.Add(type);
                         }
@@ -60,24 +60,28 @@ namespace UniUtils.Reflection
         }
 
         /// <summary>
-        /// Checks if a type has the specified generic base type.
+        /// Checks if a type has the specified generic base type or implements the specified generic interface.
         /// </summary>
         /// <param name="type">The type to check.</param>
         /// <param name="genericBaseType">The generic base type to match.</param>
+        /// <param name="includeInterfaces">Whether to include interfaces in the check.</param>
         /// <returns>True if the type has the specified generic base type; otherwise, false.</returns>
-        private static bool HasGenericBaseType(Type type, Type genericBaseType)
+        private static bool HasGenericBaseOrInterface(Type type, Type genericBaseType, bool includeInterfaces = false)
         {
             Type baseType = type.BaseType;
-
             while (baseType != null)
             {
-                // Check if the base type is a generic type and matches the specified generic base type
                 if (baseType.IsGenericType && baseType.GetGenericTypeDefinition() == genericBaseType)
-                {
                     return true;
-                }
 
                 baseType = baseType.BaseType;
+            }
+
+            if (!includeInterfaces) return false;
+            foreach (Type iface in type.GetInterfaces())
+            {
+                if (iface.IsGenericType && iface.GetGenericTypeDefinition() == genericBaseType)
+                    return true;
             }
 
             return false;
