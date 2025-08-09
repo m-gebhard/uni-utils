@@ -148,6 +148,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Data_WaitHelper_WaitForEndOfFrame_examples">Examples</h5>
+  <pre><code>// Usage example:
+IEnumerator ExampleCoroutine()
+{
+    yield return WaitHelper.WaitForEndOfFrame;
+}</code></pre>
+
   
   
   <a id="UniUtils_Data_WaitHelper_WaitForFixedUpdate_" data-uid="UniUtils.Data.WaitHelper.WaitForFixedUpdate*"></a>
@@ -174,6 +181,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Data_WaitHelper_WaitForFixedUpdate_examples">Examples</h5>
+  <pre><code>// Usage example:
+IEnumerator ExampleCoroutine()
+{
+    yield return WaitHelper.WaitForFixedUpdate;
+}</code></pre>
+
   <h3 id="methods">Methods
   </h3>
   
@@ -227,9 +241,59 @@ IEnumerator ExampleCoroutine()
 {
     // Wait for 1 second using cached instance
     yield return WaitHelper.WaitForSeconds(1f);
+}</code></pre>
 
-    // Wait until end of frame
-    yield return WaitHelper.WaitForEndOfFrame;
+  
+  
+  <a id="UniUtils_Data_WaitHelper_WaitForSecondsRealtime_" data-uid="UniUtils.Data.WaitHelper.WaitForSecondsRealtime*"></a>
+  <h4 id="UniUtils_Data_WaitHelper_WaitForSecondsRealtime_System_Single_" data-uid="UniUtils.Data.WaitHelper.WaitForSecondsRealtime(System.Single)">WaitForSecondsRealtime(Single)</h4>
+  <div class="markdown level1 summary"><p>Gets a cached WaitForSecondsRealtime instance for the specified duration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WaitForSecondsRealtime WaitForSecondsRealtime(float seconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">seconds</span></td>
+        <td><p>The duration in seconds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WaitForSecondsRealtime</span></td>
+        <td><p>A WaitForSecondsRealtime instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_WaitHelper_WaitForSecondsRealtime_System_Single__examples">Examples</h5>
+  <pre><code>// Usage example:
+IEnumerator ExampleCoroutine()
+{
+    // Wait for 1 second in real time using cached instance
+    yield return WaitHelper.WaitForSecondsRealtime(1f);
 }</code></pre>
 
 </article>

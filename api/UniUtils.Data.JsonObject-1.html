@@ -95,9 +95,6 @@ The derived class is required to have the [Serializable] attribute.</p>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
     <div>
@@ -210,13 +207,70 @@ Debug.Log(deserialized.playerName);
   
   
   <a id="UniUtils_Data_JsonObject_1_ToJson_" data-uid="UniUtils.Data.JsonObject`1.ToJson*"></a>
-  <h4 id="UniUtils_Data_JsonObject_1_ToJson" data-uid="UniUtils.Data.JsonObject`1.ToJson">ToJson()</h4>
+  <h4 id="UniUtils_Data_JsonObject_1_ToJson_System_Boolean_" data-uid="UniUtils.Data.JsonObject`1.ToJson(System.Boolean)">ToJson(Boolean)</h4>
   <div class="markdown level1 summary"><p>Serializes the current object to a JSON string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToJson()</code></pre>
+    <pre><code class="lang-csharp hljs">public string ToJson(bool prettyPrint = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">prettyPrint</span></td>
+        <td><p>If true, formats the JSON string with better readability.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A JSON string representation of the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Data_JsonObject_1_ToJson_System_Boolean__examples">Examples</h5>
+  <pre><code>[Serializable]
+public class PlayerData : JSONObject&lt;PlayerData>
+{
+    public string playerName;
+    public int score;
+}
+
+PlayerData data = new PlayerData { playerName = &quot;Alex&quot;, score = 150 };
+string json = data.ToJson();
+Debug.Log(json); // Output: {&quot;playerName&quot;:&quot;Alex&quot;,&quot;score&quot;:150}</code></pre>
+
+  
+  
+  <a id="UniUtils_Data_JsonObject_1_ToString_" data-uid="UniUtils.Data.JsonObject`1.ToString*"></a>
+  <h4 id="UniUtils_Data_JsonObject_1_ToString" data-uid="UniUtils.Data.JsonObject`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Overrides the ToString method to return the JSON representation of the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -234,18 +288,8 @@ Debug.Log(deserialized.playerName);
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Data_JsonObject_1_ToJson_examples">Examples</h5>
-  <pre><code>[Serializable]
-public class PlayerData : JSONObject&lt;PlayerData>
-{
-    public string playerName;
-    public int score;
-}
-
-PlayerData data = new PlayerData { playerName = &quot;Alex&quot;, score = 150 };
-string json = data.ToJson();
-Debug.Log(json); // Output: {&quot;playerName&quot;:&quot;Alex&quot;,&quot;score&quot;:150}</code></pre>
-
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
 </article>
           </div>
           

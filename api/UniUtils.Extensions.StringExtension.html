@@ -240,6 +240,79 @@ Defaults to &quot;A-Za-z0-9_&quot;, which allows alphanumeric characters and und
   <pre><code>string result = &quot;hello world&quot;.Swap(&quot;hello&quot;, &quot;world&quot;);
 // result == &quot;world hello&quot;</code></pre>
 
+  
+  
+  <a id="UniUtils_Extensions_StringExtension_Truncate_" data-uid="UniUtils.Extensions.StringExtension.Truncate*"></a>
+  <h4 id="UniUtils_Extensions_StringExtension_Truncate_System_String_System_Int32_System_String_" data-uid="UniUtils.Extensions.StringExtension.Truncate(System.String,System.Int32,System.String)">Truncate(String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Truncates the input string to a specified maximum length without cutting off words.
+Appends a truncation indicator if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Truncate(this string text, int maxLength, string indicator = &quot;...&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td><p>The input string to be truncated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of the truncated string (not counting the indicator).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">indicator</span></td>
+        <td><p>The string to append if truncation occurs. Defaults to &quot;...&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A truncated string that ends on a word boundary (space/tab/newline) with the truncation indicator appended.
+Returns the original string if it&apos;s shorter than or equal to maxLength.
+Returns an empty string if the input is null or maxLength is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_StringExtension_Truncate_System_String_System_Int32_System_String__examples">Examples</h5>
+  <pre><code>string t1 = &quot;This is a long string&quot;.Truncate(10);
+// t1 == &quot;This is a…&quot;
+
+string t2 = &quot;Short&quot;.Truncate(10);
+// t2 == &quot;Short&quot;
+
+string t3 = null.Truncate(5);
+// t3 == &quot;&quot;
+
+string t4 = &quot;Supercalifragilistic&quot;.Truncate(5);
+// t4 == &quot;Super…&quot;</code></pre>
+
 </article>
           </div>
           

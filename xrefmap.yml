@@ -846,14 +846,14 @@ references:
   fullName.vb: UniUtils.Data.JsonObject(Of T).FromJson
   nameWithType: JsonObject<T>.FromJson
   nameWithType.vb: JsonObject(Of T).FromJson
-- uid: UniUtils.Data.JsonObject`1.ToJson
-  name: ToJson()
-  href: api/UniUtils.Data.JsonObject-1.html#UniUtils_Data_JsonObject_1_ToJson
-  commentId: M:UniUtils.Data.JsonObject`1.ToJson
-  fullName: UniUtils.Data.JsonObject<T>.ToJson()
-  fullName.vb: UniUtils.Data.JsonObject(Of T).ToJson()
-  nameWithType: JsonObject<T>.ToJson()
-  nameWithType.vb: JsonObject(Of T).ToJson()
+- uid: UniUtils.Data.JsonObject`1.ToJson(System.Boolean)
+  name: ToJson(Boolean)
+  href: api/UniUtils.Data.JsonObject-1.html#UniUtils_Data_JsonObject_1_ToJson_System_Boolean_
+  commentId: M:UniUtils.Data.JsonObject`1.ToJson(System.Boolean)
+  fullName: UniUtils.Data.JsonObject<T>.ToJson(System.Boolean)
+  fullName.vb: UniUtils.Data.JsonObject(Of T).ToJson(System.Boolean)
+  nameWithType: JsonObject<T>.ToJson(Boolean)
+  nameWithType.vb: JsonObject(Of T).ToJson(Boolean)
 - uid: UniUtils.Data.JsonObject`1.ToJson*
   name: ToJson
   href: api/UniUtils.Data.JsonObject-1.html#UniUtils_Data_JsonObject_1_ToJson_
@@ -863,6 +863,23 @@ references:
   fullName.vb: UniUtils.Data.JsonObject(Of T).ToJson
   nameWithType: JsonObject<T>.ToJson
   nameWithType.vb: JsonObject(Of T).ToJson
+- uid: UniUtils.Data.JsonObject`1.ToString
+  name: ToString()
+  href: api/UniUtils.Data.JsonObject-1.html#UniUtils_Data_JsonObject_1_ToString
+  commentId: M:UniUtils.Data.JsonObject`1.ToString
+  fullName: UniUtils.Data.JsonObject<T>.ToString()
+  fullName.vb: UniUtils.Data.JsonObject(Of T).ToString()
+  nameWithType: JsonObject<T>.ToString()
+  nameWithType.vb: JsonObject(Of T).ToString()
+- uid: UniUtils.Data.JsonObject`1.ToString*
+  name: ToString
+  href: api/UniUtils.Data.JsonObject-1.html#UniUtils_Data_JsonObject_1_ToString_
+  commentId: Overload:UniUtils.Data.JsonObject`1.ToString
+  isSpec: "True"
+  fullName: UniUtils.Data.JsonObject<T>.ToString
+  fullName.vb: UniUtils.Data.JsonObject(Of T).ToString
+  nameWithType: JsonObject<T>.ToString
+  nameWithType.vb: JsonObject(Of T).ToString
 - uid: UniUtils.Data.LerpValue`1
   name: LerpValue<T>
   href: api/UniUtils.Data.LerpValue-1.html
@@ -1233,6 +1250,19 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.WaitHelper.WaitForSeconds
   nameWithType: WaitHelper.WaitForSeconds
+- uid: UniUtils.Data.WaitHelper.WaitForSecondsRealtime(System.Single)
+  name: WaitForSecondsRealtime(Single)
+  href: api/UniUtils.Data.WaitHelper.html#UniUtils_Data_WaitHelper_WaitForSecondsRealtime_System_Single_
+  commentId: M:UniUtils.Data.WaitHelper.WaitForSecondsRealtime(System.Single)
+  fullName: UniUtils.Data.WaitHelper.WaitForSecondsRealtime(System.Single)
+  nameWithType: WaitHelper.WaitForSecondsRealtime(Single)
+- uid: UniUtils.Data.WaitHelper.WaitForSecondsRealtime*
+  name: WaitForSecondsRealtime
+  href: api/UniUtils.Data.WaitHelper.html#UniUtils_Data_WaitHelper_WaitForSecondsRealtime_
+  commentId: Overload:UniUtils.Data.WaitHelper.WaitForSecondsRealtime
+  isSpec: "True"
+  fullName: UniUtils.Data.WaitHelper.WaitForSecondsRealtime
+  nameWithType: WaitHelper.WaitForSecondsRealtime
 - uid: UniUtils.Debugging
   name: UniUtils.Debugging
   href: api/UniUtils.Debugging.html
@@ -1918,6 +1948,19 @@ references:
   fullName.vb: UniUtils.Extensions.GameObjectExtension.GetOrAddComponent(Of T)(GameObject)
   nameWithType: GameObjectExtension.GetOrAddComponent<T>(GameObject)
   nameWithType.vb: GameObjectExtension.GetOrAddComponent(Of T)(GameObject)
+- uid: UniUtils.Extensions.GameObjectExtension.SetLayersRecursively(GameObject,LayerMask,System.Boolean)
+  name: SetLayersRecursively(GameObject, LayerMask, Boolean)
+  href: api/UniUtils.Extensions.GameObjectExtension.html#UniUtils_Extensions_GameObjectExtension_SetLayersRecursively_GameObject_LayerMask_System_Boolean_
+  commentId: M:UniUtils.Extensions.GameObjectExtension.SetLayersRecursively(GameObject,LayerMask,System.Boolean)
+  fullName: UniUtils.Extensions.GameObjectExtension.SetLayersRecursively(GameObject, LayerMask, System.Boolean)
+  nameWithType: GameObjectExtension.SetLayersRecursively(GameObject, LayerMask, Boolean)
+- uid: UniUtils.Extensions.GameObjectExtension.SetLayersRecursively*
+  name: SetLayersRecursively
+  href: api/UniUtils.Extensions.GameObjectExtension.html#UniUtils_Extensions_GameObjectExtension_SetLayersRecursively_
+  commentId: Overload:UniUtils.Extensions.GameObjectExtension.SetLayersRecursively
+  isSpec: "True"
+  fullName: UniUtils.Extensions.GameObjectExtension.SetLayersRecursively
+  nameWithType: GameObjectExtension.SetLayersRecursively
 - uid: UniUtils.Extensions.LayerMaskExtension
   name: LayerMaskExtension
   href: api/UniUtils.Extensions.LayerMaskExtension.html
@@ -2407,6 +2450,19 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.StringExtension.Swap
   nameWithType: StringExtension.Swap
+- uid: UniUtils.Extensions.StringExtension.Truncate(System.String,System.Int32,System.String)
+  name: Truncate(String, Int32, String)
+  href: api/UniUtils.Extensions.StringExtension.html#UniUtils_Extensions_StringExtension_Truncate_System_String_System_Int32_System_String_
+  commentId: M:UniUtils.Extensions.StringExtension.Truncate(System.String,System.Int32,System.String)
+  fullName: UniUtils.Extensions.StringExtension.Truncate(System.String, System.Int32, System.String)
+  nameWithType: StringExtension.Truncate(String, Int32, String)
+- uid: UniUtils.Extensions.StringExtension.Truncate*
+  name: Truncate
+  href: api/UniUtils.Extensions.StringExtension.html#UniUtils_Extensions_StringExtension_Truncate_
+  commentId: Overload:UniUtils.Extensions.StringExtension.Truncate
+  isSpec: "True"
+  fullName: UniUtils.Extensions.StringExtension.Truncate
+  nameWithType: StringExtension.Truncate
 - uid: UniUtils.Extensions.TransformExtension
   name: TransformExtension
   href: api/UniUtils.Extensions.TransformExtension.html
@@ -3454,12 +3510,12 @@ references:
   commentId: T:UniUtils.Reflection.PredefinedAssemblyUtil
   fullName: UniUtils.Reflection.PredefinedAssemblyUtil
   nameWithType: PredefinedAssemblyUtil
-- uid: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)
-  name: GetTypes(Type)
-  href: api/UniUtils.Reflection.PredefinedAssemblyUtil.html#UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_
-  commentId: M:UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)
-  fullName: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)
-  nameWithType: PredefinedAssemblyUtil.GetTypes(Type)
+- uid: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type,System.Boolean)
+  name: GetTypes(Type, Boolean)
+  href: api/UniUtils.Reflection.PredefinedAssemblyUtil.html#UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_System_Boolean_
+  commentId: M:UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type,System.Boolean)
+  fullName: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type, System.Boolean)
+  nameWithType: PredefinedAssemblyUtil.GetTypes(Type, Boolean)
 - uid: UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes*
   name: GetTypes
   href: api/UniUtils.Reflection.PredefinedAssemblyUtil.html#UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_

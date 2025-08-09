@@ -126,13 +126,13 @@
   
   
   <a id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_" data-uid="UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes*"></a>
-  <h4 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_" data-uid="UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type)">GetTypes(Type)</h4>
+  <h4 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_System_Boolean_" data-uid="UniUtils.Reflection.PredefinedAssemblyUtil.GetTypes(Type,System.Boolean)">GetTypes(Type, Boolean)</h4>
   <div class="markdown level1 summary"><p>Gets a list of types that are subclasses of the specified generic base type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Type&gt; GetTypes(Type genericBaseType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static List&lt;Type&gt; GetTypes(Type genericBaseType, bool includeInterfaces = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,6 +148,12 @@
         <td><span class="xref">Type</span></td>
         <td><span class="parametername">genericBaseType</span></td>
         <td><p>The generic base type to match.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeInterfaces</span></td>
+        <td><p>Whether to include interfaces in the search.</p>
 </td>
       </tr>
     </tbody>
@@ -168,7 +174,7 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type__examples">Examples</h5>
+  <h5 id="UniUtils_Reflection_PredefinedAssemblyUtil_GetTypes_Type_System_Boolean__examples">Examples</h5>
   <p>Example usage:</p>
 <pre><code>List&lt;Type> derivedTypes = TypeUtility.GetTypes(typeof(MyGenericBase&lt;>));
 foreach (Type t in derivedTypes)
