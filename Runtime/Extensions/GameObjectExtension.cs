@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace UniUtils.Extensions
@@ -28,6 +29,42 @@ namespace UniUtils.Extensions
             return !component
                 ? obj.AddComponent<T>()
                 : component;
+        }
+
+        /// <summary>
+        /// Recursively sets the <see cref="GameObject.layer"/> of this GameObject and all its children,
+        /// returning a dictionary of each GameObject to its original layer mask.
+        /// </summary>
+        /// <param name="obj">The root GameObject whose layer (and its descendants) will be set.</param>
+        /// <param name="layerMask">
+        /// The target layer mask.  Internally, <see cref="GameObject.layer"/> is an int index,
+        /// so this method uses <c>layerMask.value</c> as the new layer index.
+        /// </param>
+        /// <param name="includeInactive">
+        /// If <c>true</c>, will include inactive children; otherwise only active ones.
+        /// </param>
+        /// <returns>
+        /// A <see cref="Dictionary{GameObject, LayerMask}"/> mapping each affected GameObject
+        /// to its original <see cref="GameObject.layer"/> (as a <see cref="UnityEngine.LayerMask"/>).
+        /// </returns>
+        public static Dictionary<GameObject, LayerMask> SetLayersRecursively(
+            this GameObject obj,
+            LayerMask layerMask,
+            bool includeInactive = true
+        )
+        {
+            Dictionary<GameObject, LayerMask> changedObjects = new Dictionary<GameObject, LayerMask>();
+            Transform[] all = obj.GetComponentsInChildren<Transform>(includeInactive);
+
+            foreach (Transform t in all)
+            {
+                GameObject go = t.gameObject;
+                LayerMask original = go.layer;
+                changedObjects[go] = original;
+                go.layer = layerMask.value;
+            }
+
+            return changedObjects;
         }
     }
 }
