@@ -80,6 +80,9 @@ namespace UniUtils.Reflection
             if (!includeInterfaces) return false;
             foreach (Type iface in type.GetInterfaces())
             {
+                if (iface == genericBaseType)
+                    return true;
+
                 if (iface.IsGenericType && iface.GetGenericTypeDefinition() == genericBaseType)
                     return true;
             }
