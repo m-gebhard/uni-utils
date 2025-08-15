@@ -66,6 +66,53 @@ namespace UniUtils.Extensions
 
             if (drawEndDot) Gizmos.DrawSphere(startPosition, 0.02f);
         }
+
+        /// <summary>
+        /// Draws an image in the Unity Editor with customizable width, height, and scale mode.
+        /// </summary>
+        /// <param name="image">The texture to be drawn.</param>
+        /// <param name="width">The width of the image in pixels. Defaults to 300.</param>
+        /// <param name="height">The height of the image in pixels. Defaults to 60.</param>
+        /// <param name="imageScaleMode">
+        /// The scale mode to use when drawing the image. Defaults to <see cref="ScaleMode.StretchToFill"/>.
+        /// </param>
+        /// <remarks>
+        /// This method reserves a layout rect that expands horizontally, then forces the rect width to the supplied width.
+        /// It also accounts for <see cref="EditorGUIUtility.pixelsPerPoint"/> so the texture height is crisp on high-DPI displays.
+        /// </remarks>
+        /// <example>
+        /// <code>
+        /// // Inside an EditorWindow:
+        /// private Texture2D logoImage;
+        ///
+        /// public void OnEnable()
+        /// {
+        ///     logoImage = Resources.Load&lt;Texture2D&gt;("Logo");
+        /// }
+        ///
+        /// public override void OnGUI()
+        /// {
+        ///     // draw stretched across the entire editor client width
+        ///     EditorGUILayoutExtension.DrawImage(logoImage, width: position.width, height: 80f);
+        /// }
+        /// </code>
+        /// </example>
+        public static void DrawImage(
+            Texture image,
+            float width = 300f,
+            float height = 60f,
+            ScaleMode imageScaleMode = ScaleMode.StretchToFill
+        )
+        {
+            Rect r = GUILayoutUtility.GetRect(1, height, GUILayout.ExpandWidth(true));
+            r.x = 0;
+            r.width = width;
+
+            float pixelsPerPoint = EditorGUIUtility.pixelsPerPoint;
+            r.height = Mathf.RoundToInt(height * pixelsPerPoint);
+
+            GUI.DrawTexture(r, image, imageScaleMode, true);
+        }
     }
 }
 #endif
