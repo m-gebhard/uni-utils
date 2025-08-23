@@ -1718,15 +1718,15 @@ references:
   commentId: T:UniUtils.Extensions.AudioSourceExtension
   fullName: UniUtils.Extensions.AudioSourceExtension
   nameWithType: AudioSourceExtension
-- uid: UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single})
-  name: FadeVolume(AudioSource, Single, Single, Nullable<Single>)
-  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__
-  commentId: M:UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single})
-  name.vb: FadeVolume(AudioSource, Single, Single, Nullable(Of Single))
-  fullName: UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable<System.Single>)
-  fullName.vb: UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable(Of System.Single))
-  nameWithType: AudioSourceExtension.FadeVolume(AudioSource, Single, Single, Nullable<Single>)
-  nameWithType.vb: AudioSourceExtension.FadeVolume(AudioSource, Single, Single, Nullable(Of Single))
+- uid: UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},Action)
+  name: FadeVolume(AudioSource, Single, Single, Nullable<Single>, Action)
+  href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_FadeVolume_AudioSource_System_Single_System_Single_System_Nullable_System_Single__Action_
+  commentId: M:UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource,System.Single,System.Single,System.Nullable{System.Single},Action)
+  name.vb: FadeVolume(AudioSource, Single, Single, Nullable(Of Single), Action)
+  fullName: UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable<System.Single>, Action)
+  fullName.vb: UniUtils.Extensions.AudioSourceExtension.FadeVolume(AudioSource, System.Single, System.Single, System.Nullable(Of System.Single), Action)
+  nameWithType: AudioSourceExtension.FadeVolume(AudioSource, Single, Single, Nullable<Single>, Action)
+  nameWithType.vb: AudioSourceExtension.FadeVolume(AudioSource, Single, Single, Nullable(Of Single), Action)
 - uid: UniUtils.Extensions.AudioSourceExtension.FadeVolume*
   name: FadeVolume
   href: api/UniUtils.Extensions.AudioSourceExtension.html#UniUtils_Extensions_AudioSourceExtension_FadeVolume_
