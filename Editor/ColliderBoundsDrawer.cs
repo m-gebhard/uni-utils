@@ -57,7 +57,8 @@ namespace UniUtils.Editor
                 normal = new GUIStyleState { textColor = drawColor },
                 fontStyle = FontStyle.Bold,
             };
-            Handles.Label(center + Vector3.up * 0.25f, label, style);
+            string displayName = string.IsNullOrEmpty(label) ? name : label;
+            Handles.Label(center + Vector3.up * 0.25f, displayName, style);
 #endif
         }
     }
