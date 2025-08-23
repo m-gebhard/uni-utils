@@ -17,6 +17,7 @@ namespace UniUtils.Extensions
         /// <param name="duration">The duration over which to fade the volume.</param>
         /// <param name="targetVolume">The target volume to reach at the end of the fade.</param>
         /// <param name="startVolume">The starting volume. Defaults to 0.</param>
+        /// <param name="onFinished">An optional callback to invoke when the fade is complete.</param>
         /// <returns>An IEnumerator that can be used to run the fade operation in a coroutine.</returns>
         /// <example>
         /// <code>
@@ -41,7 +42,8 @@ namespace UniUtils.Extensions
             this AudioSource audioSource,
             float duration,
             float targetVolume,
-            float? startVolume = null)
+            float? startVolume = null,
+            Action onFinished = null)
         {
             float initialVolume = startVolume ?? audioSource.volume;
             float currentTime = 0;
@@ -53,6 +55,8 @@ namespace UniUtils.Extensions
 
                 yield return null;
             }
+
+            onFinished?.Invoke();
         }
 
         /// <summary>
