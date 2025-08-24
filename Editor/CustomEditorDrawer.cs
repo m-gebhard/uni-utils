@@ -11,6 +11,7 @@ namespace UniUtils.Editor
     /// This class provides functionality for drawing custom properties and buttons in the inspector.
     /// </summary>
     /// <remarks>Make sure the deriving class has a [CustomEditor(typeof(T))] attribute.</remarks>
+    /// <remarks>To prevent Build errors, place this script in an 'Editor' folder within your Unity project.</remarks>
     /// <typeparam name="T">The type of the target component this editor is associated with.</typeparam>
     /// <example>
     /// <code>
@@ -57,6 +58,12 @@ namespace UniUtils.Editor
         /// </summary>
         protected virtual List<(string, Action)> EditorButtons { get; } = new();
 
+
+        /// <summary>
+        /// Determines whether to show the custom editor section above the default inspector.
+        /// </summary>
+        protected virtual bool ShowAboveDefaultInspector { get; } = false;
+
         /// <summary>
         /// Called by Unity to draw the inspector GUI for the target component.
         /// </summary>
@@ -65,20 +72,35 @@ namespace UniUtils.Editor
             // Update the serialized object to reflect any changes.
             serializedObject.Update();
 
-            // Draw the default inspector for the target component.
-            DrawDefaultInspector();
-
-            // Add spacing and a custom label for the custom editor section.
-            EditorGUILayout.Space();
-            if (!string.IsNullOrEmpty(Label)) EditorGUILayout.LabelField(Label, EditorStyles.boldLabel);
-
-            // Draw custom properties and buttons.
-            DrawProperties();
-            EditorGUILayout.Space();
-            DrawButtons();
+            // Draw the default inspector and custom editor.
+            if (ShowAboveDefaultInspector)
+            {
+                DrawCustomSection();
+                EditorGUILayout.Space();
+                DrawDefaultInspector();
+            }
+            else
+            {
+                DrawDefaultInspector();
+                EditorGUILayout.Space();
+                DrawCustomSection();
+            }
 
             // Apply any modified properties to the serialized object.
             serializedObject.ApplyModifiedProperties();
+        }
+
+        /// <summary>
+        /// Draws the custom section (label, properties, and buttons).
+        /// </summary>
+        private void DrawCustomSection()
+        {
+            if (!string.IsNullOrEmpty(Label))
+                EditorGUILayout.LabelField(Label, EditorStyles.boldLabel);
+
+            DrawProperties();
+            EditorGUILayout.Space();
+            DrawButtons();
         }
 
         /// <summary>
