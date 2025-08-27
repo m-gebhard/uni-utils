@@ -78,10 +78,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="UniUtils.Data.CacheDictionary`2">
+            <article class="content wrap" id="_content" data-uid="UniUtils.GameObjects.CacheDictionary`2">
   
   
-  <h1 id="UniUtils_Data_CacheDictionary_2" data-uid="UniUtils.Data.CacheDictionary`2" class="text-break">Class CacheDictionary&lt;TKey, T&gt;
+  <h1 id="UniUtils_GameObjects_CacheDictionary_2" data-uid="UniUtils.GameObjects.CacheDictionary`2" class="text-break">Class CacheDictionary&lt;TKey, T&gt;
   </h1>
   <div class="markdown level0 summary"><p>Represents a dictionary that caches items and provides methods to manage the cache.</p>
 </div>
@@ -89,11 +89,25 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CacheDictionary&lt;TKey, T&gt;</span></div>
+    <div class="level1"><a class="xref" href="UniUtils.GameObjects.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="UniUtils.GameObjects.CacheDictionary-2.html">CacheDictionary</a>&lt;TKey, T&gt;&gt;</div>
+    <div class="level2"><a class="xref" href="UniUtils.GameObjects.EphemeralSingleton-1.html">EphemeralSingleton</a>&lt;<a class="xref" href="UniUtils.GameObjects.CacheDictionary-2.html">CacheDictionary</a>&lt;TKey, T&gt;&gt;</div>
+    <div class="level3"><span class="xref">CacheDictionary&lt;TKey, T&gt;</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.Data.html">UniUtils.Data</a></h6>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UniUtils.GameObjects.Singleton-1.html#UniUtils_GameObjects_Singleton_1_instance">Singleton&lt;CacheDictionary&lt;TKey, T&gt;&gt;.instance</a>
+    </div>
+    <div>
+      <a class="xref" href="UniUtils.GameObjects.Singleton-1.html#UniUtils_GameObjects_Singleton_1_Instance">Singleton&lt;CacheDictionary&lt;TKey, T&gt;&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="UniUtils.GameObjects.Singleton-1.html#UniUtils_GameObjects_Singleton_1_Awake">Singleton&lt;CacheDictionary&lt;TKey, T&gt;&gt;.Awake()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UniUtils.GameObjects.html">UniUtils.GameObjects</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="UniUtils_Data_CacheDictionary_2_syntax">Syntax</h5>
+  <h5 id="UniUtils_GameObjects_CacheDictionary_2_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class CacheDictionary&lt;TKey, T&gt; : EphemeralSingleton&lt;CacheDictionary&lt;TKey, T&gt;&gt;</code></pre>
   </div>
@@ -118,7 +132,7 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Data_CacheDictionary_2_examples"><strong>Examples</strong></h5>
+  <h5 id="UniUtils_GameObjects_CacheDictionary_2_examples"><strong>Examples</strong></h5>
   <p>Example of using a cache to store surface types based on a ground transform:</p>
 <pre><code>public class SurfaceType
 {
@@ -144,8 +158,8 @@ public class Player
   </h3>
   
   
-  <a id="UniUtils_Data_CacheDictionary_2_AddCachedItem_" data-uid="UniUtils.Data.CacheDictionary`2.AddCachedItem*"></a>
-  <h4 id="UniUtils_Data_CacheDictionary_2_AddCachedItem__0__1_" data-uid="UniUtils.Data.CacheDictionary`2.AddCachedItem(`0,`1)">AddCachedItem(TKey, T)</h4>
+  <a id="UniUtils_GameObjects_CacheDictionary_2_AddCachedItem_" data-uid="UniUtils.GameObjects.CacheDictionary`2.AddCachedItem*"></a>
+  <h4 id="UniUtils_GameObjects_CacheDictionary_2_AddCachedItem__0__1_" data-uid="UniUtils.GameObjects.CacheDictionary`2.AddCachedItem(`0,`1)">AddCachedItem(TKey, T)</h4>
   <div class="markdown level1 summary"><p>Adds or updates an item in the cache.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -179,8 +193,8 @@ public class Player
   </table>
   
   
-  <a id="UniUtils_Data_CacheDictionary_2_ClearCache_" data-uid="UniUtils.Data.CacheDictionary`2.ClearCache*"></a>
-  <h4 id="UniUtils_Data_CacheDictionary_2_ClearCache" data-uid="UniUtils.Data.CacheDictionary`2.ClearCache">ClearCache()</h4>
+  <a id="UniUtils_GameObjects_CacheDictionary_2_ClearCache_" data-uid="UniUtils.GameObjects.CacheDictionary`2.ClearCache*"></a>
+  <h4 id="UniUtils_GameObjects_CacheDictionary_2_ClearCache" data-uid="UniUtils.GameObjects.CacheDictionary`2.ClearCache">ClearCache()</h4>
   <div class="markdown level1 summary"><p>Clears all items from the cache.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -190,8 +204,8 @@ public class Player
   </div>
   
   
-  <a id="UniUtils_Data_CacheDictionary_2_ContainsKey_" data-uid="UniUtils.Data.CacheDictionary`2.ContainsKey*"></a>
-  <h4 id="UniUtils_Data_CacheDictionary_2_ContainsKey__0_" data-uid="UniUtils.Data.CacheDictionary`2.ContainsKey(`0)">ContainsKey(TKey)</h4>
+  <a id="UniUtils_GameObjects_CacheDictionary_2_ContainsKey_" data-uid="UniUtils.GameObjects.CacheDictionary`2.ContainsKey*"></a>
+  <h4 id="UniUtils_GameObjects_CacheDictionary_2_ContainsKey__0_" data-uid="UniUtils.GameObjects.CacheDictionary`2.ContainsKey(`0)">ContainsKey(TKey)</h4>
   <div class="markdown level1 summary"><p>Determines whether the cache contains the specified key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -235,8 +249,8 @@ public class Player
   </table>
   
   
-  <a id="UniUtils_Data_CacheDictionary_2_GetOrAdd_" data-uid="UniUtils.Data.CacheDictionary`2.GetOrAdd*"></a>
-  <h4 id="UniUtils_Data_CacheDictionary_2_GetOrAdd__0_Func__0__1__System_Boolean_" data-uid="UniUtils.Data.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)">GetOrAdd(TKey, Func&lt;TKey, T&gt;, Boolean)</h4>
+  <a id="UniUtils_GameObjects_CacheDictionary_2_GetOrAdd_" data-uid="UniUtils.GameObjects.CacheDictionary`2.GetOrAdd*"></a>
+  <h4 id="UniUtils_GameObjects_CacheDictionary_2_GetOrAdd__0_Func__0__1__System_Boolean_" data-uid="UniUtils.GameObjects.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)">GetOrAdd(TKey, Func&lt;TKey, T&gt;, Boolean)</h4>
   <div class="markdown level1 summary"><p>Retrieves a value from the cache or adds it using the specified factory function if it does not exist.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -292,8 +306,8 @@ public class Player
   </table>
   
   
-  <a id="UniUtils_Data_CacheDictionary_2_RemoveCachedItem_" data-uid="UniUtils.Data.CacheDictionary`2.RemoveCachedItem*"></a>
-  <h4 id="UniUtils_Data_CacheDictionary_2_RemoveCachedItem__0_" data-uid="UniUtils.Data.CacheDictionary`2.RemoveCachedItem(`0)">RemoveCachedItem(TKey)</h4>
+  <a id="UniUtils_GameObjects_CacheDictionary_2_RemoveCachedItem_" data-uid="UniUtils.GameObjects.CacheDictionary`2.RemoveCachedItem*"></a>
+  <h4 id="UniUtils_GameObjects_CacheDictionary_2_RemoveCachedItem__0_" data-uid="UniUtils.GameObjects.CacheDictionary`2.RemoveCachedItem(`0)">RemoveCachedItem(TKey)</h4>
   <div class="markdown level1 summary"><p>Removes an item from the cache.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -321,8 +335,8 @@ public class Player
   </table>
   
   
-  <a id="UniUtils_Data_CacheDictionary_2_TryGetValue_" data-uid="UniUtils.Data.CacheDictionary`2.TryGetValue*"></a>
-  <h4 id="UniUtils_Data_CacheDictionary_2_TryGetValue__0__1__" data-uid="UniUtils.Data.CacheDictionary`2.TryGetValue(`0,`1@)">TryGetValue(TKey, out T)</h4>
+  <a id="UniUtils_GameObjects_CacheDictionary_2_TryGetValue_" data-uid="UniUtils.GameObjects.CacheDictionary`2.TryGetValue*"></a>
+  <h4 id="UniUtils_GameObjects_CacheDictionary_2_TryGetValue__0__1__" data-uid="UniUtils.GameObjects.CacheDictionary`2.TryGetValue(`0,`1@)">TryGetValue(TKey, out T)</h4>
   <div class="markdown level1 summary"><p>Attempts to retrieve a value from the cache.</p>
 </div>
   <div class="markdown level1 conceptual"></div>

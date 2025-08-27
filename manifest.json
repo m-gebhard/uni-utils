@@ -26,18 +26,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/UniUtils.Data.CacheDictionary-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/UniUtils.Data.CacheDictionary-2.html",
-          "hash": "B8bTzUce3XoPik34tIWrCxH7R8m93wa2Tc86wR1MfsM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/UniUtils.Data.Crypter.yml",
       "output": {
         ".html": {
@@ -186,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.Data.html",
-          "hash": "ea7Wl2RxdQdG8J8RLUJhUbrdVvNgBhSsLVHAZEVSCfE="
+          "hash": "gG1Xev5O5LdtUGnXEKS2toiY70mHcxOhjjpjxj6AiJA="
         }
       },
       "is_incremental": false,
@@ -650,6 +638,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.GameObjects.CacheDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.GameObjects.CacheDictionary-2.html",
+          "hash": "oRT3pC/yv2+Duhibbv1trsFIx0SJP20VYWcxkO+wwkk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UniUtils.GameObjects.ColliderEvent.yml",
       "output": {
         ".html": {
@@ -690,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.GameObjects.EphemeralSingleton-1.html",
-          "hash": "ocZ9DiB7Of6S9CdAX/Yp4LXj82b8WU0xIhEMWjGQLm8="
+          "hash": "183hIR1xd90d9KmASwF5PvmL7b1/n+ZKI8ImvAM/P2U="
         }
       },
       "is_incremental": false,
@@ -758,11 +758,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html",
+          "hash": "ouwLsKNeiSLVLaPh53MidVa4gLtNheMVr2nM642F6KY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UniUtils.GameObjects.TransformAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UniUtils.GameObjects.TransformAnimator.html",
+          "hash": "k7BNzbmWd81R8hVjsN6oYx5F45Qei1WhddZrz+n0utE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UniUtils.GameObjects.yml",
       "output": {
         ".html": {
           "relative_path": "api/UniUtils.GameObjects.html",
-          "hash": "FvP9ghRFvZnysZjgRFfQhaEFqZOz9b2NV7YhM3u9VSc="
+          "hash": "cCLbvAuzZs6hLbtsDdMWzxocu/RhqB+WNqIiFa/YF3U="
         }
       },
       "is_incremental": false,
@@ -822,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "IgmMEP57FYdNACEc8qhA5zj9JPlVmOxzcHeCe+jC+Jc="
+          "hash": "E6adHlfXSr9mvXF1cLr79li5IaxfKZmRVHPks80NXvI="
         }
       },
       "is_incremental": false,
@@ -888,7 +912,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 67,
+          "total_file_count": 69,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

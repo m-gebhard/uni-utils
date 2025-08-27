@@ -45,119 +45,6 @@ references:
   fullName.vb: UniUtils.Data.Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), System.Single, Action(Of T), Action(Of T, System.Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
   nameWithType: Batcher.ProcessPreBatched<T>(IReadOnlyList<IReadOnlyList<T>>, Action<T>, Single, Action<T>, Action<T, Boolean>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<IReadOnlyList<T>>, Action<T, Exception>)
   nameWithType.vb: Batcher.ProcessPreBatched(Of T)(IReadOnlyList(Of IReadOnlyList(Of T)), Action(Of T), Single, Action(Of T), Action(Of T, Boolean), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of IReadOnlyList(Of T)), Action(Of T, Exception))
-- uid: UniUtils.Data.CacheDictionary`2
-  name: CacheDictionary<TKey, T>
-  href: api/UniUtils.Data.CacheDictionary-2.html
-  commentId: T:UniUtils.Data.CacheDictionary`2
-  name.vb: CacheDictionary(Of TKey, T)
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T)
-  nameWithType: CacheDictionary<TKey, T>
-  nameWithType.vb: CacheDictionary(Of TKey, T)
-- uid: UniUtils.Data.CacheDictionary`2.AddCachedItem(`0,`1)
-  name: AddCachedItem(TKey, T)
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_AddCachedItem__0__1_
-  commentId: M:UniUtils.Data.CacheDictionary`2.AddCachedItem(`0,`1)
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.AddCachedItem(TKey, T)
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).AddCachedItem(TKey, T)
-  nameWithType: CacheDictionary<TKey, T>.AddCachedItem(TKey, T)
-  nameWithType.vb: CacheDictionary(Of TKey, T).AddCachedItem(TKey, T)
-- uid: UniUtils.Data.CacheDictionary`2.AddCachedItem*
-  name: AddCachedItem
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_AddCachedItem_
-  commentId: Overload:UniUtils.Data.CacheDictionary`2.AddCachedItem
-  isSpec: "True"
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.AddCachedItem
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).AddCachedItem
-  nameWithType: CacheDictionary<TKey, T>.AddCachedItem
-  nameWithType.vb: CacheDictionary(Of TKey, T).AddCachedItem
-- uid: UniUtils.Data.CacheDictionary`2.ClearCache
-  name: ClearCache()
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_ClearCache
-  commentId: M:UniUtils.Data.CacheDictionary`2.ClearCache
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.ClearCache()
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).ClearCache()
-  nameWithType: CacheDictionary<TKey, T>.ClearCache()
-  nameWithType.vb: CacheDictionary(Of TKey, T).ClearCache()
-- uid: UniUtils.Data.CacheDictionary`2.ClearCache*
-  name: ClearCache
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_ClearCache_
-  commentId: Overload:UniUtils.Data.CacheDictionary`2.ClearCache
-  isSpec: "True"
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.ClearCache
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).ClearCache
-  nameWithType: CacheDictionary<TKey, T>.ClearCache
-  nameWithType.vb: CacheDictionary(Of TKey, T).ClearCache
-- uid: UniUtils.Data.CacheDictionary`2.ContainsKey(`0)
-  name: ContainsKey(TKey)
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_ContainsKey__0_
-  commentId: M:UniUtils.Data.CacheDictionary`2.ContainsKey(`0)
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.ContainsKey(TKey)
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).ContainsKey(TKey)
-  nameWithType: CacheDictionary<TKey, T>.ContainsKey(TKey)
-  nameWithType.vb: CacheDictionary(Of TKey, T).ContainsKey(TKey)
-- uid: UniUtils.Data.CacheDictionary`2.ContainsKey*
-  name: ContainsKey
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_ContainsKey_
-  commentId: Overload:UniUtils.Data.CacheDictionary`2.ContainsKey
-  isSpec: "True"
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.ContainsKey
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).ContainsKey
-  nameWithType: CacheDictionary<TKey, T>.ContainsKey
-  nameWithType.vb: CacheDictionary(Of TKey, T).ContainsKey
-- uid: UniUtils.Data.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
-  name: GetOrAdd(TKey, Func<TKey, T>, Boolean)
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_GetOrAdd__0_Func__0__1__System_Boolean_
-  commentId: M:UniUtils.Data.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
-  name.vb: GetOrAdd(TKey, Func(Of TKey, T), Boolean)
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, System.Boolean)
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), System.Boolean)
-  nameWithType: CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, Boolean)
-  nameWithType.vb: CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), Boolean)
-- uid: UniUtils.Data.CacheDictionary`2.GetOrAdd*
-  name: GetOrAdd
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_GetOrAdd_
-  commentId: Overload:UniUtils.Data.CacheDictionary`2.GetOrAdd
-  isSpec: "True"
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.GetOrAdd
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).GetOrAdd
-  nameWithType: CacheDictionary<TKey, T>.GetOrAdd
-  nameWithType.vb: CacheDictionary(Of TKey, T).GetOrAdd
-- uid: UniUtils.Data.CacheDictionary`2.RemoveCachedItem(`0)
-  name: RemoveCachedItem(TKey)
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_RemoveCachedItem__0_
-  commentId: M:UniUtils.Data.CacheDictionary`2.RemoveCachedItem(`0)
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.RemoveCachedItem(TKey)
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).RemoveCachedItem(TKey)
-  nameWithType: CacheDictionary<TKey, T>.RemoveCachedItem(TKey)
-  nameWithType.vb: CacheDictionary(Of TKey, T).RemoveCachedItem(TKey)
-- uid: UniUtils.Data.CacheDictionary`2.RemoveCachedItem*
-  name: RemoveCachedItem
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_RemoveCachedItem_
-  commentId: Overload:UniUtils.Data.CacheDictionary`2.RemoveCachedItem
-  isSpec: "True"
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.RemoveCachedItem
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).RemoveCachedItem
-  nameWithType: CacheDictionary<TKey, T>.RemoveCachedItem
-  nameWithType.vb: CacheDictionary(Of TKey, T).RemoveCachedItem
-- uid: UniUtils.Data.CacheDictionary`2.TryGetValue(`0,`1@)
-  name: TryGetValue(TKey, out T)
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_TryGetValue__0__1__
-  commentId: M:UniUtils.Data.CacheDictionary`2.TryGetValue(`0,`1@)
-  name.vb: TryGetValue(TKey, ByRef T)
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.TryGetValue(TKey, out T)
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).TryGetValue(TKey, ByRef T)
-  nameWithType: CacheDictionary<TKey, T>.TryGetValue(TKey, out T)
-  nameWithType.vb: CacheDictionary(Of TKey, T).TryGetValue(TKey, ByRef T)
-- uid: UniUtils.Data.CacheDictionary`2.TryGetValue*
-  name: TryGetValue
-  href: api/UniUtils.Data.CacheDictionary-2.html#UniUtils_Data_CacheDictionary_2_TryGetValue_
-  commentId: Overload:UniUtils.Data.CacheDictionary`2.TryGetValue
-  isSpec: "True"
-  fullName: UniUtils.Data.CacheDictionary<TKey, T>.TryGetValue
-  fullName.vb: UniUtils.Data.CacheDictionary(Of TKey, T).TryGetValue
-  nameWithType: CacheDictionary<TKey, T>.TryGetValue
-  nameWithType.vb: CacheDictionary(Of TKey, T).TryGetValue
 - uid: UniUtils.Data.Crypter
   name: Crypter
   href: api/UniUtils.Data.Crypter.html
@@ -2981,6 +2868,119 @@ references:
   commentId: N:UniUtils.GameObjects
   fullName: UniUtils.GameObjects
   nameWithType: UniUtils.GameObjects
+- uid: UniUtils.GameObjects.CacheDictionary`2
+  name: CacheDictionary<TKey, T>
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html
+  commentId: T:UniUtils.GameObjects.CacheDictionary`2
+  name.vb: CacheDictionary(Of TKey, T)
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T)
+  nameWithType: CacheDictionary<TKey, T>
+  nameWithType.vb: CacheDictionary(Of TKey, T)
+- uid: UniUtils.GameObjects.CacheDictionary`2.AddCachedItem(`0,`1)
+  name: AddCachedItem(TKey, T)
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_AddCachedItem__0__1_
+  commentId: M:UniUtils.GameObjects.CacheDictionary`2.AddCachedItem(`0,`1)
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.AddCachedItem(TKey, T)
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).AddCachedItem(TKey, T)
+  nameWithType: CacheDictionary<TKey, T>.AddCachedItem(TKey, T)
+  nameWithType.vb: CacheDictionary(Of TKey, T).AddCachedItem(TKey, T)
+- uid: UniUtils.GameObjects.CacheDictionary`2.AddCachedItem*
+  name: AddCachedItem
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_AddCachedItem_
+  commentId: Overload:UniUtils.GameObjects.CacheDictionary`2.AddCachedItem
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.AddCachedItem
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).AddCachedItem
+  nameWithType: CacheDictionary<TKey, T>.AddCachedItem
+  nameWithType.vb: CacheDictionary(Of TKey, T).AddCachedItem
+- uid: UniUtils.GameObjects.CacheDictionary`2.ClearCache
+  name: ClearCache()
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_ClearCache
+  commentId: M:UniUtils.GameObjects.CacheDictionary`2.ClearCache
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.ClearCache()
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).ClearCache()
+  nameWithType: CacheDictionary<TKey, T>.ClearCache()
+  nameWithType.vb: CacheDictionary(Of TKey, T).ClearCache()
+- uid: UniUtils.GameObjects.CacheDictionary`2.ClearCache*
+  name: ClearCache
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_ClearCache_
+  commentId: Overload:UniUtils.GameObjects.CacheDictionary`2.ClearCache
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.ClearCache
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).ClearCache
+  nameWithType: CacheDictionary<TKey, T>.ClearCache
+  nameWithType.vb: CacheDictionary(Of TKey, T).ClearCache
+- uid: UniUtils.GameObjects.CacheDictionary`2.ContainsKey(`0)
+  name: ContainsKey(TKey)
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_ContainsKey__0_
+  commentId: M:UniUtils.GameObjects.CacheDictionary`2.ContainsKey(`0)
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.ContainsKey(TKey)
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).ContainsKey(TKey)
+  nameWithType: CacheDictionary<TKey, T>.ContainsKey(TKey)
+  nameWithType.vb: CacheDictionary(Of TKey, T).ContainsKey(TKey)
+- uid: UniUtils.GameObjects.CacheDictionary`2.ContainsKey*
+  name: ContainsKey
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_ContainsKey_
+  commentId: Overload:UniUtils.GameObjects.CacheDictionary`2.ContainsKey
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.ContainsKey
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).ContainsKey
+  nameWithType: CacheDictionary<TKey, T>.ContainsKey
+  nameWithType.vb: CacheDictionary(Of TKey, T).ContainsKey
+- uid: UniUtils.GameObjects.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
+  name: GetOrAdd(TKey, Func<TKey, T>, Boolean)
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_GetOrAdd__0_Func__0__1__System_Boolean_
+  commentId: M:UniUtils.GameObjects.CacheDictionary`2.GetOrAdd(`0,Func{`0,`1},System.Boolean)
+  name.vb: GetOrAdd(TKey, Func(Of TKey, T), Boolean)
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, System.Boolean)
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), System.Boolean)
+  nameWithType: CacheDictionary<TKey, T>.GetOrAdd(TKey, Func<TKey, T>, Boolean)
+  nameWithType.vb: CacheDictionary(Of TKey, T).GetOrAdd(TKey, Func(Of TKey, T), Boolean)
+- uid: UniUtils.GameObjects.CacheDictionary`2.GetOrAdd*
+  name: GetOrAdd
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_GetOrAdd_
+  commentId: Overload:UniUtils.GameObjects.CacheDictionary`2.GetOrAdd
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.GetOrAdd
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).GetOrAdd
+  nameWithType: CacheDictionary<TKey, T>.GetOrAdd
+  nameWithType.vb: CacheDictionary(Of TKey, T).GetOrAdd
+- uid: UniUtils.GameObjects.CacheDictionary`2.RemoveCachedItem(`0)
+  name: RemoveCachedItem(TKey)
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_RemoveCachedItem__0_
+  commentId: M:UniUtils.GameObjects.CacheDictionary`2.RemoveCachedItem(`0)
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.RemoveCachedItem(TKey)
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).RemoveCachedItem(TKey)
+  nameWithType: CacheDictionary<TKey, T>.RemoveCachedItem(TKey)
+  nameWithType.vb: CacheDictionary(Of TKey, T).RemoveCachedItem(TKey)
+- uid: UniUtils.GameObjects.CacheDictionary`2.RemoveCachedItem*
+  name: RemoveCachedItem
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_RemoveCachedItem_
+  commentId: Overload:UniUtils.GameObjects.CacheDictionary`2.RemoveCachedItem
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.RemoveCachedItem
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).RemoveCachedItem
+  nameWithType: CacheDictionary<TKey, T>.RemoveCachedItem
+  nameWithType.vb: CacheDictionary(Of TKey, T).RemoveCachedItem
+- uid: UniUtils.GameObjects.CacheDictionary`2.TryGetValue(`0,`1@)
+  name: TryGetValue(TKey, out T)
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_TryGetValue__0__1__
+  commentId: M:UniUtils.GameObjects.CacheDictionary`2.TryGetValue(`0,`1@)
+  name.vb: TryGetValue(TKey, ByRef T)
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.TryGetValue(TKey, out T)
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).TryGetValue(TKey, ByRef T)
+  nameWithType: CacheDictionary<TKey, T>.TryGetValue(TKey, out T)
+  nameWithType.vb: CacheDictionary(Of TKey, T).TryGetValue(TKey, ByRef T)
+- uid: UniUtils.GameObjects.CacheDictionary`2.TryGetValue*
+  name: TryGetValue
+  href: api/UniUtils.GameObjects.CacheDictionary-2.html#UniUtils_GameObjects_CacheDictionary_2_TryGetValue_
+  commentId: Overload:UniUtils.GameObjects.CacheDictionary`2.TryGetValue
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.CacheDictionary<TKey, T>.TryGetValue
+  fullName.vb: UniUtils.GameObjects.CacheDictionary(Of TKey, T).TryGetValue
+  nameWithType: CacheDictionary<TKey, T>.TryGetValue
+  nameWithType.vb: CacheDictionary(Of TKey, T).TryGetValue
 - uid: UniUtils.GameObjects.ColliderEvent
   name: ColliderEvent
   href: api/UniUtils.GameObjects.ColliderEvent.html
@@ -3498,6 +3498,259 @@ references:
   fullName.vb: UniUtils.GameObjects.Singleton(Of T).Instance
   nameWithType: Singleton<T>.Instance
   nameWithType.vb: Singleton(Of T).Instance
+- uid: UniUtils.GameObjects.TransformAnimator
+  name: TransformAnimator
+  href: api/UniUtils.GameObjects.TransformAnimator.html
+  commentId: T:UniUtils.GameObjects.TransformAnimator
+  fullName: UniUtils.GameObjects.TransformAnimator
+  nameWithType: TransformAnimator
+- uid: UniUtils.GameObjects.TransformAnimator.AnimatePosition
+  name: AnimatePosition()
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_AnimatePosition
+  commentId: M:UniUtils.GameObjects.TransformAnimator.AnimatePosition
+  fullName: UniUtils.GameObjects.TransformAnimator.AnimatePosition()
+  nameWithType: TransformAnimator.AnimatePosition()
+- uid: UniUtils.GameObjects.TransformAnimator.AnimatePosition*
+  name: AnimatePosition
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_AnimatePosition_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.AnimatePosition
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.AnimatePosition
+  nameWithType: TransformAnimator.AnimatePosition
+- uid: UniUtils.GameObjects.TransformAnimator.AnimateRotation
+  name: AnimateRotation()
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_AnimateRotation
+  commentId: M:UniUtils.GameObjects.TransformAnimator.AnimateRotation
+  fullName: UniUtils.GameObjects.TransformAnimator.AnimateRotation()
+  nameWithType: TransformAnimator.AnimateRotation()
+- uid: UniUtils.GameObjects.TransformAnimator.AnimateRotation*
+  name: AnimateRotation
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_AnimateRotation_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.AnimateRotation
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.AnimateRotation
+  nameWithType: TransformAnimator.AnimateRotation
+- uid: UniUtils.GameObjects.TransformAnimator.AnimateScale
+  name: AnimateScale()
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_AnimateScale
+  commentId: M:UniUtils.GameObjects.TransformAnimator.AnimateScale
+  fullName: UniUtils.GameObjects.TransformAnimator.AnimateScale()
+  nameWithType: TransformAnimator.AnimateScale()
+- uid: UniUtils.GameObjects.TransformAnimator.AnimateScale*
+  name: AnimateScale
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_AnimateScale_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.AnimateScale
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.AnimateScale
+  nameWithType: TransformAnimator.AnimateScale
+- uid: UniUtils.GameObjects.TransformAnimator.Awake
+  name: Awake()
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_Awake
+  commentId: M:UniUtils.GameObjects.TransformAnimator.Awake
+  fullName: UniUtils.GameObjects.TransformAnimator.Awake()
+  nameWithType: TransformAnimator.Awake()
+- uid: UniUtils.GameObjects.TransformAnimator.Awake*
+  name: Awake
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_Awake_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.Awake
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.Awake
+  nameWithType: TransformAnimator.Awake
+- uid: UniUtils.GameObjects.TransformAnimator.GetRandomizedTarget(Vector3,Vector3)
+  name: GetRandomizedTarget(Vector3, Vector3)
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_GetRandomizedTarget_Vector3_Vector3_
+  commentId: M:UniUtils.GameObjects.TransformAnimator.GetRandomizedTarget(Vector3,Vector3)
+  fullName: UniUtils.GameObjects.TransformAnimator.GetRandomizedTarget(Vector3, Vector3)
+  nameWithType: TransformAnimator.GetRandomizedTarget(Vector3, Vector3)
+- uid: UniUtils.GameObjects.TransformAnimator.GetRandomizedTarget*
+  name: GetRandomizedTarget
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_GetRandomizedTarget_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.GetRandomizedTarget
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.GetRandomizedTarget
+  nameWithType: TransformAnimator.GetRandomizedTarget
+- uid: UniUtils.GameObjects.TransformAnimator.isEnabled
+  name: isEnabled
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_isEnabled
+  commentId: F:UniUtils.GameObjects.TransformAnimator.isEnabled
+  fullName: UniUtils.GameObjects.TransformAnimator.isEnabled
+  nameWithType: TransformAnimator.isEnabled
+- uid: UniUtils.GameObjects.TransformAnimator.isPositionForward
+  name: isPositionForward
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_isPositionForward
+  commentId: F:UniUtils.GameObjects.TransformAnimator.isPositionForward
+  fullName: UniUtils.GameObjects.TransformAnimator.isPositionForward
+  nameWithType: TransformAnimator.isPositionForward
+- uid: UniUtils.GameObjects.TransformAnimator.isRotationForward
+  name: isRotationForward
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_isRotationForward
+  commentId: F:UniUtils.GameObjects.TransformAnimator.isRotationForward
+  fullName: UniUtils.GameObjects.TransformAnimator.isRotationForward
+  nameWithType: TransformAnimator.isRotationForward
+- uid: UniUtils.GameObjects.TransformAnimator.isScaleForward
+  name: isScaleForward
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_isScaleForward
+  commentId: F:UniUtils.GameObjects.TransformAnimator.isScaleForward
+  fullName: UniUtils.GameObjects.TransformAnimator.isScaleForward
+  nameWithType: TransformAnimator.isScaleForward
+- uid: UniUtils.GameObjects.TransformAnimator.positionConfig
+  name: positionConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_positionConfig
+  commentId: F:UniUtils.GameObjects.TransformAnimator.positionConfig
+  fullName: UniUtils.GameObjects.TransformAnimator.positionConfig
+  nameWithType: TransformAnimator.positionConfig
+- uid: UniUtils.GameObjects.TransformAnimator.positionDelayTimer
+  name: positionDelayTimer
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_positionDelayTimer
+  commentId: F:UniUtils.GameObjects.TransformAnimator.positionDelayTimer
+  fullName: UniUtils.GameObjects.TransformAnimator.positionDelayTimer
+  nameWithType: TransformAnimator.positionDelayTimer
+- uid: UniUtils.GameObjects.TransformAnimator.positionProgress
+  name: positionProgress
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_positionProgress
+  commentId: F:UniUtils.GameObjects.TransformAnimator.positionProgress
+  fullName: UniUtils.GameObjects.TransformAnimator.positionProgress
+  nameWithType: TransformAnimator.positionProgress
+- uid: UniUtils.GameObjects.TransformAnimator.positionTarget
+  name: positionTarget
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_positionTarget
+  commentId: F:UniUtils.GameObjects.TransformAnimator.positionTarget
+  fullName: UniUtils.GameObjects.TransformAnimator.positionTarget
+  nameWithType: TransformAnimator.positionTarget
+- uid: UniUtils.GameObjects.TransformAnimator.rotationConfig
+  name: rotationConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_rotationConfig
+  commentId: F:UniUtils.GameObjects.TransformAnimator.rotationConfig
+  fullName: UniUtils.GameObjects.TransformAnimator.rotationConfig
+  nameWithType: TransformAnimator.rotationConfig
+- uid: UniUtils.GameObjects.TransformAnimator.rotationDelayTimer
+  name: rotationDelayTimer
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_rotationDelayTimer
+  commentId: F:UniUtils.GameObjects.TransformAnimator.rotationDelayTimer
+  fullName: UniUtils.GameObjects.TransformAnimator.rotationDelayTimer
+  nameWithType: TransformAnimator.rotationDelayTimer
+- uid: UniUtils.GameObjects.TransformAnimator.rotationProgress
+  name: rotationProgress
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_rotationProgress
+  commentId: F:UniUtils.GameObjects.TransformAnimator.rotationProgress
+  fullName: UniUtils.GameObjects.TransformAnimator.rotationProgress
+  nameWithType: TransformAnimator.rotationProgress
+- uid: UniUtils.GameObjects.TransformAnimator.rotationTarget
+  name: rotationTarget
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_rotationTarget
+  commentId: F:UniUtils.GameObjects.TransformAnimator.rotationTarget
+  fullName: UniUtils.GameObjects.TransformAnimator.rotationTarget
+  nameWithType: TransformAnimator.rotationTarget
+- uid: UniUtils.GameObjects.TransformAnimator.scaleConfig
+  name: scaleConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_scaleConfig
+  commentId: F:UniUtils.GameObjects.TransformAnimator.scaleConfig
+  fullName: UniUtils.GameObjects.TransformAnimator.scaleConfig
+  nameWithType: TransformAnimator.scaleConfig
+- uid: UniUtils.GameObjects.TransformAnimator.scaleDelayTimer
+  name: scaleDelayTimer
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_scaleDelayTimer
+  commentId: F:UniUtils.GameObjects.TransformAnimator.scaleDelayTimer
+  fullName: UniUtils.GameObjects.TransformAnimator.scaleDelayTimer
+  nameWithType: TransformAnimator.scaleDelayTimer
+- uid: UniUtils.GameObjects.TransformAnimator.scaleProgress
+  name: scaleProgress
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_scaleProgress
+  commentId: F:UniUtils.GameObjects.TransformAnimator.scaleProgress
+  fullName: UniUtils.GameObjects.TransformAnimator.scaleProgress
+  nameWithType: TransformAnimator.scaleProgress
+- uid: UniUtils.GameObjects.TransformAnimator.scaleTarget
+  name: scaleTarget
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_scaleTarget
+  commentId: F:UniUtils.GameObjects.TransformAnimator.scaleTarget
+  fullName: UniUtils.GameObjects.TransformAnimator.scaleTarget
+  nameWithType: TransformAnimator.scaleTarget
+- uid: UniUtils.GameObjects.TransformAnimator.SetIsEnabled(System.Boolean)
+  name: SetIsEnabled(Boolean)
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetIsEnabled_System_Boolean_
+  commentId: M:UniUtils.GameObjects.TransformAnimator.SetIsEnabled(System.Boolean)
+  fullName: UniUtils.GameObjects.TransformAnimator.SetIsEnabled(System.Boolean)
+  nameWithType: TransformAnimator.SetIsEnabled(Boolean)
+- uid: UniUtils.GameObjects.TransformAnimator.SetIsEnabled*
+  name: SetIsEnabled
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetIsEnabled_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.SetIsEnabled
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.SetIsEnabled
+  nameWithType: TransformAnimator.SetIsEnabled
+- uid: UniUtils.GameObjects.TransformAnimator.target
+  name: target
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_target
+  commentId: F:UniUtils.GameObjects.TransformAnimator.target
+  fullName: UniUtils.GameObjects.TransformAnimator.target
+  nameWithType: TransformAnimator.target
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData
+  name: TransformAnimator.TransformAnimatorComponentData
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html
+  commentId: T:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData
+  nameWithType: TransformAnimator.TransformAnimatorComponentData
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.animationCurve
+  name: animationCurve
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_animationCurve
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.animationCurve
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.animationCurve
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.animationCurve
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.canLoop
+  name: canLoop
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_canLoop
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.canLoop
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.canLoop
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.canLoop
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.endValue
+  name: endValue
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_endValue
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.endValue
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.endValue
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.endValue
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.isEnabled
+  name: isEnabled
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_isEnabled
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.isEnabled
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.isEnabled
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.isEnabled
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.loopDelay
+  name: loopDelay
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_loopDelay
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.loopDelay
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.loopDelay
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.loopDelay
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.speed
+  name: speed
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_speed
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.speed
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.speed
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.speed
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.startValue
+  name: startValue
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_startValue
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.startValue
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.startValue
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.startValue
+- uid: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.targetVariance
+  name: targetVariance
+  href: api/UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.html#UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_targetVariance
+  commentId: F:UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.targetVariance
+  fullName: UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData.targetVariance
+  nameWithType: TransformAnimator.TransformAnimatorComponentData.targetVariance
+- uid: UniUtils.GameObjects.TransformAnimator.Update
+  name: Update()
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_Update
+  commentId: M:UniUtils.GameObjects.TransformAnimator.Update
+  fullName: UniUtils.GameObjects.TransformAnimator.Update()
+  nameWithType: TransformAnimator.Update()
+- uid: UniUtils.GameObjects.TransformAnimator.Update*
+  name: Update
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_Update_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.Update
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.Update
+  nameWithType: TransformAnimator.Update
 - uid: UniUtils.Reflection
   name: UniUtils.Reflection
   href: api/UniUtils.Reflection.html
