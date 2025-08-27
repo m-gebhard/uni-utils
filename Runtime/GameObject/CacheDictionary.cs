@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using UniUtils.GameObjects;
 
-namespace UniUtils.Data
+namespace UniUtils.GameObjects
 {
     /// <summary>
     /// Represents a dictionary that caches items and provides methods to manage the cache.
