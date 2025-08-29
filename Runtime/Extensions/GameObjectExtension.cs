@@ -32,12 +32,12 @@ namespace UniUtils.Extensions
         }
 
         /// <summary>
-        /// Recursively sets the <see cref="GameObject.layer"/> of this GameObject and all its children,
+        /// Recursively sets the <see cref="UnityEngine.GameObject.layer"/> of this GameObject and all its children,
         /// returning a dictionary of each GameObject to its original layer mask.
         /// </summary>
         /// <param name="obj">The root GameObject whose layer (and its descendants) will be set.</param>
         /// <param name="layerMask">
-        /// The target layer mask.  Internally, <see cref="GameObject.layer"/> is an int index,
+        /// The target layer mask.  Internally, <see cref="UnityEngine.GameObject.layer"/> is an int index,
         /// so this method uses <c>layerMask.value</c> as the new layer index.
         /// </param>
         /// <param name="includeInactive">
@@ -45,7 +45,7 @@ namespace UniUtils.Extensions
         /// </param>
         /// <returns>
         /// A <see cref="Dictionary{GameObject, LayerMask}"/> mapping each affected GameObject
-        /// to its original <see cref="GameObject.layer"/> (as a <see cref="UnityEngine.LayerMask"/>).
+        /// to its original <see cref="UnityEngine.GameObject.layer"/> (as a <see cref="UnityEngine.LayerMask"/>).
         /// </returns>
         public static Dictionary<GameObject, LayerMask> SetLayersRecursively(
             this GameObject obj,
