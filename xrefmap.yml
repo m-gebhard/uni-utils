@@ -2356,19 +2356,45 @@ references:
   commentId: T:UniUtils.Extensions.TransformExtension
   fullName: UniUtils.Extensions.TransformExtension
   nameWithType: TransformExtension
-- uid: UniUtils.Extensions.TransformExtension.MoveToTargetTransform(Transform,Transform,System.Single)
-  name: MoveToTargetTransform(Transform, Transform, Single)
-  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveToTargetTransform_Transform_Transform_System_Single_
-  commentId: M:UniUtils.Extensions.TransformExtension.MoveToTargetTransform(Transform,Transform,System.Single)
-  fullName: UniUtils.Extensions.TransformExtension.MoveToTargetTransform(Transform, Transform, System.Single)
-  nameWithType: TransformExtension.MoveToTargetTransform(Transform, Transform, Single)
-- uid: UniUtils.Extensions.TransformExtension.MoveToTargetTransform*
-  name: MoveToTargetTransform
-  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveToTargetTransform_
-  commentId: Overload:UniUtils.Extensions.TransformExtension.MoveToTargetTransform
+- uid: UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean)
+  name: MoveAndRotateToTransform(Transform, Transform, Single, Boolean)
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_
+  commentId: M:UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean)
+  fullName: UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform, Transform, System.Single, System.Boolean)
+  nameWithType: TransformExtension.MoveAndRotateToTransform(Transform, Transform, Single, Boolean)
+- uid: UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform*
+  name: MoveAndRotateToTransform
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveAndRotateToTransform_
+  commentId: Overload:UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform
   isSpec: "True"
-  fullName: UniUtils.Extensions.TransformExtension.MoveToTargetTransform
-  nameWithType: TransformExtension.MoveToTargetTransform
+  fullName: UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform
+  nameWithType: TransformExtension.MoveAndRotateToTransform
+- uid: UniUtils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean)
+  name: MoveToPosition(Transform, Vector3, Single, Boolean)
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_
+  commentId: M:UniUtils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean)
+  fullName: UniUtils.Extensions.TransformExtension.MoveToPosition(Transform, Vector3, System.Single, System.Boolean)
+  nameWithType: TransformExtension.MoveToPosition(Transform, Vector3, Single, Boolean)
+- uid: UniUtils.Extensions.TransformExtension.MoveToPosition*
+  name: MoveToPosition
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveToPosition_
+  commentId: Overload:UniUtils.Extensions.TransformExtension.MoveToPosition
+  isSpec: "True"
+  fullName: UniUtils.Extensions.TransformExtension.MoveToPosition
+  nameWithType: TransformExtension.MoveToPosition
+- uid: UniUtils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean)
+  name: MoveToTransform(Transform, Transform, Single, Boolean)
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_
+  commentId: M:UniUtils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean)
+  fullName: UniUtils.Extensions.TransformExtension.MoveToTransform(Transform, Transform, System.Single, System.Boolean)
+  nameWithType: TransformExtension.MoveToTransform(Transform, Transform, Single, Boolean)
+- uid: UniUtils.Extensions.TransformExtension.MoveToTransform*
+  name: MoveToTransform
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_MoveToTransform_
+  commentId: Overload:UniUtils.Extensions.TransformExtension.MoveToTransform
+  isSpec: "True"
+  fullName: UniUtils.Extensions.TransformExtension.MoveToTransform
+  nameWithType: TransformExtension.MoveToTransform
 - uid: UniUtils.Extensions.TransformExtension.Raycast(Transform,Vector3,RaycastHit@,LayerMask,Vector3,Vector3,System.Single,QueryTriggerInteraction,System.Boolean)
   name: Raycast(Transform, Vector3, out RaycastHit, LayerMask, Vector3, Vector3, Single, QueryTriggerInteraction, Boolean)
   href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_Raycast_Transform_Vector3_RaycastHit__LayerMask_Vector3_Vector3_System_Single_QueryTriggerInteraction_System_Boolean_
@@ -2401,6 +2427,32 @@ references:
   isSpec: "True"
   fullName: UniUtils.Extensions.TransformExtension.RaycastDirection
   nameWithType: TransformExtension.RaycastDirection
+- uid: UniUtils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean)
+  name: RotateToRotation(Transform, Quaternion, Single, Boolean)
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_
+  commentId: M:UniUtils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean)
+  fullName: UniUtils.Extensions.TransformExtension.RotateToRotation(Transform, Quaternion, System.Single, System.Boolean)
+  nameWithType: TransformExtension.RotateToRotation(Transform, Quaternion, Single, Boolean)
+- uid: UniUtils.Extensions.TransformExtension.RotateToRotation*
+  name: RotateToRotation
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_RotateToRotation_
+  commentId: Overload:UniUtils.Extensions.TransformExtension.RotateToRotation
+  isSpec: "True"
+  fullName: UniUtils.Extensions.TransformExtension.RotateToRotation
+  nameWithType: TransformExtension.RotateToRotation
+- uid: UniUtils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean)
+  name: RotateToTransform(Transform, Transform, Single, Boolean)
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_
+  commentId: M:UniUtils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean)
+  fullName: UniUtils.Extensions.TransformExtension.RotateToTransform(Transform, Transform, System.Single, System.Boolean)
+  nameWithType: TransformExtension.RotateToTransform(Transform, Transform, Single, Boolean)
+- uid: UniUtils.Extensions.TransformExtension.RotateToTransform*
+  name: RotateToTransform
+  href: api/UniUtils.Extensions.TransformExtension.html#UniUtils_Extensions_TransformExtension_RotateToTransform_
+  commentId: Overload:UniUtils.Extensions.TransformExtension.RotateToTransform
+  isSpec: "True"
+  fullName: UniUtils.Extensions.TransformExtension.RotateToTransform
+  nameWithType: TransformExtension.RotateToTransform
 - uid: UniUtils.Extensions.Vector3Extension
   name: Vector3Extension
   href: api/UniUtils.Extensions.Vector3Extension.html

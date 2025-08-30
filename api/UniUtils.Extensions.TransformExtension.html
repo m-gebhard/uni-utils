@@ -125,14 +125,15 @@
   </h3>
   
   
-  <a id="UniUtils_Extensions_TransformExtension_MoveToTargetTransform_" data-uid="UniUtils.Extensions.TransformExtension.MoveToTargetTransform*"></a>
-  <h4 id="UniUtils_Extensions_TransformExtension_MoveToTargetTransform_Transform_Transform_System_Single_" data-uid="UniUtils.Extensions.TransformExtension.MoveToTargetTransform(Transform,Transform,System.Single)">MoveToTargetTransform(Transform, Transform, Single)</h4>
-  <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position and rotation of a target Transform over a specified duration.</p>
+  <a id="UniUtils_Extensions_TransformExtension_MoveAndRotateToTransform_" data-uid="UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform*"></a>
+  <h4 id="UniUtils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean_" data-uid="UniUtils.Extensions.TransformExtension.MoveAndRotateToTransform(Transform,Transform,System.Single,System.Boolean)">MoveAndRotateToTransform(Transform, Transform, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position and rotation of a target Transform over a specified duration.
+Can optionally move in local space.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerator MoveToTargetTransform(this Transform target, Transform destination, float duration = 0.5F)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveAndRotateToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,6 +163,12 @@
         <td><p>The duration of the movement in seconds. Defaults to 0.5 seconds.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useLocal</span></td>
+        <td><p>If true, operates on localPosition/localRotation instead of world position/rotation.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h5 class="returns">Returns</h5>
@@ -175,13 +182,148 @@
     <tbody>
       <tr>
         <td><span class="xref">IEnumerator</span></td>
-        <td><p>An IEnumerator that can be used in a coroutine to perform the movement.</p>
+        <td><p>An IEnumerator to be used in a coroutine.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="UniUtils_Extensions_TransformExtension_MoveToTargetTransform_Transform_Transform_System_Single__examples">Examples</h5>
-  <pre><code>StartCoroutine(transform.MoveToTargetTransform(targetTransform, 1.0f));</code></pre>
+  <h5 id="UniUtils_Extensions_TransformExtension_MoveAndRotateToTransform_Transform_Transform_System_Single_System_Boolean__examples">Examples</h5>
+  <pre><code>StartCoroutine(characterTransform.MoveAndRotateToTransform(spawnTransform, 1.2f));</code></pre>
+
+  
+  
+  <a id="UniUtils_Extensions_TransformExtension_MoveToPosition_" data-uid="UniUtils.Extensions.TransformExtension.MoveToPosition*"></a>
+  <h4 id="UniUtils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean_" data-uid="UniUtils.Extensions.TransformExtension.MoveToPosition(Transform,Vector3,System.Single,System.Boolean)">MoveToPosition(Transform, Vector3, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Smoothly moves a Transform to a specified position over a given duration.
+Can optionally move in local space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveToPosition(this Transform target, Vector3 endPosition, float duration = 0.5F, bool useLocal = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The Transform to move.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">endPosition</span></td>
+        <td><p>The target position to move towards.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>The duration of the movement in seconds. Defaults to 0.5 seconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useLocal</span></td>
+        <td><p>If true, operates on localPosition instead of world position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An IEnumerator to be used in a coroutine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_TransformExtension_MoveToPosition_Transform_Vector3_System_Single_System_Boolean__examples">Examples</h5>
+  <pre><code>StartCoroutine(platformTransform.MoveToPosition(new Vector3(0f, 3f, 0f), 0.8f));</code></pre>
+
+  
+  
+  <a id="UniUtils_Extensions_TransformExtension_MoveToTransform_" data-uid="UniUtils.Extensions.TransformExtension.MoveToTransform*"></a>
+  <h4 id="UniUtils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean_" data-uid="UniUtils.Extensions.TransformExtension.MoveToTransform(Transform,Transform,System.Single,System.Boolean)">MoveToTransform(Transform, Transform, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Smoothly moves a Transform to match the position of a target Transform over a specified duration.
+Can optionally move in local space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator MoveToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The Transform to move.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The target Transform to move towards.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>The duration of the movement in seconds. Defaults to 0.5 seconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useLocal</span></td>
+        <td><p>If true, operates on localPosition instead of world position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An IEnumerator to be used in a coroutine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_TransformExtension_MoveToTransform_Transform_Transform_System_Single_System_Boolean__examples">Examples</h5>
+  <pre><code>StartCoroutine(enemyTransform.MoveToTransform(playerTransform, 1f, false));
+StartCoroutine(handTransform.MoveToTransform(itemSlotTransform, 0.5f));</code></pre>
 
   
   
@@ -276,6 +418,13 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Extensions_TransformExtension_Raycast_Transform_Vector3_RaycastHit__LayerMask_Vector3_Vector3_System_Single_QueryTriggerInteraction_System_Boolean__examples">Examples</h5>
+  <pre><code>RaycastHit hit;
+if(transform.Raycast(target.position, out hit, LayerMask.GetMask(&quot;Default&quot;)))
+{
+    Debug.Log(&quot;Hit object: &quot; + hit.collider.name);
+}</code></pre>
+
   
   
   <a id="UniUtils_Extensions_TransformExtension_RaycastDirection_" data-uid="UniUtils.Extensions.TransformExtension.RaycastDirection*"></a>
@@ -363,6 +512,149 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="UniUtils_Extensions_TransformExtension_RaycastDirection_Transform_Vector3_RaycastHit__LayerMask_Vector3_System_Single_QueryTriggerInteraction_System_Boolean__examples">Examples</h5>
+  <pre><code>RaycastHit hit;
+Vector3 direction = transform.up;
+if(transform.RaycastDirection(direction, out hit, LayerMask.GetMask(&quot;Default&quot;), maxDistance: 10f))
+{
+    Debug.Log(&quot;Hit object in up direction: &quot; + hit.collider.name);
+}</code></pre>
+
+  
+  
+  <a id="UniUtils_Extensions_TransformExtension_RotateToRotation_" data-uid="UniUtils.Extensions.TransformExtension.RotateToRotation*"></a>
+  <h4 id="UniUtils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean_" data-uid="UniUtils.Extensions.TransformExtension.RotateToRotation(Transform,Quaternion,System.Single,System.Boolean)">RotateToRotation(Transform, Quaternion, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Smoothly rotates a Transform to a specified Quaternion rotation over a given duration.
+Can optionally rotate in local space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator RotateToRotation(this Transform target, Quaternion endRot, float duration = 0.5F, bool useLocal = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The Transform to rotate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">endRot</span></td>
+        <td><p>The target rotation as a Quaternion.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>The duration of the rotation in seconds. Defaults to 0.5 seconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useLocal</span></td>
+        <td><p>If true, operates on localRotation instead of world rotation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An IEnumerator to be used in a coroutine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_TransformExtension_RotateToRotation_Transform_Quaternion_System_Single_System_Boolean__examples">Examples</h5>
+  <pre><code>StartCoroutine(propellerTransform.RotateToRotation(Quaternion.Euler(0f, 0f, 360f), 2f, false));
+StartCoroutine(cameraTransform.RotateToRotation(Quaternion.Euler(15f, 0f, 0f), 1f, true));</code></pre>
+
+  
+  
+  <a id="UniUtils_Extensions_TransformExtension_RotateToTransform_" data-uid="UniUtils.Extensions.TransformExtension.RotateToTransform*"></a>
+  <h4 id="UniUtils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean_" data-uid="UniUtils.Extensions.TransformExtension.RotateToTransform(Transform,Transform,System.Single,System.Boolean)">RotateToTransform(Transform, Transform, Single, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Smoothly rotates a Transform to match another Transform&apos;s rotation over a specified duration.
+Can optionally rotate in local space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerator RotateToTransform(this Transform target, Transform destination, float duration = 0.5F, bool useLocal = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>The Transform to rotate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">destination</span></td>
+        <td><p>The Transform whose rotation to match.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>The duration of the rotation in seconds. Defaults to 0.5 seconds.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">useLocal</span></td>
+        <td><p>If true, operates on localRotation instead of world rotation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerator</span></td>
+        <td><p>An IEnumerator to be used in a coroutine.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UniUtils_Extensions_TransformExtension_RotateToTransform_Transform_Transform_System_Single_System_Boolean__examples">Examples</h5>
+  <pre><code>StartCoroutine(turretTransform.RotateToTransform(enemyTransform, 0.7f, false));</code></pre>
+
 </article>
           </div>
           
