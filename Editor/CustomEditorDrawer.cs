@@ -51,18 +51,22 @@ namespace UniUtils.Editor
         /// <summary>
         /// Gets the label displayed in the custom editor section.
         /// </summary>
-        protected virtual string Label { get; } = "";
+        protected virtual string Label => "";
+
+        /// <summary>
+        /// Determines whether to show the default inspector.
+        /// </summary>
+        protected virtual bool ShowDefaultInspector => true;
 
         /// <summary>
         /// A list of custom buttons to display in the editor, each with a label and a callback action.
         /// </summary>
         protected virtual List<(string, Action)> EditorButtons { get; } = new();
 
-
         /// <summary>
         /// Determines whether to show the custom editor section above the default inspector.
         /// </summary>
-        protected virtual bool ShowAboveDefaultInspector { get; } = false;
+        protected virtual bool ShowAboveDefaultInspector => false;
 
         /// <summary>
         /// Called by Unity to draw the inspector GUI for the target component.
@@ -76,13 +80,21 @@ namespace UniUtils.Editor
             if (ShowAboveDefaultInspector)
             {
                 DrawCustomSection();
-                EditorGUILayout.Space();
-                DrawDefaultInspector();
+
+                if (ShowDefaultInspector)
+                {
+                    EditorGUILayout.Space();
+                    DrawDefaultInspector();
+                }
             }
             else
             {
-                DrawDefaultInspector();
-                EditorGUILayout.Space();
+                if (ShowDefaultInspector)
+                {
+                    DrawDefaultInspector();
+                    EditorGUILayout.Space();
+                }
+
                 DrawCustomSection();
             }
 
