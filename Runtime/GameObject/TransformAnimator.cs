@@ -29,12 +29,12 @@ namespace UniUtils.GameObjects
         protected TransformAnimatorComponentData scaleConfig;
 
         [Header("Events")]
-        public UnityEvent OnPositionCycleCompleted;
-        public UnityEvent OnRotationCycleCompleted;
-        public UnityEvent OnScaleCycleCompleted;
-        public event Action OnPositionCycleCompletedAction;
-        public event Action OnRotationCycleCompletedAction;
-        public event Action OnScaleCycleCompletedAction;
+        public UnityEvent OnPositionTransitionCompleted;
+        public UnityEvent OnRotationTransitionCompleted;
+        public UnityEvent OnScaleTransitionCompleted;
+        public event Action OnPositionTransitionCompletedAction;
+        public event Action OnRotationTransitionCompletedAction;
+        public event Action OnScaleTransitionCompletedAction;
 
         public TransformAnimatorComponentData PositionConfig => positionConfig;
         public TransformAnimatorComponentData RotationConfig => rotationConfig;
@@ -181,8 +181,8 @@ namespace UniUtils.GameObjects
             {
                 if (!hasCompletedPositionCycle)
                 {
-                    OnPositionCycleCompleted?.Invoke();
-                    OnPositionCycleCompletedAction?.Invoke();
+                    OnPositionTransitionCompleted?.Invoke();
+                    OnPositionTransitionCompletedAction?.Invoke();
                 }
 
                 if (positionConfig.canLoop)
@@ -201,8 +201,8 @@ namespace UniUtils.GameObjects
             {
                 if (!hasCompletedPositionCycle)
                 {
-                    OnPositionCycleCompleted?.Invoke();
-                    OnPositionCycleCompletedAction?.Invoke();
+                    OnPositionTransitionCompleted?.Invoke();
+                    OnPositionTransitionCompletedAction?.Invoke();
                 }
 
                 if (positionConfig.canLoop)
@@ -245,8 +245,8 @@ namespace UniUtils.GameObjects
             {
                 if (!hasCompletedRotationCycle)
                 {
-                    OnRotationCycleCompleted?.Invoke();
-                    OnRotationCycleCompletedAction?.Invoke();
+                    OnRotationTransitionCompleted?.Invoke();
+                    OnRotationTransitionCompletedAction?.Invoke();
                 }
 
                 if (rotationConfig.canLoop)
@@ -265,8 +265,8 @@ namespace UniUtils.GameObjects
             {
                 if (!hasCompletedRotationCycle)
                 {
-                    OnRotationCycleCompleted?.Invoke();
-                    OnRotationCycleCompletedAction?.Invoke();
+                    OnRotationTransitionCompleted?.Invoke();
+                    OnRotationTransitionCompletedAction?.Invoke();
                 }
 
                 if (rotationConfig.canLoop)
@@ -306,8 +306,8 @@ namespace UniUtils.GameObjects
             {
                 if (!hasCompletedScaleCycle)
                 {
-                    OnScaleCycleCompleted?.Invoke();
-                    OnScaleCycleCompletedAction?.Invoke();
+                    OnScaleTransitionCompleted?.Invoke();
+                    OnScaleTransitionCompletedAction?.Invoke();
                 }
 
                 if (scaleConfig.canLoop)
@@ -326,8 +326,8 @@ namespace UniUtils.GameObjects
             {
                 if (!hasCompletedScaleCycle)
                 {
-                    OnScaleCycleCompleted?.Invoke();
-                    OnScaleCycleCompletedAction?.Invoke();
+                    OnScaleTransitionCompleted?.Invoke();
+                    OnScaleTransitionCompletedAction?.Invoke();
                 }
 
                 if (scaleConfig.canLoop)
