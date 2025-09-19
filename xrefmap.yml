@@ -794,6 +794,14 @@ references:
   fullName.vb: UniUtils.Data.LerpValue(Of T).LerpValue
   nameWithType: LerpValue<T>.LerpValue
   nameWithType.vb: LerpValue(Of T).LerpValue
+- uid: UniUtils.Data.LerpValue`1.currentValue
+  name: currentValue
+  href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1_currentValue
+  commentId: F:UniUtils.Data.LerpValue`1.currentValue
+  fullName: UniUtils.Data.LerpValue<T>.currentValue
+  fullName.vb: UniUtils.Data.LerpValue(Of T).currentValue
+  nameWithType: LerpValue<T>.currentValue
+  nameWithType.vb: LerpValue(Of T).currentValue
 - uid: UniUtils.Data.LerpValue`1.ForceSet(`0)
   name: ForceSet(T)
   href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1_ForceSet__0_
@@ -811,6 +819,22 @@ references:
   fullName.vb: UniUtils.Data.LerpValue(Of T).ForceSet
   nameWithType: LerpValue<T>.ForceSet
   nameWithType.vb: LerpValue(Of T).ForceSet
+- uid: UniUtils.Data.LerpValue`1.lerpFunc
+  name: lerpFunc
+  href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1_lerpFunc
+  commentId: F:UniUtils.Data.LerpValue`1.lerpFunc
+  fullName: UniUtils.Data.LerpValue<T>.lerpFunc
+  fullName.vb: UniUtils.Data.LerpValue(Of T).lerpFunc
+  nameWithType: LerpValue<T>.lerpFunc
+  nameWithType.vb: LerpValue(Of T).lerpFunc
+- uid: UniUtils.Data.LerpValue`1.lerpSpeed
+  name: lerpSpeed
+  href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1_lerpSpeed
+  commentId: F:UniUtils.Data.LerpValue`1.lerpSpeed
+  fullName: UniUtils.Data.LerpValue<T>.lerpSpeed
+  fullName.vb: UniUtils.Data.LerpValue(Of T).lerpSpeed
+  nameWithType: LerpValue<T>.lerpSpeed
+  nameWithType.vb: LerpValue(Of T).lerpSpeed
 - uid: UniUtils.Data.LerpValue`1.LerpSpeed
   name: LerpSpeed
   href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1_LerpSpeed
@@ -879,6 +903,14 @@ references:
   fullName.vb: UniUtils.Data.LerpValue(Of T).Target
   nameWithType: LerpValue<T>.Target
   nameWithType.vb: LerpValue(Of T).Target
+- uid: UniUtils.Data.LerpValue`1.targetValue
+  name: targetValue
+  href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1_targetValue
+  commentId: F:UniUtils.Data.LerpValue`1.targetValue
+  fullName: UniUtils.Data.LerpValue<T>.targetValue
+  fullName.vb: UniUtils.Data.LerpValue(Of T).targetValue
+  nameWithType: LerpValue<T>.targetValue
+  nameWithType.vb: LerpValue(Of T).targetValue
 - uid: UniUtils.Data.LerpValue`1.Update(System.Single)
   name: Update(Single)
   href: api/UniUtils.Data.LerpValue-1.html#UniUtils_Data_LerpValue_1_Update_System_Single_
