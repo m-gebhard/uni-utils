@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 namespace UniUtils.GameObjects
 {
@@ -9,6 +11,8 @@ namespace UniUtils.GameObjects
     /// </summary>
     public class TransformAnimator : MonoBehaviour
     {
+        #region Fields
+
         [Header("Setup")]
         [SerializeField, Tooltip("Target Transform to animate. If null, will use this GameObject's transform.")]
         protected Transform target;
@@ -24,6 +28,18 @@ namespace UniUtils.GameObjects
         [SerializeField, Tooltip("Configuration for scale animation.")]
         protected TransformAnimatorComponentData scaleConfig;
 
+        [Header("Events")]
+        public UnityEvent OnPositionCycleCompleted;
+        public UnityEvent OnRotationCycleCompleted;
+        public UnityEvent OnScaleCycleCompleted;
+        public event Action OnPositionCycleCompletedAction;
+        public event Action OnRotationCycleCompletedAction;
+        public event Action OnScaleCycleCompletedAction;
+
+        public TransformAnimatorComponentData PositionConfig => positionConfig;
+        public TransformAnimatorComponentData RotationConfig => rotationConfig;
+        public TransformAnimatorComponentData ScaleConfig => scaleConfig;
+
         protected float positionProgress;
         protected float rotationProgress;
         protected float scaleProgress;
@@ -31,6 +47,10 @@ namespace UniUtils.GameObjects
         protected bool isPositionForward = true;
         protected bool isRotationForward = true;
         protected bool isScaleForward = true;
+
+        protected bool hasCompletedPositionCycle;
+        protected bool hasCompletedRotationCycle;
+        protected bool hasCompletedScaleCycle;
 
         protected float positionDelayTimer;
         protected float rotationDelayTimer;
@@ -40,31 +60,7 @@ namespace UniUtils.GameObjects
         protected Vector3 rotationTarget;
         protected Vector3 scaleTarget;
 
-        /// <summary>
-        /// Represents the configuration data for animating a specific transform component.
-        /// </summary>
-        [Serializable]
-        public class TransformAnimatorComponentData
-        {
-            [Tooltip("Enable or disable this component animation.")]
-            public bool isEnabled;
-            [Space]
-            [Tooltip("Animation speed in units per second.")] [Range(0f, 30f)]
-            public float speed = 1f;
-            [Tooltip("Should the animation loop back and forth.")]
-            public bool canLoop;
-            [Tooltip("Delay between loops in seconds.")] [Range(0f, 30f)]
-            public float loopDelay;
-            [Space]
-            [Tooltip("Starting value of the transform component.")]
-            public Vector3 startValue;
-            [Tooltip("Ending value of the transform component.")]
-            public Vector3 endValue;
-            [Tooltip("Random variance offset to apply each new forward iteration to the end value.")]
-            public Vector3 targetVariance;
-            [Tooltip("Animation curve to control interpolation.")]
-            public AnimationCurve animationCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
-        }
+        #endregion
 
         /// <summary>
         /// Initializes the target Transform and sets its initial position, rotation, and scale
@@ -99,11 +95,53 @@ namespace UniUtils.GameObjects
             if (scaleConfig.isEnabled) AnimateScale();
         }
 
+        #region Setters
+
         /// <summary>
         /// Enables or disables the animator.
         /// </summary>
         /// <param name="state">True to enable, false to disable.</param>
         public virtual void SetIsEnabled(bool state) => isEnabled = state;
+
+        /// <summary>
+        /// Resets the progress and delay timers for position, rotation, and scale animations.
+        /// </summary>
+        public virtual void ResetProgress()
+        {
+            positionProgress = isPositionForward ? 0f : 1f;
+            rotationProgress = isRotationForward ? 0f : 1f;
+            scaleProgress = isScaleForward ? 0f : 1f;
+
+            positionDelayTimer = 0f;
+            rotationDelayTimer = 0f;
+            scaleDelayTimer = 0f;
+
+            hasCompletedPositionCycle = false;
+            hasCompletedRotationCycle = false;
+            hasCompletedScaleCycle = false;
+        }
+
+        /// <summary>
+        /// Sets the configuration for position animation.
+        /// </summary>
+        /// <param name="config">The configuration data for position animation.</param>
+        public virtual void SetPositionConfig(TransformAnimatorComponentData config) => positionConfig = config;
+
+        /// <summary>
+        /// Sets the configuration for rotation animation.
+        /// </summary>
+        /// <param name="config">The configuration data for rotation animation.</param>
+        public virtual void SetRotationConfig(TransformAnimatorComponentData config) => rotationConfig = config;
+
+        /// <summary>
+        /// Sets the configuration for scale animation.
+        /// </summary>
+        /// <param name="config">The configuration data for scale animation.</param>
+        public virtual void SetScaleConfig(TransformAnimatorComponentData config) => scaleConfig = config;
+
+        #endregion
+
+        #region Helpers & Animation
 
         /// <summary>
         /// Calculates a randomized target value by applying a random offset to the base end value.
@@ -114,9 +152,9 @@ namespace UniUtils.GameObjects
         protected static Vector3 GetRandomizedTarget(Vector3 baseEnd, Vector3 offset)
         {
             return new Vector3(
-                baseEnd.x + UnityEngine.Random.Range(-offset.x, offset.x),
-                baseEnd.y + UnityEngine.Random.Range(-offset.y, offset.y),
-                baseEnd.z + UnityEngine.Random.Range(-offset.z, offset.z)
+                baseEnd.x + Random.Range(-offset.x, offset.x),
+                baseEnd.y + Random.Range(-offset.y, offset.y),
+                baseEnd.z + Random.Range(-offset.z, offset.z)
             );
         }
 
@@ -141,20 +179,43 @@ namespace UniUtils.GameObjects
 
             if (isPositionForward && positionProgress >= 1f)
             {
+                if (!hasCompletedPositionCycle)
+                {
+                    OnPositionCycleCompleted?.Invoke();
+                    OnPositionCycleCompletedAction?.Invoke();
+                }
+
                 if (positionConfig.canLoop)
                 {
                     isPositionForward = false;
                     positionDelayTimer = positionConfig.loopDelay;
+                    hasCompletedPositionCycle = false;
+                }
+                else
+                {
+                    hasCompletedPositionCycle = true;
                 }
             }
 
-            if (isPositionForward || !(positionProgress <= 0f)) return;
-
-            if (positionConfig.canLoop)
+            if (!isPositionForward && positionProgress <= 0f)
             {
-                positionTarget = GetRandomizedTarget(positionConfig.endValue, positionConfig.targetVariance);
-                isPositionForward = true;
-                positionDelayTimer = positionConfig.loopDelay;
+                if (!hasCompletedPositionCycle)
+                {
+                    OnPositionCycleCompleted?.Invoke();
+                    OnPositionCycleCompletedAction?.Invoke();
+                }
+
+                if (positionConfig.canLoop)
+                {
+                    positionTarget = GetRandomizedTarget(positionConfig.endValue, positionConfig.targetVariance);
+                    isPositionForward = true;
+                    positionDelayTimer = positionConfig.loopDelay;
+                    hasCompletedPositionCycle = false;
+                }
+                else
+                {
+                    hasCompletedPositionCycle = true;
+                }
             }
         }
 
@@ -182,20 +243,43 @@ namespace UniUtils.GameObjects
 
             if (isRotationForward && rotationProgress >= 1f)
             {
+                if (!hasCompletedRotationCycle)
+                {
+                    OnRotationCycleCompleted?.Invoke();
+                    OnRotationCycleCompletedAction?.Invoke();
+                }
+
                 if (rotationConfig.canLoop)
                 {
                     isRotationForward = false;
                     rotationDelayTimer = rotationConfig.loopDelay;
+                    hasCompletedRotationCycle = false;
+                }
+                else
+                {
+                    hasCompletedRotationCycle = true;
                 }
             }
 
-            if (isRotationForward || !(rotationProgress <= 0f)) return;
-
-            if (rotationConfig.canLoop)
+            if (!isRotationForward && rotationProgress <= 0f)
             {
-                rotationTarget = GetRandomizedTarget(rotationConfig.endValue, rotationConfig.targetVariance);
-                isRotationForward = true;
-                rotationDelayTimer = rotationConfig.loopDelay;
+                if (!hasCompletedRotationCycle)
+                {
+                    OnRotationCycleCompleted?.Invoke();
+                    OnRotationCycleCompletedAction?.Invoke();
+                }
+
+                if (rotationConfig.canLoop)
+                {
+                    rotationTarget = GetRandomizedTarget(rotationConfig.endValue, rotationConfig.targetVariance);
+                    isRotationForward = true;
+                    rotationDelayTimer = rotationConfig.loopDelay;
+                    hasCompletedRotationCycle = false;
+                }
+                else
+                {
+                    hasCompletedRotationCycle = true;
+                }
             }
         }
 
@@ -220,21 +304,72 @@ namespace UniUtils.GameObjects
 
             if (isScaleForward && scaleProgress >= 1f)
             {
+                if (!hasCompletedScaleCycle)
+                {
+                    OnScaleCycleCompleted?.Invoke();
+                    OnScaleCycleCompletedAction?.Invoke();
+                }
+
                 if (scaleConfig.canLoop)
                 {
                     isScaleForward = false;
                     scaleDelayTimer = scaleConfig.loopDelay;
+                    hasCompletedScaleCycle = false;
+                }
+                else
+                {
+                    hasCompletedScaleCycle = true;
                 }
             }
 
-            if (isScaleForward || !(scaleProgress <= 0f)) return;
-
-            if (scaleConfig.canLoop)
+            if (!isScaleForward && scaleProgress <= 0f)
             {
-                scaleTarget = GetRandomizedTarget(scaleConfig.endValue, scaleConfig.targetVariance);
-                isScaleForward = true;
-                scaleDelayTimer = scaleConfig.loopDelay;
+                if (!hasCompletedScaleCycle)
+                {
+                    OnScaleCycleCompleted?.Invoke();
+                    OnScaleCycleCompletedAction?.Invoke();
+                }
+
+                if (scaleConfig.canLoop)
+                {
+                    scaleTarget = GetRandomizedTarget(scaleConfig.endValue, scaleConfig.targetVariance);
+                    isScaleForward = true;
+                    scaleDelayTimer = scaleConfig.loopDelay;
+                    hasCompletedScaleCycle = false;
+                }
+                else
+                {
+                    hasCompletedScaleCycle = true;
+                }
             }
+        }
+
+        #endregion
+
+        /// <summary>
+        /// Represents the configuration data for animating a specific transform component.
+        /// </summary>
+        [Serializable]
+        public class TransformAnimatorComponentData
+        {
+            [Tooltip("Enable or disable this component animation.")]
+            public bool isEnabled;
+            [Space]
+            [Tooltip("Animation speed in units per second.")] [Range(0f, 30f)]
+            public float speed = 1f;
+            [Tooltip("Should the animation loop back and forth.")]
+            public bool canLoop;
+            [Tooltip("Delay between loops in seconds.")] [Range(0f, 30f)]
+            public float loopDelay;
+            [Space]
+            [Tooltip("Starting value of the transform component.")]
+            public Vector3 startValue;
+            [Tooltip("Ending value of the transform component.")]
+            public Vector3 endValue;
+            [Tooltip("Random variance offset to apply each new forward iteration to the end value.")]
+            public Vector3 targetVariance;
+            [Tooltip("Animation curve to control interpolation.")]
+            public AnimationCurve animationCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
         }
     }
 }
