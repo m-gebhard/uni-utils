@@ -3621,6 +3621,24 @@ references:
   isSpec: "True"
   fullName: UniUtils.GameObjects.TransformAnimator.GetRandomizedTarget
   nameWithType: TransformAnimator.GetRandomizedTarget
+- uid: UniUtils.GameObjects.TransformAnimator.hasCompletedPositionCycle
+  name: hasCompletedPositionCycle
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_hasCompletedPositionCycle
+  commentId: F:UniUtils.GameObjects.TransformAnimator.hasCompletedPositionCycle
+  fullName: UniUtils.GameObjects.TransformAnimator.hasCompletedPositionCycle
+  nameWithType: TransformAnimator.hasCompletedPositionCycle
+- uid: UniUtils.GameObjects.TransformAnimator.hasCompletedRotationCycle
+  name: hasCompletedRotationCycle
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_hasCompletedRotationCycle
+  commentId: F:UniUtils.GameObjects.TransformAnimator.hasCompletedRotationCycle
+  fullName: UniUtils.GameObjects.TransformAnimator.hasCompletedRotationCycle
+  nameWithType: TransformAnimator.hasCompletedRotationCycle
+- uid: UniUtils.GameObjects.TransformAnimator.hasCompletedScaleCycle
+  name: hasCompletedScaleCycle
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_hasCompletedScaleCycle
+  commentId: F:UniUtils.GameObjects.TransformAnimator.hasCompletedScaleCycle
+  fullName: UniUtils.GameObjects.TransformAnimator.hasCompletedScaleCycle
+  nameWithType: TransformAnimator.hasCompletedScaleCycle
 - uid: UniUtils.GameObjects.TransformAnimator.isEnabled
   name: isEnabled
   href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_isEnabled
@@ -3645,12 +3663,61 @@ references:
   commentId: F:UniUtils.GameObjects.TransformAnimator.isScaleForward
   fullName: UniUtils.GameObjects.TransformAnimator.isScaleForward
   nameWithType: TransformAnimator.isScaleForward
+- uid: UniUtils.GameObjects.TransformAnimator.OnPositionCycleCompleted
+  name: OnPositionCycleCompleted
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_OnPositionCycleCompleted
+  commentId: F:UniUtils.GameObjects.TransformAnimator.OnPositionCycleCompleted
+  fullName: UniUtils.GameObjects.TransformAnimator.OnPositionCycleCompleted
+  nameWithType: TransformAnimator.OnPositionCycleCompleted
+- uid: UniUtils.GameObjects.TransformAnimator.OnPositionCycleCompletedAction
+  name: OnPositionCycleCompletedAction
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_OnPositionCycleCompletedAction
+  commentId: E:UniUtils.GameObjects.TransformAnimator.OnPositionCycleCompletedAction
+  fullName: UniUtils.GameObjects.TransformAnimator.OnPositionCycleCompletedAction
+  nameWithType: TransformAnimator.OnPositionCycleCompletedAction
+- uid: UniUtils.GameObjects.TransformAnimator.OnRotationCycleCompleted
+  name: OnRotationCycleCompleted
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_OnRotationCycleCompleted
+  commentId: F:UniUtils.GameObjects.TransformAnimator.OnRotationCycleCompleted
+  fullName: UniUtils.GameObjects.TransformAnimator.OnRotationCycleCompleted
+  nameWithType: TransformAnimator.OnRotationCycleCompleted
+- uid: UniUtils.GameObjects.TransformAnimator.OnRotationCycleCompletedAction
+  name: OnRotationCycleCompletedAction
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_OnRotationCycleCompletedAction
+  commentId: E:UniUtils.GameObjects.TransformAnimator.OnRotationCycleCompletedAction
+  fullName: UniUtils.GameObjects.TransformAnimator.OnRotationCycleCompletedAction
+  nameWithType: TransformAnimator.OnRotationCycleCompletedAction
+- uid: UniUtils.GameObjects.TransformAnimator.OnScaleCycleCompleted
+  name: OnScaleCycleCompleted
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_OnScaleCycleCompleted
+  commentId: F:UniUtils.GameObjects.TransformAnimator.OnScaleCycleCompleted
+  fullName: UniUtils.GameObjects.TransformAnimator.OnScaleCycleCompleted
+  nameWithType: TransformAnimator.OnScaleCycleCompleted
+- uid: UniUtils.GameObjects.TransformAnimator.OnScaleCycleCompletedAction
+  name: OnScaleCycleCompletedAction
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_OnScaleCycleCompletedAction
+  commentId: E:UniUtils.GameObjects.TransformAnimator.OnScaleCycleCompletedAction
+  fullName: UniUtils.GameObjects.TransformAnimator.OnScaleCycleCompletedAction
+  nameWithType: TransformAnimator.OnScaleCycleCompletedAction
 - uid: UniUtils.GameObjects.TransformAnimator.positionConfig
   name: positionConfig
   href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_positionConfig
   commentId: F:UniUtils.GameObjects.TransformAnimator.positionConfig
   fullName: UniUtils.GameObjects.TransformAnimator.positionConfig
   nameWithType: TransformAnimator.positionConfig
+- uid: UniUtils.GameObjects.TransformAnimator.PositionConfig
+  name: PositionConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_PositionConfig
+  commentId: P:UniUtils.GameObjects.TransformAnimator.PositionConfig
+  fullName: UniUtils.GameObjects.TransformAnimator.PositionConfig
+  nameWithType: TransformAnimator.PositionConfig
+- uid: UniUtils.GameObjects.TransformAnimator.PositionConfig*
+  name: PositionConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_PositionConfig_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.PositionConfig
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.PositionConfig
+  nameWithType: TransformAnimator.PositionConfig
 - uid: UniUtils.GameObjects.TransformAnimator.positionDelayTimer
   name: positionDelayTimer
   href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_positionDelayTimer
@@ -3669,12 +3736,38 @@ references:
   commentId: F:UniUtils.GameObjects.TransformAnimator.positionTarget
   fullName: UniUtils.GameObjects.TransformAnimator.positionTarget
   nameWithType: TransformAnimator.positionTarget
+- uid: UniUtils.GameObjects.TransformAnimator.ResetProgress
+  name: ResetProgress()
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_ResetProgress
+  commentId: M:UniUtils.GameObjects.TransformAnimator.ResetProgress
+  fullName: UniUtils.GameObjects.TransformAnimator.ResetProgress()
+  nameWithType: TransformAnimator.ResetProgress()
+- uid: UniUtils.GameObjects.TransformAnimator.ResetProgress*
+  name: ResetProgress
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_ResetProgress_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.ResetProgress
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.ResetProgress
+  nameWithType: TransformAnimator.ResetProgress
 - uid: UniUtils.GameObjects.TransformAnimator.rotationConfig
   name: rotationConfig
   href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_rotationConfig
   commentId: F:UniUtils.GameObjects.TransformAnimator.rotationConfig
   fullName: UniUtils.GameObjects.TransformAnimator.rotationConfig
   nameWithType: TransformAnimator.rotationConfig
+- uid: UniUtils.GameObjects.TransformAnimator.RotationConfig
+  name: RotationConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_RotationConfig
+  commentId: P:UniUtils.GameObjects.TransformAnimator.RotationConfig
+  fullName: UniUtils.GameObjects.TransformAnimator.RotationConfig
+  nameWithType: TransformAnimator.RotationConfig
+- uid: UniUtils.GameObjects.TransformAnimator.RotationConfig*
+  name: RotationConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_RotationConfig_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.RotationConfig
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.RotationConfig
+  nameWithType: TransformAnimator.RotationConfig
 - uid: UniUtils.GameObjects.TransformAnimator.rotationDelayTimer
   name: rotationDelayTimer
   href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_rotationDelayTimer
@@ -3699,6 +3792,19 @@ references:
   commentId: F:UniUtils.GameObjects.TransformAnimator.scaleConfig
   fullName: UniUtils.GameObjects.TransformAnimator.scaleConfig
   nameWithType: TransformAnimator.scaleConfig
+- uid: UniUtils.GameObjects.TransformAnimator.ScaleConfig
+  name: ScaleConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_ScaleConfig
+  commentId: P:UniUtils.GameObjects.TransformAnimator.ScaleConfig
+  fullName: UniUtils.GameObjects.TransformAnimator.ScaleConfig
+  nameWithType: TransformAnimator.ScaleConfig
+- uid: UniUtils.GameObjects.TransformAnimator.ScaleConfig*
+  name: ScaleConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_ScaleConfig_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.ScaleConfig
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.ScaleConfig
+  nameWithType: TransformAnimator.ScaleConfig
 - uid: UniUtils.GameObjects.TransformAnimator.scaleDelayTimer
   name: scaleDelayTimer
   href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_scaleDelayTimer
@@ -3730,6 +3836,45 @@ references:
   isSpec: "True"
   fullName: UniUtils.GameObjects.TransformAnimator.SetIsEnabled
   nameWithType: TransformAnimator.SetIsEnabled
+- uid: UniUtils.GameObjects.TransformAnimator.SetPositionConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  name: SetPositionConfig(TransformAnimator.TransformAnimatorComponentData)
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetPositionConfig_UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_
+  commentId: M:UniUtils.GameObjects.TransformAnimator.SetPositionConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  fullName: UniUtils.GameObjects.TransformAnimator.SetPositionConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  nameWithType: TransformAnimator.SetPositionConfig(TransformAnimator.TransformAnimatorComponentData)
+- uid: UniUtils.GameObjects.TransformAnimator.SetPositionConfig*
+  name: SetPositionConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetPositionConfig_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.SetPositionConfig
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.SetPositionConfig
+  nameWithType: TransformAnimator.SetPositionConfig
+- uid: UniUtils.GameObjects.TransformAnimator.SetRotationConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  name: SetRotationConfig(TransformAnimator.TransformAnimatorComponentData)
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetRotationConfig_UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_
+  commentId: M:UniUtils.GameObjects.TransformAnimator.SetRotationConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  fullName: UniUtils.GameObjects.TransformAnimator.SetRotationConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  nameWithType: TransformAnimator.SetRotationConfig(TransformAnimator.TransformAnimatorComponentData)
+- uid: UniUtils.GameObjects.TransformAnimator.SetRotationConfig*
+  name: SetRotationConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetRotationConfig_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.SetRotationConfig
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.SetRotationConfig
+  nameWithType: TransformAnimator.SetRotationConfig
+- uid: UniUtils.GameObjects.TransformAnimator.SetScaleConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  name: SetScaleConfig(TransformAnimator.TransformAnimatorComponentData)
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetScaleConfig_UniUtils_GameObjects_TransformAnimator_TransformAnimatorComponentData_
+  commentId: M:UniUtils.GameObjects.TransformAnimator.SetScaleConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  fullName: UniUtils.GameObjects.TransformAnimator.SetScaleConfig(UniUtils.GameObjects.TransformAnimator.TransformAnimatorComponentData)
+  nameWithType: TransformAnimator.SetScaleConfig(TransformAnimator.TransformAnimatorComponentData)
+- uid: UniUtils.GameObjects.TransformAnimator.SetScaleConfig*
+  name: SetScaleConfig
+  href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_SetScaleConfig_
+  commentId: Overload:UniUtils.GameObjects.TransformAnimator.SetScaleConfig
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.TransformAnimator.SetScaleConfig
+  nameWithType: TransformAnimator.SetScaleConfig
 - uid: UniUtils.GameObjects.TransformAnimator.target
   name: target
   href: api/UniUtils.GameObjects.TransformAnimator.html#UniUtils_GameObjects_TransformAnimator_target
