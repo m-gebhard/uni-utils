@@ -30,45 +30,45 @@ namespace UniUtils.Data
     /// }
     /// </code>
     /// </example>
-    public sealed class LerpValue<T>
+    public class LerpValue<T>
     {
         /// <summary>
         /// The current interpolated value.
         /// </summary>
-        private T currentValue;
+        protected T currentValue;
 
         /// <summary>
         /// The target value to interpolate towards.
         /// </summary>
-        private T targetValue;
+        protected T targetValue;
 
         /// <summary>
         /// The interpolation function used to calculate the interpolated value.
         /// </summary>
-        private readonly Func<T, T, float, T> lerpFunc;
+        protected readonly Func<T, T, float, T> lerpFunc;
 
         /// <summary>
         /// The speed at which the value interpolates towards the target.
         /// </summary>
-        private float lerpSpeed;
+        protected float lerpSpeed;
 
         /// <summary>
         /// Gets the current interpolated value.
         /// </summary>
         /// <returns>The current value.</returns>
-        public T Value => currentValue;
+        public virtual T Value => currentValue;
 
         /// <summary>
         /// Gets the target value.
         /// </summary>
         /// <returns>The target value.</returns>
-        public T Target => targetValue;
+        public virtual T Target => targetValue;
 
         /// <summary>
         /// Gets the speed at which the value interpolates towards the target.
         /// </summary>
         /// <returns>The speed of interpolation.</returns>
-        public float LerpSpeed => lerpSpeed;
+        public virtual float LerpSpeed => lerpSpeed;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LerpValue{T}"/> class.
@@ -89,7 +89,7 @@ namespace UniUtils.Data
         /// Sets a new target value for interpolation.
         /// </summary>
         /// <param name="newTarget">The new target value.</param>
-        public void SetTarget(T newTarget)
+        public virtual void SetTarget(T newTarget)
         {
             targetValue = newTarget;
         }
@@ -98,7 +98,7 @@ namespace UniUtils.Data
         /// Immediately sets the current and target values to a specified value.
         /// </summary>
         /// <param name="newValue">The value to set.</param>
-        public void ForceSet(T newValue)
+        public virtual void ForceSet(T newValue)
         {
             currentValue = newValue;
             targetValue = newValue;
@@ -108,7 +108,7 @@ namespace UniUtils.Data
         /// Sets the speed at which the value interpolates towards the target.
         /// </summary>
         /// <param name="newSpeed">The new interpolation speed.</param>
-        public void SetLerpSpeed(float newSpeed)
+        public virtual void SetLerpSpeed(float newSpeed)
         {
             lerpSpeed = newSpeed;
         }
@@ -117,7 +117,7 @@ namespace UniUtils.Data
         /// Updates the current value by interpolating towards the target value.
         /// </summary>
         /// <param name="deltaTime">The time elapsed since the last update.</param>
-        public void Update(float deltaTime)
+        public virtual void Update(float deltaTime)
         {
             currentValue = lerpFunc(currentValue, targetValue, deltaTime * lerpSpeed);
         }
