@@ -120,8 +120,151 @@
     }
 }</code></pre>
 
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UniUtils_GameObjects_ColliderEventHandler_registeredEvents" data-uid="UniUtils.GameObjects.ColliderEventHandler.registeredEvents">registeredEvents</h4>
+  <div class="markdown level1 summary"><p>Stores collision and trigger events by tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly Dictionary&lt;string, ColliderEventEntry&gt; registeredEvents</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="UniUtils.GameObjects.ColliderEventEntry.html">ColliderEventEntry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="UniUtils_GameObjects_ColliderEventHandler_OnCollisionEnter_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter*"></a>
+  <h4 id="UniUtils_GameObjects_ColliderEventHandler_OnCollisionEnter_Collision_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter(Collision)">OnCollisionEnter(Collision)</h4>
+  <div class="markdown level1 summary"><p>Called when a collision occurs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCollisionEnter(Collision other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Collision</span></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The collision data associated with the collision event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_ColliderEventHandler_OnCollisionExit_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit*"></a>
+  <h4 id="UniUtils_GameObjects_ColliderEventHandler_OnCollisionExit_Collision_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit(Collision)">OnCollisionExit(Collision)</h4>
+  <div class="markdown level1 summary"><p>Called when a collision ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnCollisionExit(Collision other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Collision</span></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The collision data associated with the collision event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_ColliderEventHandler_OnTriggerEnter_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter*"></a>
+  <h4 id="UniUtils_GameObjects_ColliderEventHandler_OnTriggerEnter_Collider_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter(Collider)">OnTriggerEnter(Collider)</h4>
+  <div class="markdown level1 summary"><p>Called when a trigger collider enters the trigger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTriggerEnter(Collider other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Collider</span></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The other collider involved in the trigger event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UniUtils_GameObjects_ColliderEventHandler_OnTriggerExit_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit*"></a>
+  <h4 id="UniUtils_GameObjects_ColliderEventHandler_OnTriggerExit_Collider_" data-uid="UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit(Collider)">OnTriggerExit(Collider)</h4>
+  <div class="markdown level1 summary"><p>Called when a trigger collider exits the trigger.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnTriggerExit(Collider other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Collider</span></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The other collider involved in the trigger event.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="UniUtils_GameObjects_ColliderEventHandler_RegisterColliderEvent_" data-uid="UniUtils.GameObjects.ColliderEventHandler.RegisterColliderEvent*"></a>
@@ -131,7 +274,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void RegisterColliderEvent(ColliderEvent colliderEvent, bool isTriggerEvent = false)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void RegisterColliderEvent(ColliderEvent colliderEvent, bool isTriggerEvent = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -164,7 +307,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected void UnregisterColliderEvent(string eventTag)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual void UnregisterColliderEvent(string eventTag)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

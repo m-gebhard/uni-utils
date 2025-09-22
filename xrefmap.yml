@@ -3113,6 +3113,58 @@ references:
   commentId: T:UniUtils.GameObjects.ColliderEventHandler
   fullName: UniUtils.GameObjects.ColliderEventHandler
   nameWithType: ColliderEventHandler
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter(Collision)
+  name: OnCollisionEnter(Collision)
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnCollisionEnter_Collision_
+  commentId: M:UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter(Collision)
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter(Collision)
+  nameWithType: ColliderEventHandler.OnCollisionEnter(Collision)
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter*
+  name: OnCollisionEnter
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnCollisionEnter_
+  commentId: Overload:UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnCollisionEnter
+  nameWithType: ColliderEventHandler.OnCollisionEnter
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit(Collision)
+  name: OnCollisionExit(Collision)
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnCollisionExit_Collision_
+  commentId: M:UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit(Collision)
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit(Collision)
+  nameWithType: ColliderEventHandler.OnCollisionExit(Collision)
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit*
+  name: OnCollisionExit
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnCollisionExit_
+  commentId: Overload:UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnCollisionExit
+  nameWithType: ColliderEventHandler.OnCollisionExit
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter(Collider)
+  name: OnTriggerEnter(Collider)
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnTriggerEnter_Collider_
+  commentId: M:UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter(Collider)
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter(Collider)
+  nameWithType: ColliderEventHandler.OnTriggerEnter(Collider)
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter*
+  name: OnTriggerEnter
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnTriggerEnter_
+  commentId: Overload:UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnTriggerEnter
+  nameWithType: ColliderEventHandler.OnTriggerEnter
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit(Collider)
+  name: OnTriggerExit(Collider)
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnTriggerExit_Collider_
+  commentId: M:UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit(Collider)
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit(Collider)
+  nameWithType: ColliderEventHandler.OnTriggerExit(Collider)
+- uid: UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit*
+  name: OnTriggerExit
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_OnTriggerExit_
+  commentId: Overload:UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit
+  isSpec: "True"
+  fullName: UniUtils.GameObjects.ColliderEventHandler.OnTriggerExit
+  nameWithType: ColliderEventHandler.OnTriggerExit
 - uid: UniUtils.GameObjects.ColliderEventHandler.RegisterColliderEvent(UniUtils.GameObjects.ColliderEvent,System.Boolean)
   name: RegisterColliderEvent(ColliderEvent, Boolean)
   href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_RegisterColliderEvent_UniUtils_GameObjects_ColliderEvent_System_Boolean_
@@ -3126,6 +3178,12 @@ references:
   isSpec: "True"
   fullName: UniUtils.GameObjects.ColliderEventHandler.RegisterColliderEvent
   nameWithType: ColliderEventHandler.RegisterColliderEvent
+- uid: UniUtils.GameObjects.ColliderEventHandler.registeredEvents
+  name: registeredEvents
+  href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_registeredEvents
+  commentId: F:UniUtils.GameObjects.ColliderEventHandler.registeredEvents
+  fullName: UniUtils.GameObjects.ColliderEventHandler.registeredEvents
+  nameWithType: ColliderEventHandler.registeredEvents
 - uid: UniUtils.GameObjects.ColliderEventHandler.UnregisterColliderEvent(System.String)
   name: UnregisterColliderEvent(String)
   href: api/UniUtils.GameObjects.ColliderEventHandler.html#UniUtils_GameObjects_ColliderEventHandler_UnregisterColliderEvent_System_String_
