@@ -69,6 +69,11 @@ namespace UniUtils.Editor
         protected virtual bool ShowAboveDefaultInspector => false;
 
         /// <summary>
+        /// Determines whether the inspector should update every frame.
+        /// </summary>
+        protected virtual bool EnableRealtimeUpdate => false;
+
+        /// <summary>
         /// Called by Unity to draw the inspector GUI for the target component.
         /// </summary>
         public override void OnInspectorGUI()
@@ -80,7 +85,6 @@ namespace UniUtils.Editor
             if (ShowAboveDefaultInspector)
             {
                 DrawCustomSection();
-
                 if (ShowDefaultInspector)
                 {
                     EditorGUILayout.Space();
@@ -100,6 +104,12 @@ namespace UniUtils.Editor
 
             // Apply any modified properties to the serialized object.
             serializedObject.ApplyModifiedProperties();
+
+            // Repaint every frame if EnableRealtimeUpdate is true
+            if (EnableRealtimeUpdate)
+            {
+                Repaint();
+            }
         }
 
         /// <summary>
