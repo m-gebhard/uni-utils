@@ -38,12 +38,12 @@ namespace UniUtils.GameObjects
         /// <summary>
         /// Stores collision and trigger events by tag.
         /// </summary>
-        private readonly Dictionary<string, ColliderEventEntry> registeredEvents = new();
+        protected readonly Dictionary<string, ColliderEventEntry> registeredEvents = new();
 
         /// <summary>
         /// Registers a collider event by tag.
         /// </summary>
-        protected void RegisterColliderEvent(ColliderEvent colliderEvent, bool isTriggerEvent = false)
+        protected virtual void RegisterColliderEvent(ColliderEvent colliderEvent, bool isTriggerEvent = false)
         {
             if (!registeredEvents.TryGetValue(colliderEvent.Tag, out ColliderEventEntry entry))
             {
@@ -65,7 +65,7 @@ namespace UniUtils.GameObjects
         /// <summary>
         /// Unregisters a collider event by a given tag.
         /// </summary>
-        protected void UnregisterColliderEvent(string eventTag)
+        protected virtual void UnregisterColliderEvent(string eventTag)
         {
             registeredEvents.Remove(eventTag);
         }
@@ -74,7 +74,7 @@ namespace UniUtils.GameObjects
         /// Called when a trigger collider enters the trigger.
         /// </summary>
         /// <param name="other">The other collider involved in the trigger event.</param>
-        private void OnTriggerEnter(Collider other)
+        protected virtual void OnTriggerEnter(Collider other)
         {
             if (registeredEvents.TryGetValue(other.tag, out ColliderEventEntry entry))
             {
@@ -86,7 +86,7 @@ namespace UniUtils.GameObjects
         /// Called when a trigger collider exits the trigger.
         /// </summary>
         /// <param name="other">The other collider involved in the trigger event.</param>
-        private void OnTriggerExit(Collider other)
+        protected virtual void OnTriggerExit(Collider other)
         {
             if (registeredEvents.TryGetValue(other.tag, out ColliderEventEntry entry))
             {
@@ -98,7 +98,7 @@ namespace UniUtils.GameObjects
         /// Called when a collision occurs.
         /// </summary>
         /// <param name="other">The collision data associated with the collision event.</param>
-        private void OnCollisionEnter(Collision other)
+        protected virtual void OnCollisionEnter(Collision other)
         {
             if (registeredEvents.TryGetValue(other.gameObject.tag, out ColliderEventEntry entry))
             {
@@ -110,7 +110,7 @@ namespace UniUtils.GameObjects
         /// Called when a collision ends.
         /// </summary>
         /// <param name="other">The collision data associated with the collision event.</param>
-        private void OnCollisionExit(Collision other)
+        protected virtual void OnCollisionExit(Collision other)
         {
             if (registeredEvents.TryGetValue(other.gameObject.tag, out ColliderEventEntry entry))
             {
@@ -148,6 +148,7 @@ namespace UniUtils.GameObjects
         /// </remarks>
         public Action<GameObject, ContactPoint[]> OnExit;
     }
+
     /// <summary>
     /// Stores collision and trigger events.
     /// </summary>
