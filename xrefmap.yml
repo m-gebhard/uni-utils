@@ -168,12 +168,12 @@ references:
   isSpec: "True"
   fullName: UniUtils.Data.FadeTransitions.FadeLightIntensity
   nameWithType: FadeTransitions.FadeLightIntensity
-- uid: UniUtils.Data.FadeTransitions.FadeMaterialColor(Material,Color,System.String,System.Single)
-  name: FadeMaterialColor(Material, Color, String, Single)
-  href: api/UniUtils.Data.FadeTransitions.html#UniUtils_Data_FadeTransitions_FadeMaterialColor_Material_Color_System_String_System_Single_
-  commentId: M:UniUtils.Data.FadeTransitions.FadeMaterialColor(Material,Color,System.String,System.Single)
-  fullName: UniUtils.Data.FadeTransitions.FadeMaterialColor(Material, Color, System.String, System.Single)
-  nameWithType: FadeTransitions.FadeMaterialColor(Material, Color, String, Single)
+- uid: UniUtils.Data.FadeTransitions.FadeMaterialColor(Material,Color,System.String,System.Int32,System.Single)
+  name: FadeMaterialColor(Material, Color, String, Int32, Single)
+  href: api/UniUtils.Data.FadeTransitions.html#UniUtils_Data_FadeTransitions_FadeMaterialColor_Material_Color_System_String_System_Int32_System_Single_
+  commentId: M:UniUtils.Data.FadeTransitions.FadeMaterialColor(Material,Color,System.String,System.Int32,System.Single)
+  fullName: UniUtils.Data.FadeTransitions.FadeMaterialColor(Material, Color, System.String, System.Int32, System.Single)
+  nameWithType: FadeTransitions.FadeMaterialColor(Material, Color, String, Int32, Single)
 - uid: UniUtils.Data.FadeTransitions.FadeMaterialColor*
   name: FadeMaterialColor
   href: api/UniUtils.Data.FadeTransitions.html#UniUtils_Data_FadeTransitions_FadeMaterialColor_
