@@ -63,6 +63,7 @@ namespace UniUtils.Data
         /// <param name="targetColor">The target color to fade to.</param>
         /// <param name="fieldName">The name of the color property to modify (default is "_EmissionColor").</param>
         /// <param name="duration">The duration of the fade in seconds.</param>
+        /// <param name="materialPropertyId">Optional property ID for the color property. If provided, it overrides fieldName.</param>
         /// <returns>An IEnumerator for use in a coroutine.</returns>
         /// <example>
         /// <code>
@@ -79,10 +80,13 @@ namespace UniUtils.Data
             Material targetMaterial,
             Color targetColor,
             string fieldName = "_EmissionColor",
+            int materialPropertyId = -1,
             float duration = 1f
         )
         {
-            int propertyId = Shader.PropertyToID(fieldName);
+            int propertyId = materialPropertyId != -1
+                ? materialPropertyId
+                : Shader.PropertyToID(fieldName);
 
             return FadeValue(
                 () => targetMaterial.GetColor(propertyId),
